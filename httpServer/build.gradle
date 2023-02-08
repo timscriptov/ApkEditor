@@ -20,15 +20,18 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
     namespace 'com.gmail.heagoo.httpserver'
-
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.0.0'
-    testImplementation 'junit:junit:4.13'
-    androidTestImplementation('androidx.test.espresso:espresso-core:3.1.0', {
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation('androidx.test.espresso:espresso-core:3.5.1', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     implementation project(path: ':_AndroidCommon')

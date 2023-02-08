@@ -32,6 +32,10 @@ android {
             buildConfigField "boolean", "PARSER_ONLY", "false"
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
+    }
     namespace 'com.gmail.heagoo.apkeditor.base'
 }
 
@@ -43,22 +47,22 @@ dependencies {
     implementation project(':PngEditor')
     implementation project(':imageViewLib')
 
-    implementation 'com.google.guava:guava:24.1-jre'
+    implementation 'com.google.guava:guava:31.1-jre'
 
-    implementation jetpack.vp
-    implementation jetpack.interpolator
-    implementation jetpack.fragment
-    implementation jetpack.preference
-    implementation jetpack.core
-    implementation jetpack.cardview
-    implementation jetpack.material
-    implementation jetpack.dex
-    implementation jetpack.worker
-    implementation jetpack.lifecycle
-    implementation jetpack.constraint
+    implementation 'androidx.viewpager:viewpager:1.0.0'
+    implementation 'androidx.interpolator:interpolator:1.0.0'
+    implementation 'androidx.fragment:fragment:1.5.5'
+    implementation 'androidx.preference:preference:1.2.0'
+    implementation 'androidx.appcompat:appcompat:1.6.0'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.multidex:multidex:2.0.1'
+    implementation "androidx.work:work-runtime:2.8.0"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
 
-    implementation network.gson
+    implementation 'com.google.code.gson:gson:2.10.1'
 
-    implementation legacy.preference
-    implementation legacy.v4
+    implementation 'androidx.legacy:legacy-preference-v14:1.0.0'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
 }

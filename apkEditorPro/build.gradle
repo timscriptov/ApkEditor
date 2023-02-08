@@ -13,8 +13,8 @@ android {
     }
 
     compileOptions {
-        sourceCompatibility JavaVersion.VERSION_1_8
-        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_11
+        targetCompatibility JavaVersion.VERSION_11
     }
 
     externalNativeBuild {
@@ -40,19 +40,14 @@ android {
 dependencies {
     implementation project(':apkEditor')
     implementation project(':appDataEditor')
-   // implementation 'com.android.support:appcompat-v7:28.0.0'
-    // https://mvnrepository.com/artifact/org.smali/smali
     implementation 'org.smali:baksmali:2.4.0'
     implementation 'org.smali:smali:2.4.0'
-//    implementation files('libs/baksmali-2.4.0.jar')
-//    implementation files('libs/smali-2.4.0.jar')
-
     // Dependencies for jadx
     implementation 'commons-io:commons-io:2.5'
     implementation 'asm:asm-all:3.3.1'
     implementation files('libs/dx-1.10.jar')
     implementation files('libs/android-5.1-clst-core.jar')
-    implementation 'org.slf4j:slf4j-api:1.7.21'
+    implementation 'org.slf4j:slf4j-api:2.0.3'
     implementation 'uk.com.robust-it:cloning:1.9.2'
-    implementation 'com.intellij:annotations:12.0@jar'
+    implementation 'org.jetbrains:annotations:23.1.0'
 }
