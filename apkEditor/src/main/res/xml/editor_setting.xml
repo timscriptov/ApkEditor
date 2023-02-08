@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <CheckBoxPreference
+        android:key="LineWrap"
+        android:title="@string/line_wrap" />
+
+    <CheckBoxPreference
+        android:key="ShowLineNumbers"
+        android:title="@string/show_line_numbers" />
+
+    <EditTextPreference
+        android:inputType="number"
+        android:key="FontSize"
+        android:title="@string/font_size" />
+
+    <EditTextPreference
+        android:dialogMessage="@string/use_bfe_message"
+        android:inputType="number"
+        android:key="BigFileSize"
+        android:title="@string/when_use_bfe" />
+
+    <CheckBoxPreference
+        android:key="SymbolInput"
+        android:summary="@string/symbol_input_summary"
+        android:title="@string/symbol_input" />
+
+</PreferenceScreen>

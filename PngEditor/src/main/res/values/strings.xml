@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">PNG Editor</string>
+    <string name="resize">Resize</string>
+    <string name="new_size">New Size:</string>
+    <string name="input_new_size">Please input the new size</string>
+    <string name="width">Width</string>
+    <string name="height">Height</string>
+    <string name="preview">Preview</string>
+    <string name="fit">Fit</string>
+    <string name="help">Help</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+    <string name="discard">Discard</string>
+    <string name="background">Background</string>
+    <string name="remove">Remove</string>
+    <string name="remove_bg">Remove BG</string>
+    <string name="bg_color">BG Color</string>
+    <string name="replace_color">Replace Color</string>
+    <string name="transparency">Transparency</string>
+    <string name="image_saved">Image saved.</string>
+    <string name="invalid_input">Invalid Input.</string>
+    <string name="cannot_open_file">Cannot open file: %s</string>
+    <string name="image_save_failed">Failed to save the image.</string>
+    <string name="image_save_tip">Image is modified. Do you want to save the changes or discard them?</string>
+    <string name="no_change">No change detected.</string>
+    <string name="image_modified_tip">Image is modified. Are you sure you want to discard the changes?</string>
+    <string name="open_with_browser">Open with Browser</string>
+
+    <string name="resize_without_zooming">No zooming (Just expand or shrink the border)</string>
+</resources>

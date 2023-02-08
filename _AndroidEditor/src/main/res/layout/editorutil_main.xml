@@ -1,0 +1,269 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffe9f2fc"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/filename"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="4dip"
+            android:singleLine="true"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="#ff5997c4" />
+
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/center_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <!-- 
+        <include layout="@layout/item_editor_view_wrap" />
+         -->
+        <LinearLayout
+            android:id="@+id/editorView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.gmail.heagoo.neweditor.ObScrollView
+                android:id="@+id/editorScrollview"
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1.0"
+                android:fillViewport="true"
+                android:scrollbars="vertical">
+
+                <LinearLayout
+                    android:id="@+id/editorLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/lineNumbers"
+                        android:layout_width="40.0dip"
+                        android:layout_height="match_parent"
+                        android:focusable="false"
+                        android:gravity="center|right|top"
+                        android:maxLength="1000000"
+                        android:padding="2.0dip"
+                        android:textSize="14.0sp"
+                        android:typeface="monospace" />
+
+                    <View
+                        android:id="@+id/divider"
+                        android:layout_width="1.0px"
+                        android:layout_height="match_parent" />
+
+                    <com.gmail.heagoo.neweditor.ObEditText
+                        android:id="@+id/editor"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center|left|top"
+                        android:imeOptions="flagNoExtractUi"
+                        android:inputType="textMultiLine|textNoSuggestions"
+                        android:maxLength="1000000"
+                        android:nextFocusRight="@id/editor"
+                        android:padding="2.0dip"
+                        android:textCursorDrawable="@null"
+                        android:textSize="12.0sp"
+                        android:typeface="monospace" />
+                </LinearLayout>
+            </com.gmail.heagoo.neweditor.ObScrollView>
+
+            <LinearLayout
+                android:id="@+id/menu_layout"
+                android:layout_width="match_parent"
+                android:layout_height="48dip"
+                android:background="#ff111111"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/saveBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_iv_button"
+                    android:minWidth="80dip"
+                    android:scaleType="center"
+                    android:src="@drawable/edit_save" />
+
+                <ImageView
+                    android:id="@+id/openFindBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_iv_button"
+                    android:minWidth="80dip"
+                    android:scaleType="center"
+                    android:src="@drawable/edit_find" />
+
+                <ImageView
+                    android:id="@+id/configBtn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center_vertical"
+                    android:background="@drawable/selector_iv_button"
+                    android:minWidth="80dip"
+                    android:scaleType="center"
+                    android:src="@drawable/edit_config"
+                    android:visibility="invisible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!-- 
+        <include layout="@layout/item_find_panel" />
+         -->
+        <SlidingDrawer
+            android:id="@+id/sliding_drawer"
+            android:layout_width="180.0dip"
+            android:layout_height="match_parent"
+            android:layout_gravity="right"
+            android:layout_marginBottom="48.0dip"
+            android:content="@+id/panel_content"
+            android:focusable="false"
+            android:handle="@+id/panel_button"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/panel_button"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="#ff111111"
+                android:gravity="center"
+                android:padding="2dip"
+                android:src="@drawable/edit_slide_left" />
+
+            <RelativeLayout
+                android:id="@+id/panel_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#ff111111">
+
+                <ViewAnimator
+                    android:id="@+id/searchAnimator"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <!--
+                    <include layout="@layout/item_find_view" />
+                    -->
+                    <RelativeLayout
+                        android:id="@+id/search_frame"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_margin="5.0dip">
+
+                        <LinearLayout
+                            android:id="@+id/input_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="vertical">
+
+                            <EditText
+                                android:id="@+id/findEdit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:hint="@string/find"
+                                android:imeOptions="actionSearch|flagNoExtractUi"
+                                android:selectAllOnFocus="true"
+                                android:singleLine="true"
+                                android:textColor="#ffffffff">
+
+                                <requestFocus />
+                            </EditText>
+
+                            <EditText
+                                android:id="@+id/replaceEdit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:hint="@string/replace"
+                                android:imeOptions="actionNone|flagNoExtractUi"
+                                android:selectAllOnFocus="true"
+                                android:textColor="#ffffffff" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/option_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/input_layout"
+                            android:orientation="horizontal">
+
+                            <ToggleButton
+                                android:id="@+id/checkBoxRegexp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:drawableTop="@drawable/edit_regexp"
+                                android:paddingTop="10.0dip"
+                                android:textOff=""
+                                android:textOn=""
+                                android:textSize="12.0sp" />
+
+                            <ToggleButton
+                                android:id="@+id/checkBoxIgnoreCase"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:drawableTop="@drawable/edit_ignorecase"
+                                android:paddingTop="10.0dip"
+                                android:textOff=""
+                                android:textOn=""
+                                android:textSize="12.0sp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/action_layout"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentBottom="true"
+                            android:layout_marginBottom="4dip"
+                            android:orientation="horizontal">
+
+                            <ImageButton
+                                android:id="@+id/findBtn"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:src="@drawable/edit_search" />
+
+                            <ImageButton
+                                android:id="@+id/replaceBtn"
+                                android:layout_width="0.0dip"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1.0"
+                                android:src="@drawable/edit_replace" />
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                </ViewAnimator>
+            </RelativeLayout>
+        </SlidingDrawer>
+
+
+    </FrameLayout>
+
+
+</LinearLayout>

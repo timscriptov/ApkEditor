@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/action_save"
+        android:icon="@drawable/edit_save"
+        android:showAsAction="ifRoom"
+        android:title="@string/save" />
+    <item
+        android:id="@+id/action_find"
+        android:icon="@drawable/edit_find"
+        android:showAsAction="ifRoom"
+        android:title="@string/find_replace" />
+    <item
+        android:id="@+id/action_config"
+        android:icon="@drawable/edit_config"
+        android:showAsAction="never"
+        android:title="@string/settings" />
+
+</menu>

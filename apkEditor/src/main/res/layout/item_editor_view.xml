@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editorView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gmail.heagoo.apkeditor.neweditor.ObScrollView
+        android:id="@+id/editorScrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:fillViewport="true"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/editorLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/lineNumbers"
+                android:layout_width="40.0dip"
+                android:layout_height="fill_parent"
+                android:focusable="false"
+                android:gravity="center|right|top"
+                android:padding="2.0dip"
+                android:textSize="12.0sp"
+                android:typeface="monospace" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="1.0px"
+                android:layout_height="fill_parent" />
+
+            <com.gmail.heagoo.apkeditor.neweditor.ObHorizontalScrollView
+                android:id="@+id/hScrollView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:fillViewport="true">
+
+                <com.gmail.heagoo.apkeditor.neweditor.ObEditText
+                    android:id="@+id/editor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center|left|top"
+                    android:imeOptions="flagNoExtractUi"
+                    android:inputType="textMultiLine|textNoSuggestions"
+                    android:nextFocusRight="@id/editor"
+                    android:padding="2.0dip"
+                    android:textCursorDrawable="@null"
+                    android:textSize="12.0sp"
+                    android:typeface="monospace" />
+            </com.gmail.heagoo.apkeditor.neweditor.ObHorizontalScrollView>
+        </LinearLayout>
+    </com.gmail.heagoo.apkeditor.neweditor.ObScrollView>
+
+    <LinearLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="48dip"
+        android:background="#ff111111"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/saveBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_iv_button"
+            android:minWidth="80dip"
+            android:scaleType="center"
+            android:src="@drawable/edit_save" />
+
+        <ImageView
+            android:id="@+id/openFindBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_iv_button"
+            android:minWidth="80dip"
+            android:scaleType="center"
+            android:src="@drawable/edit_find" />
+
+        <ImageView
+            android:id="@+id/configBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/selector_iv_button"
+            android:minWidth="80dip"
+            android:scaleType="center"
+            android:src="@drawable/edit_config" />
+    </LinearLayout>
+</LinearLayout>

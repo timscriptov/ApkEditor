@@ -1,0 +1,273 @@
+<html>
+    <title>Help for APK Editor and APK Editor Pro</title>
+    <body>
+        <center>
+            <div style="max-width:800px;">
+
+                <p style="text-align: center;">
+                <center>
+                    <img
+                            alt="logo"
+                            class="aligncenter size-full"
+                            src="logo.jpg">
+                    <center>
+                </p>
+
+                <p style="text-align: left;">
+                <ul>
+                    <li style="text-align: left;">
+                        <a href="#about">About APK Editor</a>
+                    </li>
+                    <li style="text-align: left;">Examples of How to Use It</li>
+                    <ol type="decimal">
+                        <li style="text-align: left;">
+                            <a href="#example1">Modify App Name</a>
+                        </li>
+                        <li style="text-align: left;">
+                            <a href="#example2">Beauty UI: Change Background Image</a>
+                        </li>
+                        <li style="text-align: left;">
+                            <a href="#example3">Remove Ad</a>
+                        </li>
+                        <li style="text-align: left;">
+                            <a href="#example4">Make an App can Move to SD Card</a>
+                        </li>
+                        <li style="text-align: left;">
+                            <a href="#example5">Remove Unwanted Permissions</a>
+                        </li>
+                    </ol>
+                    <li style="text-align: left;">
+                        <a href="#issues">About Issues</a>
+                    </li>
+                </ul>
+
+                </p>
+
+
+                <p
+                        id="about"
+                        style="text-align: left;">
+                    <B>APK Editor</B>
+                    is a super tool that can hack apk files to do lots of things for fun.
+                    It can help us to translate strings, replace icons, redesign layouts, remove
+                    ads, remove limitation in free version, etc. What it can do depends on how you
+                    use it. However, to use it well, we need a little bit professional skills.
+                </p>
+                <p style="text-align: left;">To get started with it, just open an apk file either
+                    from a folder or installed apps. It will display some editable information
+                    inside the apk. Make some changes as you want, and then click the save button in
+                    the upper right corner. In following part, I will give you some examples. For
+                    convenience, I will take 'APK Creator' as the target apk file. (APK Creator can
+                    be downloaded from
+                    <a href="https://play.google.com/store/apps/details?id=com.gmail.heagoo.apkcreator">
+                        HERE</a>)
+                </p>
+
+                <p
+                        id="example1"
+                        style="text-align: left;">
+                    <B>Example 1: Modify App Name</B>
+                    <br>
+                    <B>(1)</B>
+                    Select target app by clicking at 'Select Apk from App', and then select 'APK
+                    Creator'
+                    <br>
+                    <img src="example1_1.jpg">
+                    <br>
+                    <br>
+                    And then click at 'Full Edit'
+                    <br>
+                    <img src="example1_2.jpg">
+                    <br>
+                    <B>(2)</B>
+                    There are 3 tabs in the editing activity, 'String' tab is selected by default,
+                    input 'creator' to search the target string item, and then matched items will be
+                    shown:
+                    <br>
+                    <img src="example1_3.jpg">
+                    <br>
+                    And then click at the item to change it to your favorate string. For example,
+                    here we change it to 'App Creator'
+                    <br>
+                    <img src="example1_4.jpg">
+                    <br>
+                    <B>(3)</B>
+                    Click save button in the upper right corner. After a while, we will be told that
+                    the modified apk is in some place:
+                    <br>
+                    <img src="example1_5.jpg">
+                    <br>
+                    <B>(4)</B>
+                    Modified apk can be installed from file explorer. (But please note that the
+                    original app should be uninstalled before the installation, as the apk is
+                    resigned with another key)
+                </p>
+
+                <p
+                        id="example2"
+                        style="text-align: left;">
+                    <B>Example 2: Change Background Image</B>
+                    <br>
+                    <B>(1)</B>
+                    Select target app by clicking at 'Select Apk from App', then select 'APK
+                    Creator', and then click at 'Full Edit'
+                    <br>
+                    <B>(2)</B>
+                    Click 'Resource' tab after editing activity shown, and then enter 'layout'
+                    folder by clicking at the item. Click at 'activity_main.xml':
+                    <br>
+                    <img src="example2_1.jpg">
+                    <br>
+                    After 'activity_main.xml' is opened, look into it and you will see the
+                    background image is 'bg':
+                    <br>
+                    <img src="example2_2.jpg">
+                    <br>
+                    <B>(3)</B>
+                    Return to 'res' folder, and then input 'bg', uncheck TXT item, then click at
+                    search icon to search files which contains 'bg':
+                    <br>
+                    <img src="example2_3.jpg">
+                    <br>
+                    (Please note: when TXT icon is checked, it means to search files which contain
+                    input text in file content; otherwise means to search files which contain input
+                    text in file name)
+                    <br>
+                    <B>(4)</B>
+                    After search result shown, find the file name like 'bg.jpg', 'bg.png', remember
+                    that path and browse to main editing page to replace it:
+                    <br>
+                    <img src="example2_4.jpg">
+                    <br>
+                    Here we browse to res/drawable folder, and long click at 'bg.jpg' to replace it:
+                    <br>
+                    <img src="example2_5.jpg">
+                    <br>
+                    <font color="red">NOTE:</font>
+                    Please do not select a big file, like directly from camera directory.
+                    <br>
+                    <B>(5)</B>
+                    After image replace, click at 'save' button in the upper right corner. After a
+                    while, we will be told that the modified apk is in some place.
+                    <br>
+                </p>
+
+                <p
+                        id="example3"
+                        style="text-align: left;">
+                    <B>Example 3: Remove Ad</B>
+                    <br>
+                    <B>(1)</B>
+                    Select target app by clicking at 'Select Apk from App', then selecting 'APK
+                    Creator', and then click at 'Full Edit'.
+                    <br>
+                    <B>(2)</B>
+                    Click 'Resource' tab after editable resource shown, and then enter 'layout'
+                    folder by clicking at the item. Click 'activity_main.xml' and it will show the
+                    content of activity_main.xml. Scroll to the last line, change<br>
+                    layout_height="wrap_content"
+                    <br>
+                    to:
+                    <br>
+                    layout_height="0dip"
+                    <br>
+                    <img src="example3_1.jpg">
+                    <br>
+                    And click save icon in the bottom to save the modification.
+                    <br>
+                    (Please note this just make the ad on main page invisible, but it's similar for
+                    other pages)
+                    <br>
+                    <B>(3)</B>
+                    For interstitial ad, please remove the AdActivity in AndroidManifest.xml:
+                    <br>
+                    <img src="example3_2.jpg">
+                    <br>
+                    <B>(4)</B>
+                    After all the modifications, click save button in the upper right corner. After
+                    a while, we will be told that the modified apk is in some place.
+                    <br>
+                </p>
+
+                <p
+                        id="example4"
+                        style="text-align: left;">
+                    <B>Example 4: Make an App can Move to SD Card</B>
+                    <br>
+                    (ONLY available in pro version)
+                    <br>
+                    <B>(1)</B>
+                    Select target app by clicking at 'Select Apk from App', then selecting 'APK
+                    Creator', and then click at 'Full Edit'.
+                    <br>
+                    <B>(2)</B>
+                    Click 'Manifest' tab, and then click at the line of manifest (Generally should
+                    be line 2)
+                    <br>
+                    <B>(3)</B>
+                    Click at '+' icon to add a key and value (android:installLocation="auto", refer
+                    to the following graph), and then click 'OK'; when return to previous dialog,
+                    click 'Save'
+                    <br>
+                    <img src="example4_1.jpg">
+                    <br>
+                    (NOTE: you could change 'auto' to 'preferExternal')
+                    <br>
+                    <B>(4)</B>
+                    Click save button in the upper right corner. After a while, we will be told that
+                    the modified apk is in some place.
+                    <br>
+                </p>
+
+                <p
+                        id="example5"
+                        style="text-align: left;">
+                    <B>Example 5: Remove Unwanted Permissions</B>
+                    <br>
+                    (ONLY available in pro version, here we will demonstrate how to remove internet
+                    permission)
+                    <br>
+                    <B>(1)</B>
+                    Select target app by clicking at 'Select Apk from App', then selecting 'APK
+                    Creator', and then click at 'Full Edit'.
+                    <br>
+                    <B>(2)</B>
+                    Click 'Manifest' tab, and then click at the lines of uses-permission (Should
+                    around line 3-5). Find out the line which contains the name of
+                    "android.permission.INTERNET".
+                    <br>
+                    <B>(3)</B>
+                    Long click at the line, it will prompt a dialog like:
+                    <br>
+                    <img src="example5_1.jpg">
+                    <br>
+                    <B>(4)</B>
+                    Click at 'Delete this Line' menu.
+                    <br>
+                    <B>(5)</B>
+                    Click save button in the upper right corner. After a while, we will be told that
+                    the modified apk is in some place.
+                    <br>
+                </p>
+
+                <p
+                        id="issues"
+                        style="text-align: left;">
+                    Reverse engineering is a challenge job,<B>please note</B>:
+                    <br>
+                    (1) In "Resource"/"Manifest" tab, you could try long clicking for more
+                    operations.
+                    <br>
+                    (2) Please avoid using it to modify big apk files, as it may consume lots of CPU
+                    and memory resources which is beyond device's ability.
+                    <br>
+                    (3) We do NOT guarantee that it can edit all the apks.
+                    <br>
+                    (4) The modified apk may not work, use it at your own risk.
+                    <br>
+                </p>
+
+            </div>
+        </center>
+    </body>
+</html>

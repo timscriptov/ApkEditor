@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="abc_action_mode_done">סיים</string>
+    <string name="abc_action_bar_home_description">דף הבית</string>
+    <string name="abc_action_bar_up_description">למעלה</string>
+    <string name="abc_action_menu_overflow_description">אפשרויות נוספות</string>
+    <string name="abc_searchview_description_search">חיפוש</string>
+    <string name="abc_searchview_description_query">חיפוש</string>
+    <string name="abc_searchview_description_clear">נקה חיפוש</string>
+    <string name="abc_searchview_description_submit">חפש</string>
+    <string name="abc_searchview_description_voice">חיפוש קולי</string>
+    <string name="abc_activitychooserview_choose_application">בחר אפליקציה</string>
+    <string name="abc_activity_chooser_view_see_all">צפה בהכל</string>
+    <string name="abc_shareactionprovider_share_with_application">שתף עם %s</string>
+    <string name="abc_shareactionprovider_share_with">שתף עם</string>
+
+    <string name="app_name">עורך APK</string>
+    <string name="action_settings">הגדרות</string>
+    <string name="hello_world">שלום עולם!</string>
+    <string name="loading">טוען &#8230;</string>
+    <string name="string">מחרוזות</string>
+    <string name="resource">משאבים</string>
+    <string name="manifest">תצהיר</string>
+    <string name="save">שמור</string>
+    <string name="cannot_parse_apk">לא מסוגל לנתח את קובץ הapk</string>
+    <string name="resolution">אזולוציה</string>
+    <string name="pro_mode">גרסה מלאה</string>
+    <string name="search">חיפוש</string>
+    <string name="delete">מחק</string>
+    <string name="delete_this_line">מחק שורה זו</string>
+    <string name="help">עזרה</string>
+    <string name="exit">יציאה</string>
+    <string name="edit">ערוך</string>
+    <string name="view">הצג</string>
+    <string name="succeed">הצליח</string>
+    <string name="key">מפתח</string>
+    <string name="value">ערך</string>
+    <string name="install">התקן</string>
+    <string name="close">סגור</string>
+    <string name="extract">חלץ קובץ</string>
+    <string name="select_apk_file">בחר קובץ Apk</string>
+    <string name="select_apk_from_app">בחר Apk מתוך אפליקציות מותקנות</string>
+    <string name="line_data">פרטי השורה:</string>
+    <string name="description">תיאור:</string>
+    <string name="in_progress">עובד &#8230;</string>
+    <string name="select_file_replace">בחר קובץ להחלפה</string>
+    <string name="pls_input_keyword">הכנס מילה לחיפוש</string>
+    <string name="manifest_edit_not_support">עריכה אינה נתמכת בגירסה החינמית!</string>
+    <string name="promote_msg">עריכה נתמכת רק בגירסה בתשלום.&#x0a;לחץ \'צפה בגרסה המלאה\' לקבלת הגרסה המלאה?</string>
+    <string name="not_available">לא זמין</string>
+    <string name="view_pro_version">צפה בגרסה המלאה</string>
+    <string name="add_key_value">הוסף מפתח/ערך:</string>
+    <string name="open_in_new_window">פתח בחלונית חדשה</string>
+    <string name="edit_string_value">ערוך את הערך</string>
+    <string name="add_a_language">הוסף שפה</string>
+    <string name="language">שפה:</string>
+    <string name="code">קוד:</string>
+    <string name="replace">החלף</string>
+    <string name="resource_replaced">משאב הוחלף.</string>
+    <string name="show_ad">הצג פרסומת</string>
+    <string name="sure_to_exit_editing">אתה בטוח שברצונך לצאת מהעריכה?</string>
+    <string name="yes">כן</string>
+    <string name="no">לא</string>
+
+    <!-- For Folder List -->
+    <string name="dummy"></string>
+    <string name="rename">שנה שם</string>
+    <string name="pls_input_filename">אנא הכנס שם קובץ:</string>
+    <string name="file_already_exist">\'%s\' כבר קיים!</string>
+    <string name="failed">נכשל</string>
+
+    <!-- Settings -->
+    <string name="app_display">הצגת אפליקציות</string>
+    <string name="app_list_order">סדר רשימת האפליקציות</string>
+    <string name="appearance">תצוגה</string>
+    <string name="launcher_icon">סמל אפליקצייה</string>
+    <string name="full_screen">מסך מלא</string>
+    <string name="full_screen_desc">לחץ לאיפשוא מסך מלא</string>
+    <string name="dark_theme">ערכת נושא כהה</string>
+    <string name="dark_theme_desc">אפשר ערכת נושא כהה בעורך</string>
+
+    <!-- added 20150501 -->
+    <string name="save_succeed_1">הצליח: נשמר אל %s</string>
+    <string name="failed_1">נכשל: %s</string>
+    <string name="user_apps">מאפליקציות משתמש</string>
+    <string name="system_apps">אפליקציות מערכת</string>
+    <string name="icon_changed_tip">הסמל שונה, אך יתכן והשינוי יתרחש רק אחרי כיבוי המכשיר.</string>
+    <string name="empty_key_tip">מפתח לא יכול להיות ריק!</string>
+    <string name="show_ad_tip">נשמר בהצלחה! מצטערים להראות לך פרסומת.</string>
+    <string name="apk_savedas_1">APK נשמר כ %s</string>
+    <string name="invalid_lang_code">קוד שפה שגוי!</string>
+    <string name="wait_for_decoding">אנא המתן מעט עד שפיענוח האפליקצייה תסתיים.</string>
+    <string name="lang_exist">שפה זו כבר קיימת!</string>
+    <string name="section_undeletable">לא ניתן למחוק חלק זה!</string>
+    <string name="remove">הסר</string>
+    <string name="remove_tip">אפליקציה זו מותקנת כבר, יתכן ותצטרך להסיא אותה לפני התקנת הקובץ הערוך.</string>
+
+    <!-- added in version 1.3.0 -->
+    <string name="full_edit">עריכה מלאה (בנייה מחדש)</string>
+    <string name="simple_edit">עריכה פשוטה (החלפת קבצים)</string>
+    <string name="files_capital">קבצים</string>
+    <string name="images_capital">תמונות</string>
+    <string name="audios_captical">צלילים</string>
+    <string name="size">גודל</string>
+    <string name="saved">נשמר.</string>
+    <string name="image_summary">%d תמונות</string>
+    <string name="audio_summary">%d צלילים</string>
+    <string name="compose">יוצר</string>
+    <string name="sign">חותם</string>
+    <string name="compose_error">שגיאה ביצירה: </string>
+    <string name="sign_error">שגיאה בחתימה: </string>
+    <string name="must_allow_non_market_app">חובה לאפשר התקנה ממקורות לא ידועים!</string>
+    <string name="apk_building">בונה קובץ APK</string>
+    <string name="compression_level">רמת דחיסה</string>
+    <string name="compression_level_summary">רמה נמוכה מהירה יותר, אך בדחיסה נמוכה, הקובץ גדול יותר.</string>
+
+    <!-- added in version 1.3.2 -->
+    <string name="str_app_name">שם אפליקציה</string>
+    <string name="common_edit">עריכה נפוצה</string>
+    <string name="package_name">שם החבילה</string>
+    <string name="install_location">מיקום התקנה</string>
+    <string name="version_code">מספר גירסה</string>
+    <string name="version_name">שם מספר גירסה</string>
+    <string name="location_0">ברירת מחדל (לא קבוע)</string>
+    <string name="location_1">אוטומטי (החלטת הטלפון)</string>
+    <string name="location_2">זיכרון פנמי בלבד</string>
+    <string name="location_3">העדף כרטיס זיכרון</string>
+    <string name="invalid_ver_code">מספר גירסה שגוי.</string>
+    <string name="no_change_detected">לא זוהו שינויים.</string>
+
+    <!-- added in version 1.3.4 -->
+    <string name="step">שלב</string>
+    <string name="merge">מיזוג</string>
+    <string name="merge_error">שגיאה במיזוג: %s</string>
+    <string name="cleanup">ניקוי</string>
+
+    <!-- version 1.3.6 -->
+    <string name="notfound_in_manifest">לא מסוגל למצוא שורה זו בAndroidManifest.xml</string>
+    <string name="empty_input_tip">קלט לא יכול להישאר ריק.</string>
+    <string name="mf_search_ret">%d שורות נמצאו</string>
+
+    <!-- version 1.3.12 -->
+    <string name="add_a_file">הוסף קובץ</string>
+    <string name="file_added">נוסף קובץ: %s</string>
+
+    <!-- version 1.3.16 -->
+    <string name="edit_data_root">ערוך מידע [שורש]</string>
+
+</resources>

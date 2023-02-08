@@ -1,0 +1,287 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE MODE SYSTEM "xmode.dtd">
+
+<MODE>
+
+	<PROPS>
+		<PROPERTY NAME="lineComment" VALUE="#" />
+		<PROPERTY NAME="contextInsensitive" VALUE="true"/>
+	</PROPS>
+
+	<RULES HIGHLIGHT_DIGITS="TRUE" IGNORE_CASE="TRUE"
+         DIGIT_RE="(0x)?[\p{Digit}a-fA-F_]+[hHdD]?">
+		<EOL_SPAN TYPE="COMMENT1">#</EOL_SPAN>
+
+		<SPAN TYPE="LITERAL1" NO_LINE_BREAK="TRUE">
+			<BEGIN>'</BEGIN>
+			<END>'</END>
+		</SPAN>
+
+		<SPAN TYPE="LITERAL1" NO_LINE_BREAK="TRUE">
+			<BEGIN>"</BEGIN>
+			<END>"</END>
+		</SPAN>
+
+		<MARK_FOLLOWING  TYPE="LABEL" MATCH_TYPE="OPERATOR">:</MARK_FOLLOWING>
+
+		<KEYWORDS>
+
+
+<KEYWORD1>goto</KEYWORD1>
+<KEYWORD1>return-void</KEYWORD1>
+<KEYWORD1>nop</KEYWORD1>
+<KEYWORD1>const/4</KEYWORD1>
+<KEYWORD1>move-result</KEYWORD1>
+<KEYWORD1>move-result-wide</KEYWORD1>
+<KEYWORD1>move-result-object</KEYWORD1>
+<KEYWORD1>move-exception</KEYWORD1>
+<KEYWORD1>return</KEYWORD1>
+<KEYWORD1>return-wide</KEYWORD1>
+<KEYWORD1>return-object</KEYWORD1>
+<KEYWORD1>monitor-enter</KEYWORD1>
+<KEYWORD1>monitor-exit</KEYWORD1>
+<KEYWORD1>throw</KEYWORD1>
+<KEYWORD1>move</KEYWORD1>
+<KEYWORD1>move-wide</KEYWORD1>
+<KEYWORD1>move-object</KEYWORD1>
+<KEYWORD1>array-length</KEYWORD1>
+<KEYWORD1>neg-int</KEYWORD1>
+<KEYWORD1>not-int</KEYWORD1>
+<KEYWORD1>neg-long</KEYWORD1>
+<KEYWORD1>not-long</KEYWORD1>
+<KEYWORD1>neg-float</KEYWORD1>
+<KEYWORD1>neg-double</KEYWORD1>
+<KEYWORD1>int-to-long</KEYWORD1>
+<KEYWORD1>int-to-float</KEYWORD1>
+<KEYWORD1>int-to-double</KEYWORD1>
+<KEYWORD1>long-to-int</KEYWORD1>
+<KEYWORD1>long-to-float</KEYWORD1>
+<KEYWORD1>long-to-double</KEYWORD1>
+<KEYWORD1>float-to-int</KEYWORD1>
+<KEYWORD1>float-to-long</KEYWORD1>
+<KEYWORD1>float-to-double</KEYWORD1>
+<KEYWORD1>double-to-int</KEYWORD1>
+<KEYWORD1>double-to-long</KEYWORD1>
+<KEYWORD1>double-to-float</KEYWORD1>
+<KEYWORD1>int-to-byte</KEYWORD1>
+<KEYWORD1>int-to-char</KEYWORD1>
+<KEYWORD1>int-to-short</KEYWORD1>
+<KEYWORD1>add-int/2addr</KEYWORD1>
+<KEYWORD1>sub-int/2addr</KEYWORD1>
+<KEYWORD1>mul-int/2addr</KEYWORD1>
+<KEYWORD1>div-int/2addr</KEYWORD1>
+<KEYWORD1>rem-int/2addr</KEYWORD1>
+<KEYWORD1>and-int/2addr</KEYWORD1>
+<KEYWORD1>or-int/2addr</KEYWORD1>
+<KEYWORD1>xor-int/2addr</KEYWORD1>
+<KEYWORD1>shl-int/2addr</KEYWORD1>
+<KEYWORD1>shr-int/2addr</KEYWORD1>
+<KEYWORD1>ushr-int/2addr</KEYWORD1>
+<KEYWORD1>add-long/2addr</KEYWORD1>
+<KEYWORD1>sub-long/2addr</KEYWORD1>
+<KEYWORD1>mul-long/2addr</KEYWORD1>
+<KEYWORD1>div-long/2addr</KEYWORD1>
+<KEYWORD1>rem-long/2addr</KEYWORD1>
+<KEYWORD1>and-long/2addr</KEYWORD1>
+<KEYWORD1>or-long/2addr</KEYWORD1>
+<KEYWORD1>xor-long/2addr</KEYWORD1>
+<KEYWORD1>shl-long/2addr</KEYWORD1>
+<KEYWORD1>shr-long/2addr</KEYWORD1>
+<KEYWORD1>ushr-long/2addr</KEYWORD1>
+<KEYWORD1>add-float/2addr</KEYWORD1>
+<KEYWORD1>sub-float/2addr</KEYWORD1>
+<KEYWORD1>mul-float/2addr</KEYWORD1>
+<KEYWORD1>div-float/2addr</KEYWORD1>
+<KEYWORD1>rem-float/2addr</KEYWORD1>
+<KEYWORD1>add-double/2addr</KEYWORD1>
+<KEYWORD1>sub-double/2addr</KEYWORD1>
+<KEYWORD1>mul-double/2addr</KEYWORD1>
+<KEYWORD1>div-double/2addr</KEYWORD1>
+<KEYWORD1>rem-double/2addr</KEYWORD1>
+<KEYWORD1>goto/16</KEYWORD1>
+<KEYWORD1>sget</KEYWORD1>
+<KEYWORD1>sget-wide</KEYWORD1>
+<KEYWORD1>sget-object</KEYWORD1>
+<KEYWORD1>sget-boolean</KEYWORD1>
+<KEYWORD1>sget-byte</KEYWORD1>
+<KEYWORD1>sget-char</KEYWORD1>
+<KEYWORD1>sget-short</KEYWORD1>
+<KEYWORD1>sput</KEYWORD1>
+<KEYWORD1>sput-wide</KEYWORD1>
+<KEYWORD1>sput-object</KEYWORD1>
+<KEYWORD1>sput-boolean</KEYWORD1>
+<KEYWORD1>sput-byte</KEYWORD1>
+<KEYWORD1>sput-char</KEYWORD1>
+<KEYWORD1>sput-short</KEYWORD1>
+<KEYWORD1>const-string</KEYWORD1>
+<KEYWORD1>check-cast</KEYWORD1>
+<KEYWORD1>new-instance</KEYWORD1>
+<KEYWORD1>const-class</KEYWORD1>
+<KEYWORD1>const/high16</KEYWORD1>
+<KEYWORD1>const-wide/high16</KEYWORD1>
+<KEYWORD1>const/16</KEYWORD1>
+<KEYWORD1>const-wide/16</KEYWORD1>
+<KEYWORD1>if-eqz</KEYWORD1>
+<KEYWORD1>if-nez</KEYWORD1>
+<KEYWORD1>if-ltz</KEYWORD1>
+<KEYWORD1>if-gez</KEYWORD1>
+<KEYWORD1>if-gtz</KEYWORD1>
+<KEYWORD1>if-lez</KEYWORD1>
+<KEYWORD1>add-int/lit8</KEYWORD1>
+<KEYWORD1>rsub-int/lit8</KEYWORD1>
+<KEYWORD1>mul-int/lit8</KEYWORD1>
+<KEYWORD1>div-int/lit8</KEYWORD1>
+<KEYWORD1>rem-int/lit8</KEYWORD1>
+<KEYWORD1>and-int/lit8</KEYWORD1>
+<KEYWORD1>or-int/lit8</KEYWORD1>
+<KEYWORD1>xor-int/lit8</KEYWORD1>
+<KEYWORD1>shl-int/lit8</KEYWORD1>
+<KEYWORD1>shr-int/lit8</KEYWORD1>
+<KEYWORD1>ushr-int/lit8</KEYWORD1>
+<KEYWORD1>iget</KEYWORD1>
+<KEYWORD1>iget-wide</KEYWORD1>
+<KEYWORD1>iget-object</KEYWORD1>
+<KEYWORD1>iget-boolean</KEYWORD1>
+<KEYWORD1>iget-byte</KEYWORD1>
+<KEYWORD1>iget-char</KEYWORD1>
+<KEYWORD1>iget-short</KEYWORD1>
+<KEYWORD1>iput</KEYWORD1>
+<KEYWORD1>iput-wide</KEYWORD1>
+<KEYWORD1>iput-object</KEYWORD1>
+<KEYWORD1>iput-boolean</KEYWORD1>
+<KEYWORD1>iput-byte</KEYWORD1>
+<KEYWORD1>iput-char</KEYWORD1>
+<KEYWORD1>iput-short</KEYWORD1>
+<KEYWORD1>instance-of</KEYWORD1>
+<KEYWORD1>new-array</KEYWORD1>
+<KEYWORD1>iget-quick</KEYWORD1>
+<KEYWORD1>iget-wide-quick</KEYWORD1>
+<KEYWORD1>iget-object-quick</KEYWORD1>
+<KEYWORD1>iput-quick</KEYWORD1>
+<KEYWORD1>iput-wide-quick</KEYWORD1>
+<KEYWORD1>iput-object-quick</KEYWORD1>
+<KEYWORD1>rsub-int</KEYWORD1>
+<KEYWORD1>add-int/lit16</KEYWORD1>
+<KEYWORD1>mul-int/lit16</KEYWORD1>
+<KEYWORD1>div-int/lit16</KEYWORD1>
+<KEYWORD1>rem-int/lit16</KEYWORD1>
+<KEYWORD1>and-int/lit16</KEYWORD1>
+<KEYWORD1>or-int/lit16</KEYWORD1>
+<KEYWORD1>xor-int/lit16</KEYWORD1>
+<KEYWORD1>if-eq</KEYWORD1>
+<KEYWORD1>if-ne</KEYWORD1>
+<KEYWORD1>if-lt</KEYWORD1>
+<KEYWORD1>if-ge</KEYWORD1>
+<KEYWORD1>if-gt</KEYWORD1>
+<KEYWORD1>if-le</KEYWORD1>
+<KEYWORD1>move/from16</KEYWORD1>
+<KEYWORD1>move-wide/from16</KEYWORD1>
+<KEYWORD1>move-object/from16</KEYWORD1>
+<KEYWORD1>cmpl-float</KEYWORD1>
+<KEYWORD1>cmpg-float</KEYWORD1>
+<KEYWORD1>cmpl-double</KEYWORD1>
+<KEYWORD1>cmpg-double</KEYWORD1>
+<KEYWORD1>cmp-long</KEYWORD1>
+<KEYWORD1>aget</KEYWORD1>
+<KEYWORD1>aget-wide</KEYWORD1>
+<KEYWORD1>aget-object</KEYWORD1>
+<KEYWORD1>aget-boolean</KEYWORD1>
+<KEYWORD1>aget-byte</KEYWORD1>
+<KEYWORD1>aget-char</KEYWORD1>
+<KEYWORD1>aget-short</KEYWORD1>
+<KEYWORD1>aput</KEYWORD1>
+<KEYWORD1>aput-wide</KEYWORD1>
+<KEYWORD1>aput-object</KEYWORD1>
+<KEYWORD1>aput-boolean</KEYWORD1>
+<KEYWORD1>aput-byte</KEYWORD1>
+<KEYWORD1>aput-char</KEYWORD1>
+<KEYWORD1>aput-short</KEYWORD1>
+<KEYWORD1>add-int</KEYWORD1>
+<KEYWORD1>sub-int</KEYWORD1>
+<KEYWORD1>mul-int</KEYWORD1>
+<KEYWORD1>div-int</KEYWORD1>
+<KEYWORD1>rem-int</KEYWORD1>
+<KEYWORD1>and-int</KEYWORD1>
+<KEYWORD1>or-int</KEYWORD1>
+<KEYWORD1>xor-int</KEYWORD1>
+<KEYWORD1>shl-int</KEYWORD1>
+<KEYWORD1>shr-int</KEYWORD1>
+<KEYWORD1>ushr-int</KEYWORD1>
+<KEYWORD1>add-long</KEYWORD1>
+<KEYWORD1>sub-long</KEYWORD1>
+<KEYWORD1>mul-long</KEYWORD1>
+<KEYWORD1>div-long</KEYWORD1>
+<KEYWORD1>rem-long</KEYWORD1>
+<KEYWORD1>and-long</KEYWORD1>
+<KEYWORD1>or-long</KEYWORD1>
+<KEYWORD1>xor-long</KEYWORD1>
+<KEYWORD1>shl-long</KEYWORD1>
+<KEYWORD1>shr-long</KEYWORD1>
+<KEYWORD1>ushr-long</KEYWORD1>
+<KEYWORD1>add-float</KEYWORD1>
+<KEYWORD1>sub-float</KEYWORD1>
+<KEYWORD1>mul-float</KEYWORD1>
+<KEYWORD1>div-float</KEYWORD1>
+<KEYWORD1>rem-float</KEYWORD1>
+<KEYWORD1>add-double</KEYWORD1>
+<KEYWORD1>sub-double</KEYWORD1>
+<KEYWORD1>mul-double</KEYWORD1>
+<KEYWORD1>div-double</KEYWORD1>
+<KEYWORD1>rem-double</KEYWORD1>
+<KEYWORD1>goto/32</KEYWORD1>
+<KEYWORD1>const-string/jumbo</KEYWORD1>
+<KEYWORD1>const</KEYWORD1>
+<KEYWORD1>const-wide/32</KEYWORD1>
+<KEYWORD1>fill-array-data</KEYWORD1>
+<KEYWORD1>packed-switch</KEYWORD1>
+<KEYWORD1>sparse-switch</KEYWORD1>
+<KEYWORD1>move/16</KEYWORD1>
+<KEYWORD1>move-wide/16</KEYWORD1>
+<KEYWORD1>move-object/16</KEYWORD1>
+<KEYWORD1>invoke-virtual</KEYWORD1>
+<KEYWORD1>invoke-super</KEYWORD1>
+<KEYWORD1>invoke-direct</KEYWORD1>
+<KEYWORD1>invoke-static</KEYWORD1>
+<KEYWORD1>invoke-interface</KEYWORD1>
+<KEYWORD1>filled-new-array</KEYWORD1>
+<KEYWORD1>invoke-direct-empty</KEYWORD1>
+<KEYWORD1>execute-inline</KEYWORD1>
+<KEYWORD1>invoke-virtual-quick</KEYWORD1>
+<KEYWORD1>invoke-super-quick</KEYWORD1>
+<KEYWORD1>invoke-virtual/range</KEYWORD1>
+<KEYWORD1>invoke-super/range</KEYWORD1>
+<KEYWORD1>invoke-direct/range</KEYWORD1>
+<KEYWORD1>invoke-static/range</KEYWORD1>
+<KEYWORD1>invoke-interface/range</KEYWORD1>
+<KEYWORD1>filled-new-array/range</KEYWORD1>
+<KEYWORD1>invoke-virtual-quick/range</KEYWORD1>
+<KEYWORD1>invoke-super-quick/range</KEYWORD1>
+<KEYWORD1>const-wide</KEYWORD1>
+
+			<!-- directives -->
+			<MARKUP>.class</MARKUP>
+			<MARKUP>.super</MARKUP>
+			<MARKUP>.implements</MARKUP>
+			<MARKUP>.field</MARKUP>
+			<MARKUP>.subannotation</MARKUP>
+			<MARKUP>.annotation</MARKUP>
+			<MARKUP>.enum</MARKUP>
+			<MARKUP>.method</MARKUP>
+			<MARKUP>.registers</MARKUP>
+			<MARKUP>.locals</MARKUP>
+			<MARKUP>.array-data</MARKUP>
+			<MARKUP>.packed-switch</MARKUP>
+			<MARKUP>.sparse-switch</MARKUP>
+			<MARKUP>.catch</MARKUP>
+			<MARKUP>.catchall</MARKUP>
+			<MARKUP>.parameter</MARKUP>
+			<MARKUP>.prologue</MARKUP>
+			<MARKUP>.epilogue</MARKUP>
+			<MARKUP>.source</MARKUP>
+			<MARKUP>.end</MARKUP>
+			<MARKUP>.restart</MARKUP>
+
+		</KEYWORDS>
+	</RULES>
+</MODE>

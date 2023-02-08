@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="appicon_key">
+        <item>По умолчанию (1)</item>
+        <item>(2)</item>
+        <item>(3)</item>
+        <item>(4)</item>
+        <item>(5)</item>
+        <item>(6)</item>
+        <item>(7)</item>
+        <item>(8)</item>
+        <item>(9)</item>
+        <item>(10)</item>
+        <item>(11)</item>
+        <item>(12)</item>
+        <item>(13)</item>
+        <item>(14)</item>
+        <item>(15)</item>
+        <item>(16)</item>
+        <item>(17)</item>
+    </string-array>
+    <string-array name="compression_level_key">
+        <item>0 (без сжатия)</item>
+        <item>1 (лучшая скорость)</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5 (среднее сжатие)</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9 (максимальное сжатие)</item>
+    </string-array>
+    <string-array name="decode_dir_key">
+        <item>Внутренняя папка</item>
+        <item>Пользовательская папка</item>
+    </string-array>
+    <string-array name="file_extract_rename_key">
+        <item>Авто (добавление числового суффикса)</item>
+        <item>Перезапись</item>
+    </string-array>
+    <string-array name="language_key">
+        <item>По умолчанию</item>
+        <item>Арабский</item>
+        <item>Китайский</item>
+        <item>Чешский</item>
+        <item>Голландский</item>
+        <item>Английский</item>
+        <item>Французский</item>
+        <item>Немецкий</item>
+        <item>Иврит</item>
+        <item>Венгерский</item>
+        <item>Персидский</item>
+        <item>Польский</item>
+        <item>Португальский</item>
+        <item>Русский</item>
+        <item>Словацкий</item>
+        <item>Испанский</item>
+        <item>Турецкий</item>
+        <item>Украинский</item>
+        <item>Вьетнамский</item>
+    </string-array>
+    <string-array name="order_key">
+        <item>по названию приложения</item>
+        <item>по времени установки</item>
+    </string-array>
+    <string-array name="order_value">
+        <item>По названию приложения</item>
+        <item>По времени установки</item>
+    </string-array>
+    <string-array name="signer_key">
+        <item>testkey</item>
+        <item>ключ, созданный APK Editor</item>
+        <item>пользовательский ключ</item>
+    </string-array>
+    <string-array name="theme_key">
+        <item>Светлая тема</item>
+        <item>Тёмная тема 1</item>
+        <item>Тёмная тема 2</item>
+    </string-array>
+    <string-array name="output_apkname_key">
+        <item>{имя пакета}_[un]signed.apk</item>
+        <item>gen_[un]signed.apk</item>
+        <item>{имя приложения}_[un]signed.apk</item>
+    </string-array>
+    <string-array name="decode_mode_key">
+        <item>@string/decode_all_files</item>
+        <item>@string/decode_partial_files</item>
+        <item>Выбор перед декодированием</item>
+    </string-array>
+</resources>

@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SlidingDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_drawer"
+    android:layout_width="180.0dip"
+    android:layout_height="match_parent"
+    android:layout_gravity="right"
+    android:layout_marginBottom="48.0dip"
+    android:content="@+id/panel_content"
+    android:focusable="false"
+    android:handle="@+id/panel_button"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@+id/panel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="#ff111111"
+        android:gravity="center"
+        android:padding="2dip"
+        android:src="@drawable/edit_slide_left" />
+
+    <RelativeLayout
+        android:id="@+id/panel_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ff111111">
+
+        <ViewAnimator
+            android:id="@+id/searchAnimator"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!-- <include layout="@layout/item_find_view" /> -->
+
+            <RelativeLayout
+                android:id="@+id/search_frame"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="4.0dip"
+                android:layout_marginBottom="4.0dip">
+
+                <LinearLayout
+                    android:id="@+id/input_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/findEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/et_background_white"
+                        android:hint="@string/find"
+                        android:imeOptions="actionSearch|flagNoExtractUi"
+                        android:maxLines="1"
+                        android:paddingLeft="4dip"
+                        android:selectAllOnFocus="true"
+                        android:textColor="#ff333333"
+                        android:textCursorDrawable="@null">
+
+                        <requestFocus />
+                    </EditText>
+
+                    <EditText
+                        android:id="@+id/replaceEdit"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dip"
+                        android:layout_weight="1.0"
+                        android:background="@drawable/et_background_white"
+                        android:hint="@string/replace"
+                        android:imeOptions="actionNone|flagNoExtractUi"
+                        android:maxLines="1"
+                        android:paddingLeft="4dip"
+                        android:selectAllOnFocus="true"
+                        android:textColor="#ff333333"
+                        android:textCursorDrawable="@null" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/option_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/input_layout"
+                    android:orientation="horizontal">
+
+                    <ToggleButton
+                        android:id="@+id/checkBoxRegexp"
+                        style="@style/MyToggleButton"
+                        android:layout_width="0dip"
+                        android:layout_height="48dip"
+                        android:layout_weight="1.0"
+                        android:contentDescription="@string/regexp"
+                        android:drawableTop="@drawable/edit_regexp_dark"
+                        android:paddingTop="4.0dip"
+                        android:textOff=""
+                        android:textOn="" />
+
+                    <ToggleButton
+                        android:id="@+id/checkBoxIgnoreCase"
+                        style="@style/MyToggleButton"
+                        android:layout_width="0dip"
+                        android:layout_height="48dip"
+                        android:layout_weight="1.0"
+                        android:contentDescription="@string/case_insensitive"
+                        android:drawableTop="@drawable/edit_ignorecase_dark"
+                        android:paddingTop="4.0dip"
+                        android:textOff=""
+                        android:textOn="" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/action_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginBottom="4dip"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/findBtn"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:contentDescription="@string/find"
+                        android:src="@drawable/edit_search_dark" />
+
+                    <ImageButton
+                        android:id="@+id/replaceBtn"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:contentDescription="@string/replace"
+                        android:src="@drawable/edit_replace_dark" />
+
+                    <ImageButton
+                        android:id="@+id/replaceAllBtn"
+                        android:layout_width="0.0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1.0"
+                        android:contentDescription="@string/replace_all"
+                        android:src="@drawable/edit_replaceall_dark" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_above="@id/action_layout"
+                    android:layout_below="@id/option_layout"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/lineNumEdit"
+                        android:layout_width="0dip"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/et_background_white"
+                        android:hint="@string/line_number"
+                        android:inputType="number"
+                        android:maxLines="1"
+                        android:paddingLeft="4dip"
+                        android:selectAllOnFocus="true"
+                        android:textColor="#ff333333"
+                        android:textCursorDrawable="@null" />
+
+                    <ImageButton
+                        android:id="@+id/goBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:contentDescription="@string/go"
+                        android:src="@drawable/edit_go_dark" />
+                </LinearLayout>
+            </RelativeLayout>
+        </ViewAnimator>
+    </RelativeLayout>
+</SlidingDrawer>

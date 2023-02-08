@@ -1,0 +1,328 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="in_progress">جاري العامل...</string>
+    <string name="searching">البحث</string>
+    <string name="loading">جاري تحميل...</string>
+    <string name="close">إغلاق</string>
+    <string name="find">Find</string>
+    <string name="keyword_hint">الرجاء إدخال كلمة للبحث</string>
+    <string name="keyword_cannot_empty">الكلمة الأساسية لا يمكن أن تكون فارغة!</string>
+    <string name="app_list_order">قائمة التطبيقات التي أمر بها</string>
+    <string name="app_display">عرض التطبيق</string>
+    <string name="hackable">قادرة على الاختراق</string>
+    <string name="unhackable">واحد-قادرة على الاختراق</string>
+    <string name="replace">استبدال</string>
+    <string name="action_settings">إعدادات</string>
+    <string name="hello_world">مرحبا بالعالم!</string>
+    <string name="table_record">سجل الجدول</string>
+    <string name="previous">السابقة</string>
+    <string name="next">القادم</string>
+    <string name="tables_of">الجداول من</string>
+    <string name="name">الاسم</string>
+    <string name="value">Value</string>
+    <string name="save">حفظ</string>
+    <string name="pre_page">Previous الصفحة</string>
+    <string name="next_page">الصفحة التالية</string>
+    <string name="delete">حذف</string>
+    <string name="not_editable_tip">عذرا، القيمة غير قابلة للتحرير بعد الآن!</string>
+    <string name="appdm_backup">النسخ الاحتياطي</string>
+    <string name="appdm_backup_list">قائمة النسخ الاحتياطي</string>
+    <string name="appdm_preference">الأفضلية</string>
+    <string name="appdm_database">قاعدة بيانات</string>
+    <string name="appdm_basic_info">معلومات أساسية</string>
+    <string name="appdm_key">مفتاح</string>
+    <string name="appdm_label_app_name">اسم التطبيق:</string>
+    <string name="appdm_label_shared_preference">المشتركة الأفضلية:</string>
+    <string name="appdm_search">البحث</string>
+    <string name="appdm_save_apk">حفظ أية بي كيه في...</string>
+    <string name="appdm_app_name">اسم التطبيق</string>
+    <string name="appdm_package_name">اسم الحزمة</string>
+    <string name="appdm_app_size">حجم التطبيق</string>
+    <string name="appdm_version">الإصدار</string>
+    <string name="appdm_version_code">إصدار الكود البرمجية</string>
+    <string name="appdm_version_name">اسم الإصدار</string>
+    <string name="appdm_apk_file_path">مسار الحفض لملف أية بي كيه</string>
+    <string name="appdm_apk_build_time">وقت الإنشاء لتطبيق أية بي كيه</string>
+    <string name="appdm_install_time">وقت التثبيت</string>
+    <string name="appdm_signature">التوقيع</string>
+    <string name="apk_saved_tip">نجح! APK حفظ بطاقة SD: %s</string>
+    <string name="warning_keyword_empty">لا يمكن أن يكون الإدخال فارغ.</string>
+    <string name="appdm_raw_file">الخام الملف</string>
+    <string name="appdm_file_too_big">الملف كبير جدا لفتح.</string>
+    <string name="appdm_not_found">
+	لم يتم العثور عليه</string>
+    <string name="appdm_file_saved">حفظ الملف.</string>
+    <string name="abc_action_mode_done">تفعيل</string>
+    <string name="abc_action_bar_home_description">انتقل إلى الصفحة الرئيسية</string>
+    <string name="abc_action_bar_up_description">الانتقال لأعلى</string>
+    <string name="abc_action_menu_overflow_description">المزيد من الخيارات</string>
+    <string name="abc_searchview_description_search">البحث </string>
+    <string name="abc_searchview_description_query">البحث عن الاساله</string>
+    <string name="abc_searchview_description_clear">واضحة الاستعلام</string>
+    <string name="abc_searchview_description_submit">إرسال الاستعلام</string>
+    <string name="abc_searchview_description_voice">البحث الصوتي</string>
+    <string name="abc_activitychooserview_choose_application">اختر من التطبيق</string>
+    <string name="abc_activity_chooser_view_see_all">[مشاهدةالكل]</string>
+    <string name="abc_shareactionprovider_share_with_application">مشاركة مع %s</string>
+    <string name="abc_shareactionprovider_share_with">مشاركة مع</string>
+    <string name="app_name">أية بي كيه محرر برو</string>
+    <string name="string">السلسلة</string>
+    <string name="resource">المورد</string>
+    <string name="manifest">ظاهر</string>
+    <string name="cannot_parse_apk">لا يمكن تحليل الملف apk</string>
+    <string name="resolution">القرار شفويا</string>
+    <string name="pro_mode">برو</string>
+    <string name="search">البحث </string>
+    <string name="delete_this_line">حذف هذا السطر</string>
+    <string name="help">تعليمات</string>
+    <string name="exit">خروج</string>
+    <string name="edit">تحرير</string>
+    <string name="view">طريقة العرض</string>
+    <string name="succeed">نجح</string>
+    <string name="key">مفتاح</string>
+    <string name="install">تثبيت</string>
+    <string name="extract">استخراج</string>
+    <string name="select_apk_file">
+	حدد أية بي كيه من الملف</string>
+    <string name="select_apk_from_app">حدد أية بي كيه من التطبيق</string>
+    <string name="line_data">خط البيانات:</string>
+    <string name="description">الوصف:</string>
+    <string name="select_file_replace">حدد ملف ليحل محله</string>
+    <string name="pls_input_keyword">إدخال الكلمة الأساسية للبحث</string>
+    <string name="manifest_edit_not_support">لا يتم دعم التحرير في نسخة مجانية!</string>
+    <string name="promote_msg">"تحرير معتمد فقط في الإصدار المحترف. انقر فوق '"عرض الإصدار برو"'ل الحصول على نسخة برو؟"</string>
+    <string name="not_available">غير متوفر</string>
+    <string name="view_pro_version">عرض الإصدار برو</string>
+    <string name="add_key_value">إضافة مفتاح/قيمة:</string>
+    <string name="open_in_new_window">فتح في نافذة جديدة</string>
+    <string name="edit_string_value">قم بتحرير قيمة</string>
+    <string name="add_a_language">إضافة لغة</string>
+    <string name="language">اللغة:</string>
+    <string name="code">كود:</string>
+    <string name="resource_replaced">استبدال الموارد.</string>
+    <string name="show_ad">إظهار الإعلان</string>
+    <string name="sure_to_exit_editing">هل أنت متأكد من الخروج من التحرير؟</string>
+    <string name="yes">نعم</string>
+    <string name="no">لا</string>
+    <string name="dummy" />
+    <string name="rename">إعادة تسمية</string>
+    <string name="pls_input_filename">الرجاء إدخال اسم الملف:</string>
+    <string name="file_already_exist">"'%s' موجود بالفعل!"</string>
+    <string name="failed">فشل</string>
+    <string name="appearance">المظهر</string>
+    <string name="launcher_icon">رمز المشغل</string>
+    <string name="full_screen_desc">حدد هذا الخيار لتمكين شاشة كاملة</string>
+    <string name="dark_theme">موضوع الظلام</string>
+    <string name="dark_theme_desc">تمكين موضوع المظلمة لمحرير أية بي كيه</string>
+    <string name="save_succeed_1">نجح: الحفظ إلى %s</string>
+    <string name="failed_1">فشل: %s</string>
+    <string name="user_apps">تطبيقات المستخدم</string>
+    <string name="system_apps">تطبيقات نظام</string>
+    <string name="icon_changed_tip">تغيير الرمز، ولكن قد لا تصبح نافذة المفعول حتى يتم إعادة تشغيل الجهاز.</string>
+    <string name="empty_key_tip">لا يمكن أن يكون مفتاح فارغ!</string>
+    <string name="show_ad_tip">نجح! آسف لعرض الإعلان بالنسبة لك.</string>
+    <string name="apk_savedas_1">أية بي كيه حفظ باسم %s</string>
+    <string name="invalid_lang_code">رمز اللغة غير صالح!</string>
+    <string name="wait_for_decoding">الرجاء الانتظار لحظة حتى يتم الانتهاء من فك التشفير.</string>
+    <string name="lang_exist">على اللغة فعلا موجود!</string>
+    <string name="section_undeletable">لا يمكن حذف هذا المقطع!</string>
+    <string name="remove">إزالة</string>
+    <string name="remove_tip">التطبيق مثبت بالفعل، قد تحتاج إلى إزالته التطبيق المثبت قبل تثبيت التطبيق المعدل.</string>
+    <string name="full_edit">تحرير كامل (إعادة بناء الموارد)</string>
+    <string name="simple_edit">تحرير بسيط (استبدال الملف)</string>
+    <string name="files_capital">الملفات</string>
+    <string name="images_capital">الصور</string>
+    <string name="audios_captical">الصوتيات</string>
+    <string name="size">الحجم</string>
+    <string name="saved">حفظ.</string>
+    <string name="image_summary">%d الصور</string>
+    <string name="audio_summary">%d الصوتيات</string>
+    <string name="compose">يؤلف</string>
+    <string name="sign">إشارة</string>
+    <string name="compose_error">
+	خطأ في	التكوي:</string>
+    <string name="sign_error">
+	خطأ في علامة :</string>
+    <string name="must_allow_non_market_app">
+	يجب السماح بتثبيت التطبيقات من خارج المتجر!</string>
+    <string name="apk_building">بناء أية بي كيه</string>
+    <string name="compression_level">مستوى الضغط</string>
+    <string name="compression_level_summary">انخفاض مستوى أفضل بسرعة، ولكن مع نسبة ضغط سيئة، مما جعل أية بي كيه أكبر.</string>
+    <string name="str_app_name">اسم التطبيق</string>
+    <string name="common_edit">تحرير المشتركة</string>
+    <string name="package_name">اسم الحزمة</string>
+    <string name="install_location">موقع التثبيت</string>
+    <string name="version_code">إصدار الكود البرمجية</string>
+    <string name="version_name">اسم الإصدار</string>
+    <string name="location_0">
+	افتراضي (غير محدد)</string>
+    <string name="location_1">سيارات (نظام التشغيل اتخاذ قرار)</string>
+    <string name="location_2">الداخلية فقط</string>
+    <string name="location_3">تفضل الخارجية</string>
+    <string name="invalid_ver_code">كود إصدار غير صالح.</string>
+    <string name="no_change_detected">تم الكشف عن عدم إدخال أي تغيير.</string>
+    <string name="step">الخطوة</string>
+    <string name="merge">دمج</string>
+    <string name="merge_error">دمج خطأ: %s</string>
+    <string name="cleanup">تنظيف اعلى</string>
+    <string name="notfound_in_manifest">لا يمكن العثور على السلسلة الهدف في AndroidManifest.xml</string>
+    <string name="empty_input_tip">لا يمكن أن يكون الإدخال فارغ.</string>
+    <string name="mf_search_ret">%d العثور على خطوط</string>
+    <string name="add_a_file">إضافة ملف</string>
+    <string name="file_added">إضافة ملف: %s</string>
+    <string name="edit_data_root">تحرير بيانات [الجذر]</string>
+    <string name="others">آخرون</string>
+    <string name="clean_garbage">تنظيف القمامة</string>
+    <string name="clean_garbage_summary">انقر هنا لتنظيف الملفات المؤقتة.</string>
+    <string name="temp_file_cleaned">تنظيف الملفات المؤقتة.</string>
+    <string name="auto_translation">ترجمة التلقائي</string>
+    <string name="select_target_lang">حدد لغة لترجمة من و إلى</string>
+    <string name="stop">ايقاف</string>
+    <string name="hide">إخفاء</string>
+    <string name="retranslate">&lt;u&gt;ترجمة جديدة&lt;/u&gt;</string>
+    <string name="translating">تتم الآن الترجمة...</string>
+    <string name="translated">تمت الترجمة</string>
+    <string name="translated_format">%d السلاسل المترجمة</string>
+    <string name="failed_format">%d السلاسل فشل في الترجمة</string>
+    <string name="untranslated_format">%d أهمل السلاسل</string>
+    <string name="error_no_string_totranslate">السلسلة لا تحتاج إلى ترجمة.</string>
+    <string name="error_no_string_tosave">
+	لا توجد سلسلة مترجمة لحفط.</string>
+    <string name="general_error">خطأ: %s</string>
+    <string name="save_succeed_tip">%d سلاسل المحفوظة.</string>
+    <string name="save_translation_title">حفظ الترجمة؟</string>
+    <string name="save_translation_msg">لم يتم حفظ الترجمة حتى الآن. حفظه قبل مواصلة العملية؟</string>
+    <string name="string_notsaved_msg">%d يتم تجاهل السلاسل.</string>
+    <string name="error_file_too_big">ملف كبير جداً لفتح.</string>
+    <string name="settings">إعدادات</string>
+    <string name="find_replace">بحث/استبدال</string>
+    <string name="regexp">التعبير العادي</string>
+    <string name="not_found">لم يتم العثور على</string>
+    <string name="file_saved">حفظ الملف.</string>
+    <string name="font_size">حجم الخط</string>
+    <string name="font_size_summary">حجم الخط الحالي: %d</string>
+    <string name="line_wrap">التفاف الأسطر</string>
+    <string name="line_wrap_enabled">لتمكين التفاف الأسطر. يجب إعادة تشغيل في حالة تغيير.</string>
+    <string name="line_wrap_disabled">ليتم تعطيل التفاف السطر. يجب إعادة تشغيل في حالة تغيير.</string>
+    <string name="cannot_find_ext_sdcard">لا يمكن العثور على بطاقة sd الخارجية.</string>
+    <string name="rename_in_resources">إعادة تسمية اسم الحزمة في resources.arsc</string>
+    <string name="sign_apk_with">توقيع أية بي كيه مع</string>
+    <string name="sign_apk_with_summary">تحديد المفتاح الذي يتم استخدامه للتوقيع أية بي كيه.</string>
+    <string name="str_files_found" formatted="false">"%d الملف(s) العثور على - '%s'"</string>
+    <string name="files">الملفات</string>
+    <string name="smali_editing">تحرير سمالي</string>
+    <string name="smali_edit_summary">تمكين. سيتم إظهار التنفيذ المباشر للصورة سمالي في "تحرير كامل".</string>
+    <string name="smali_edit_disabled_summary">معطل. لن يتم إظهار التنفيذ المباشر للصورة سمالي في "تحرير كامل".</string>
+    <string name="warning">تحذير</string>
+    <string name="succeed_with_warning">نجح مع التحذيرات.</string>
+    <string name="unknown_error">خطأ غير معروف.</string>
+    <string name="notice_capital">إشعار</string>
+    <string name="assemble_dex_file">تجميع ملف التنفيذ المباشر</string>
+    <string name="assemble_dex_detail" formatted="false">%d/%d ملفات مجمعة</string>
+    <string name="donot_show_again">عدم إظهار ذلك مرة أخرى</string>
+    <string name="colormixer_red">R</string>
+    <string name="colormixer_green">G</string>
+    <string name="colormixer_blue">B</string>
+    <string name="colormixer_alpha">A</string>
+    <string name="colormixer_set">تعيين</string>
+    <string name="colormixer_cancel">إلغاء </string>
+    <string name="new_folder">مجلد جديد</string>
+    <string name="pls_input_foldername">الرجاء إدخال اسم المجلد:</string>
+    <string name="confirm_dir_replace">تأكيد استبدال الدليل</string>
+    <string name="select_folder_replace">حدد مجلد الذي تريد استبداله</string>
+    <string name="folder_replace_tip" formatted="false">هل أنت متأكد من استبدال %s مع %s?</string>
+    <string name="folder_replaced">استبدال المجلد</string>
+    <string name="custom_key_setting">إعداد مفتاح مخصص</string>
+    <string name="public_key_label">"المفتاح العمومي
+(.x509.pem)"</string>
+    <string name="private_key_label">"المفتاح الخاص
+(.pk8)"</string>
+    <string name="select_key_file">حدد ملف مفتاح</string>
+    <string name="error_filepath_empty">لا يمكن أن يكون مسار الملف فارغ.</string>
+    <string name="error_filepath_notexist">الملف غير موجود.</string>
+    <string name="select_folder">الرجاء تحديد مجلد</string>
+    <string name="select_folder_err1">
+	الرجاء لا تقم بتحديد المسار داخل دليل العمل لمحرر أية بي كيه.</string>
+    <string name="select_folder_err2">
+	الرجاء لا تقم بتحديد المسار الذي يحتوي على دليل العمل داخل محرر أية بي كيه.</string>
+    <string name="file_replaced">استبدال الملف.</string>
+    <string name="hide_smali_tip">
+	الرجاء انقر لوقت طويل فوق التنفيذ المباشر -&gt; سمالي لإخفائه.</string>
+    <string name="pkg_rename_notice">
+	يرجى ملاحظة: إعادة تسمية الحزمة على الأرجح لا يعمل, اعتماداً على كيفية يتم كتابة التطبيق (أو حتى المحمية).</string>
+    <string name="package_rename_method">أسلوب إعادة تسمية الحزمة</string>
+    <string name="pkg_rename_direct">إعادة تسمية المباشرة</string>
+    <string name="pkg_rename_cheat">
+	الغش على اسم الحزمة </string>
+    <string name="pkg_rename_as_plugin">جعله البرنامج المساعد</string>
+    <string name="decode_dex_file">
+	فك ترميز ملف التنفيذ المباشر...</string>
+    <string name="encode_dex_file">
+	ترميز ملف التنفيذ المباشر...</string>
+    <string name="sample_code">
+	نموذج الكود البرمجية</string>
+    <string name="show_a_toast">	إظهار الاشعارات </string>
+    <string name="log_a_message">تسجيل رسالة</string>
+    <string name="smali_copied">
+	رمز سمالي تم نسخ إلى الحافظة.</string>
+    <string name="detail">التفاصيل</string>
+    <string name="path">المسار</string>
+    <string name="entry_in_apk">الدخول في أية بي كيه</string>
+    <string name="num_items_selected">%d البند(s) تحديد</string>
+    <string name="color">لون</string>
+    <string name="failed_create_dir">فشل إنشاء الدليل: %s</string>
+    <string name="copy_error_msg">نسخ رسالة الإعلام بالخطأ</string>
+    <string name="errmsg_copied">رسالة خطأ في نسخ إلى الحافظة.</string>
+    <string name="search_file_names">البحث في اسم الملف</string>
+    <string name="search_file_content">البحث في محتويات الملف</string>
+    <string name="patch_capital">التصحيح</string>
+    <string name="select_patch">
+	حدد لتصحيح</string>
+    <string name="apply_the_patch">
+حدد	تطبيق لتصحيح</string>
+    <string name="patch_applied">
+	التصحيح التطبيقية</string>
+    <string name="save_patch_example">&lt;u&gt;حفظ نماذج التصحيح إلى بطاقة sd&lt;/u&gt;</string>
+    <string name="current_patch">
+	&lt;u&gt;التصحيح الحالية:&lt;/u&gt;</string>
+    <string name="no_patch_selected">التصحيح لا يوجد تحديد</string>
+    <string name="patch_start_parse">
+	تحليل قواعد داخل patch.txt …
+</string>
+    <string name="patch_start_apply">تطبيق قاعدة التصحيح في السطر %d …</string>
+    <string name="all_rules_applied">جميع القواعد المطبقة.</string>
+    <string name="patch_examples_copied">أمثلة على تصحيح نسخ إلى %s</string>
+    <string name="patch_error_no_entry">
+	"لا يمكن العثور على '%s' داخل التصحيح."</string>
+    <string name="patch_error_cannot_parse" formatted="false">لا يمكن تحليل الخط %d: %s</string>
+    <string name="patch_error_unknown_rule" formatted="false">القاعدة غير معتمد في سطر %d: %s</string>
+    <string name="patch_error_read_from">لا يمكن القراءة من%s.</string>
+    <string name="patch_error_write_to">لا يمكن الكتابة إلى %s.</string>
+    <string name="patch_error_no_source_file">لم يتم تحديد الملف المصدر.</string>
+    <string name="patch_error_no_target_file">لم يتم تحديد الملف الهدف.</string>
+    <string name="patch_error_no_match_content">لم يتم تحديد محتوى مطابقة.</string>
+    <string name="patch_error_no_match">	لم يتم العثور على أي تطابق في %s.</string>
+    <string name="patch_error_publicxml_notfound">لا يمكن العثور على res/values/public.xml</string>
+    <string name="patch_error_invalid_target" formatted="false">الهدف غير صالح أو غير معتمد في سطر %d: %s</string>
+    <string name="patch_info_num_replaced">%d مباراة(es) استبدال.</string>
+    <string name="translate_plugin">ترجمة البرنامج المساعد</string>
+    <string name="translate_plugin_notfound_tip">لا يمكن العثور على أي ترجمة البرنامج المساعد. إذا كنت ترغب في تطوير البرنامج المساعد، يرجى الرجوع إلى اتباع التعليمات:</string>
+    <string name="open_in_editor">فتح في محرر</string>
+    <string name="about">حول</string>
+    <string name="line_number">رقم السطر</string>
+    <string name="replace_all_ret">%d التواجد(s) يتم استبدال</string>
+    <string name="rebuild_confirmation">إعادة تأكيد</string>
+    <string name="rebuild_confirm_e_summary">تمكين. وسوف تظهر النقر فوق إعادة إنشاء مربع حوار للتأكيد عند الزر حفظ. يمكننا أن نجعل خيار عدم التوقيع على أية بي كيه في مربع الحوار.</string>
+    <string name="rebuild_confirm_d_summary">معطل. سيتم إعادة مباشرة، والنقر فوق علامة على أية بي كيه عند الزر حفظ.</string>
+    <string name="rebuild_the_apk">إعادة بناء أية بي كيه</string>
+    <string name="rebuild_dex_file">إعادة إنشاء ملف التنفيذ المباشر</string>
+    <string name="rebuild_res_file">إعادة إنشاء ملف الموارد</string>
+    <string name="sign_the_apk">التوقيع أية بي كيه</string>
+    <string name="str_modified">تعديل</string>
+    <string name="str_not_modified">لا تعديل</string>
+    <string name="str_num_added_file">%d الملف(s) وأضاف</string>
+    <string name="str_num_removed_file">%d الملف(s) إزالة</string>
+    <string name="str_num_modified_file">%d الملف(s) تعديل</string>
+    <string name="copy_file_path">نسخ اسم الملف</string>
+    <string name="copied_to_clipboard">"'%s' نسخ إلى الحافظة."</string>
+</resources>

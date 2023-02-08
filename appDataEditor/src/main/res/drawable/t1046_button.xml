@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_pressed="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <gradient android:startColor="#ffff4000" android:endColor="#ffff8000" android:angle="90.0" />
+                    <corners android:radius="@dimen/button_radius" />
+                    <stroke android:width="1.0dip" android:color="#ffffffff" />
+                </shape>
+            </item>
+            <item android:left="2.0dip" android:top="2.0dip" android:right="2.0dip" android:bottom="20.0dip">
+                <shape>
+                    <gradient android:startColor="#08ffffff" android:endColor="#30ffffff" android:angle="90.0" />
+                    <corners android:topLeftRadius="3.0dip" android:topRightRadius="3.0dip" android:bottomLeftRadius="15.0dip" android:bottomRightRadius="15.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_checked="true">
+        <layer-list>
+            <item>
+                <shape>
+                    <gradient android:startColor="#ff000000" android:endColor="#ff202020" android:angle="90.0" />
+                    <corners android:radius="@dimen/button_radius" />
+                    <stroke android:width="1.0dip" android:color="#40ffffff" />
+                </shape>
+            </item>
+            <item>
+                <shape android:shape="rectangle">
+                    <gradient android:startColor="#8000ffff" android:endColor="#30000000" android:angle="90.0" android:type="radial" android:centerX="0.5" android:centerY="1.5" android:gradientRadius="100.0" android:centerColor="#5000ffff" />
+                    <corners android:topLeftRadius="@dimen/button_radius" android:topRightRadius="@dimen/button_radius" android:bottomLeftRadius="@dimen/button_radius" android:bottomRightRadius="@dimen/button_radius" />
+                </shape>
+            </item>
+            <item android:left="2.0dip" android:top="2.0dip" android:right="2.0dip" android:bottom="20.0dip">
+                <shape>
+                    <gradient android:startColor="#08ffffff" android:endColor="#30ffffff" android:angle="90.0" />
+                    <corners android:topLeftRadius="3.0dip" android:topRightRadius="3.0dip" android:bottomLeftRadius="15.0dip" android:bottomRightRadius="15.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="#ff111111" />
+            <corners android:radius="@dimen/button_radius" />
+            <stroke android:width="1.0dip" android:color="#40ffffff" />
+        </shape>
+    </item>
+    <item>
+        <layer-list>
+            <item>
+                <shape>
+                    <gradient android:startColor="#ff000000" android:endColor="#ff202020" android:angle="90.0" />
+                    <corners android:radius="@dimen/button_radius" />
+                    <stroke android:width="1.0dip" android:color="#40ffffff" />
+                </shape>
+            </item>
+            <item android:left="2.0dip" android:top="2.0dip" android:right="2.0dip" android:bottom="20.0dip">
+                <shape>
+                    <gradient android:startColor="#08ffffff" android:endColor="#30ffffff" android:angle="90.0" />
+                    <corners android:topLeftRadius="3.0dip" android:topRightRadius="3.0dip" android:bottomLeftRadius="15.0dip" android:bottomRightRadius="15.0dip" />
+                </shape>
+            </item>
+        </layer-list>
+    </item>
+</selector>

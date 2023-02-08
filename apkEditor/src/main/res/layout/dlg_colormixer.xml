@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="20dip"
+    android:paddingBottom="20dip">
+
+    <FrameLayout
+        android:id="@+id/color_layout"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="4dip">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/colorview_bg" />
+
+        <View
+            android:id="@+id/swatch"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </FrameLayout>
+
+    <TextView
+        android:id="@+id/redLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/color_layout"
+        android:layout_marginLeft="4dip"
+        android:layout_toRightOf="@id/color_layout"
+        android:text="@string/colormixer_red"
+        android:textSize="10pt" />
+
+    <SeekBar
+        android:id="@+id/red"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/redLabel"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="8dip"
+        android:layout_toRightOf="@id/redLabel"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/greenLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/redLabel"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@id/color_layout"
+        android:text="@string/colormixer_green"
+        android:textSize="10pt" />
+
+    <SeekBar
+        android:id="@+id/green"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/greenLabel"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="8dip"
+        android:layout_toRightOf="@id/greenLabel"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/blueLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/greenLabel"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@id/color_layout"
+        android:text="@string/colormixer_blue"
+        android:textSize="10pt" />
+
+    <SeekBar
+        android:id="@+id/blue"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/blueLabel"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="8dip"
+        android:layout_toRightOf="@id/blueLabel"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/alphaLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/blueLabel"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@id/color_layout"
+        android:text="@string/colormixer_alpha"
+        android:textSize="10pt" />
+
+    <SeekBar
+        android:id="@+id/alpha"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/alphaLabel"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="8dip"
+        android:layout_toRightOf="@id/alphaLabel"
+        android:focusable="true" />
+
+    <TextView
+        android:id="@+id/colorLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/alphaLabel"
+        android:layout_marginLeft="4dip"
+        android:layout_marginTop="20dip"
+        android:layout_toRightOf="@id/color_layout"
+        android:text="@string/color"
+        android:textSize="10pt" />
+
+    <EditText
+        android:id="@+id/color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/colorLabel"
+        android:layout_marginLeft="4dip"
+        android:layout_marginRight="8dip"
+        android:layout_toRightOf="@id/colorLabel"
+        android:inputType="textNoSuggestions"
+        android:maxLength="8"
+        android:minWidth="96dip"
+        android:textSize="10pt" />
+
+</RelativeLayout>

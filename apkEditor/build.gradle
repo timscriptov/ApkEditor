@@ -1,0 +1,64 @@
+plugins {
+    id 'com.android.library'
+}
+
+android {
+    compileSdkVersion 33
+
+    defaultConfig {
+        minSdk 14
+        targetSdk 26
+    }
+
+    buildTypes {
+        release {
+            buildConfigField "boolean", "IS_PRO", "true"
+            buildConfigField "boolean", "WITH_SIGN", "true"
+            buildConfigField "boolean", "DISPLAY_APP", "true"
+            buildConfigField "boolean", "ODEX_PATCH", "true"
+            buildConfigField "boolean", "SHOW_AGREEMENT", "false"
+            buildConfigField "boolean", "LIMIT_NEW_VERSION", "true"
+            buildConfigField "boolean", "PARSER_ONLY", "false"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.txt'
+        }
+        debug {
+            buildConfigField "boolean", "IS_PRO", "true"
+            buildConfigField "boolean", "WITH_SIGN", "true"
+            buildConfigField "boolean", "DISPLAY_APP", "true"
+            buildConfigField "boolean", "ODEX_PATCH", "true"
+            buildConfigField "boolean", "SHOW_AGREEMENT", "false"
+            buildConfigField "boolean", "LIMIT_NEW_VERSION", "true"
+            buildConfigField "boolean", "PARSER_ONLY", "false"
+        }
+    }
+    namespace 'com.gmail.heagoo.apkeditor.base'
+}
+
+dependencies {
+    implementation project(':apkLibrary')
+    implementation project(':_AndroidCommon')
+    implementation project(':_AndroidEditor')
+    implementation project(':httpServer')
+    implementation project(':PngEditor')
+    implementation project(':imageViewLib')
+
+    implementation 'com.google.guava:guava:24.1-jre'
+
+    implementation jetpack.vp
+    implementation jetpack.interpolator
+    implementation jetpack.fragment
+    implementation jetpack.preference
+    implementation jetpack.core
+    implementation jetpack.cardview
+    implementation jetpack.material
+    implementation jetpack.dex
+    implementation jetpack.worker
+    implementation jetpack.lifecycle
+    implementation jetpack.constraint
+
+    implementation network.gson
+
+    implementation legacy.preference
+    implementation legacy.v4
+}

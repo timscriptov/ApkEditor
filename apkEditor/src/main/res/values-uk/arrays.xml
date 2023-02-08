@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="order_key">
+        <item>За назвою</item>
+        <item>За часом встановлення</item>
+    </string-array>
+    <string-array name="order_value">
+        <item>За назвою</item>
+        <item>За часом встановлення</item>
+    </string-array>
+
+    <string-array name="compression_level_key">
+        <item>0 (Без стиснення)</item>
+        <item>1 (Найшвидший)</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5 (Середній)</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9 (Максимальний)</item>
+    </string-array>
+    <string-array name="signer_key">
+        <item>Тестовий ключ (testkey)</item>
+        <item>Ключ APK Editor</item>
+        <item>Ключ користувача</item>
+    </string-array>
+</resources>

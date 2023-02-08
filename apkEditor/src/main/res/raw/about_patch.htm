@@ -1,0 +1,1676 @@
+<html xmlns="http://www.w3.org/TR/REC-html40"
+        xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <head>
+        <meta
+                content="text/html; charset=us-ascii"
+                http-equiv=Content-Type>
+        <meta
+                content=Word.Document
+                name=ProgId>
+        <meta
+                content="Microsoft Word 15"
+                name=Generator>
+        <meta
+                content="Microsoft Word 15"
+                name=Originator>
+        </style>
+    </head>
+
+    <body
+            lang=EN-US
+            link="#0563C1"
+            style='tab-interval:.5in'
+            vlink="#954F72">
+
+        <div class=WordSection1>
+
+            <p
+                    class=MsoNormal
+                    style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                <b style='mso-bidi-font-weight:normal'>
+                    <u>
+                        <span style='mso-bidi-font-size:11.0pt'>About
+                            Patch
+                            <u1:p></u1:p>
+                        </span>
+                    </u>
+                </b>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Patch is supported in APK
+                    Editor Pro since version 1.6.0. In general, it is a zip file, which contains
+                    patch.txt and other necessary files. Patch.txt inside the zip file specifies
+                    patch rules, and other files provide patch resources.
+                    <o:p></o:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>It is not mature yet,
+                    please
+                    be careful when combining with other modifications.
+                    <o:p></o:p>
+                </span>
+            </p>
+
+            <p class=MsoNormal>
+                <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"Times New Roman"'>And, there is a patch editor (an
+                    open source project) at
+                    <a href="https://github.com/SnowVolf/PCompiler">
+                        https://github.com/SnowVolf/PCompiler
+                    </a>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </span>
+            </p>
+
+            <p class=MsoNormal>
+                <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>
+                    <o:p>&nbsp;</o:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                <b style='mso-bidi-font-weight:normal'>
+                    <u>
+                        <span style='mso-bidi-font-size:11.0pt'>Patch
+                            Format
+                            <u1:p></u1:p>
+                        </span>
+                    </u>
+                </b>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>A patch is mainly composed
+                    of patch rules. Currently, it supports 8 patch rules:
+                    <o:p></o:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpFirst
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>ADD_FILES
+                    <u3:p></u3:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpMiddle
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>REMOVE_FILES
+                    <u3:p></u3:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpMiddle
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>MATCH_REPLACE
+                    <u3:p></u3:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpMiddle
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>MATCH_ASSIGN
+                    <u3:p></u3:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpMiddle
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>MATCH_GOTO
+                    <u3:p></u3:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpMiddle
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>GOTO
+                    <u3:p></u3:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpMiddle
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>MERGE</span>
+                <u3:p></u3:p>
+                <o:p></o:p>
+            </p>
+
+            <span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>
+
+                <p
+                        class=MsoListParagraphCxSpMiddle
+                        style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                    <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                        <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                        </span>
+                    </span>
+                    <![endif]>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>EXECUTE_DEX</span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoListParagraphCxSpLast
+                        style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                    <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                        <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                        </span>
+                    </span>
+                    <![endif]>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+text-align:start;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-style: initial;
+text-decoration-color: initial;float:none;word-spacing:0px'>DUMMY
+                        </span>
+                    </span>
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                    <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Inside a rule, each
+                        line
+                        starts with &#8216;#&#8217; means that is a comment line. And, each
+                        configuration starts in a new line.
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                    <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Please take following
+                        illustrations and examples to see how to create patch.txt. Patch examples
+                        are
+                        also provided, you could save them to look inside it.
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[ADD_FILES]
+                    (Add files)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Used to add files to
+                        the app.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>NAME
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the name of the rule.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>SOURCE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the name of the file inside the archive to be copied to the app.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies target path inside the app.
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[REMOVE_FILES]
+                    (Deleting files)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Used to delete files or
+                        folders from the app.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>NAME
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the name of the rule.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies target path to be deleted inside the app. If you need to delete
+                        several files at once, you need to write down the names of all the files or
+                        folders, and each name must begin with a new line.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>For example:
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>[REMOVE_FILES]
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>TARGET:
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span class=GramE>
+                        <span style='font-size:10.0pt;font-family:"Courier New"'>res/values-
+                            <span class=SpellE>ru</span>
+                        </span>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span class=GramE>
+                        <span style='font-size:10.0pt;font-family:"Courier New"'><u3:p></u3:p>
+                            res/values-
+                            <span class=SpellE>hz</span>
+                        </span>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'><u3:p></u3:p>res/values
+                    </span>
+                    <span class=GramE>
+                        <span style='font-size:10.0pt;font-family:"Cambria Math",serif;
+mso-bidi-font-family:"Cambria Math"'>&#8203;&#8203;
+                        </span>
+                        <span style='font-size:10.0pt;font-family:"Courier New"'>/</span>
+                    </span>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>strings.xml
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>[/REMOVE_FILES]
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                    <span style='mso-spacerun:yes'>&nbsp;</span>[MATCH_REPLACE] (Find and replace)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Used to find and
+                        replace the
+                        found result.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>Name
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the name of the rule. (You can leave it blank, but if you want to
+                        jump to this rule from other places, name is a must)
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the file path to do the find and replace operation.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>MATCH
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specify the text you want to find.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>REGEX
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        true or false. True means the match string is a regular expression.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>REPLACE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:
+"Courier New"'>: specifies the text that will replace the found result. (Blank
+                        means to delete the found result)
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[MATCH_ASSIGN]
+                    (Defining variables)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Used to define
+                        variables.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>Name
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the name of the rule. (You can leave it blank, but if you want to
+                        jump to this rule from other places, name is a must)
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the file path to do match operation.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>MATCH
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the text you want to find.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>REGEX
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        true or false. True means the match string is a regular expression.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>ASSIGN
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the name and value of the variable. (For example: p1 = $ {GROUP1})
+                        If
+                        there are more than one variables, then each next variable must begin with a
+                        new line.
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[MATCH_GOTO]
+                    (If match, then go to a target rule)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Used to find some text
+                        in
+                        specified files, and in case of a successful match, will go to execute the
+                        rule
+                        written in the &quot;GOTO&quot; field.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>If the text is not
+                        found
+                        then the rule written right after that is executed.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>Name
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the name of the rule.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the file path to do the match operation.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>MATCH
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specify the text you want to find.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>REGEX
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        true or false. True means the match string is a regular expression.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>GOTO
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the name of the next rule. If successfully matched, then will go
+                        to
+                        execute that rule.
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                    <span style='mso-spacerun:yes'>&nbsp;</span>[GOTO] (Redirect to some rule)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Used to redirect to
+                        another
+                        rule.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>GOTO
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the name of the next rule.
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[MERGE]
+                    (Link resources)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>It is a powerful rule
+                        that
+                        will merge specified resource with current app. It means that the resource
+                        will
+                        be added, together with IDs refactoring to avoid resource conflicting.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>NAME
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        specifies the name of the rule.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>SOURCE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        file name of the resource file which will be merged.
+                        <u3:p></u3:p>
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <o:p>&nbsp;</o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[EXECUTE_DEX]
+                    (Execute a
+                    <span class=SpellE>dex</span>
+                    script)
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Rule to execute a
+                        customized
+                        script.
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>SCRIPT
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        Target script file inside the zip to be executed.
+                        <u3:p></u3:p>
+                        It must be a
+                        <span class=SpellE>dex</span>
+                        file, which could be generated through following
+                        commands:
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'>
+                    <span class=SpellE>
+                        <span class=GramE>
+                            <span style='font-size:10.0pt;font-family:"Courier New"'>javac</span>
+                        </span>
+                    </span>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>-source 1.7 -target 1.7
+                        test/AddDebugInfo.java
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'>
+                    <span class=GramE>
+                        <span style='font-size:10.0pt;
+font-family:"Courier New"'>dx
+                        </span>
+                    </span>
+                    <span style='font-size:10.0pt;
+font-family:"Courier New"'>--
+                        <span class=SpellE>dex</span>
+                        --output=
+                        <span class=SpellE>script.dex</span>
+                        test/
+                        <span class=SpellE>AddDebugInfo.class</span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>SMALI_NEEDED
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:
+"Courier New"'>: Indicate the script needs
+                        <span class=SpellE>smali</span>
+                        code
+                        or not.
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>If
+                        true, and
+                        <span class=SpellE>smali</span>
+                        code is not generated yet, then when
+                        the rule got executed, the patch will generate
+                        <span class=SpellE>smali</span>
+                        code as the first step.
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>MAIN_CLASS
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:
+"Courier New"'>: Class path which contains the entrance
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>ENTRANCE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:
+"Courier New"'>: Target method to execute, the method must accepts 4 String
+                        parameters.
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>PARAM
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        Pass as the last parameter to the target method.
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[DUMMY]
+                    (Dummy rule)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Dummy rule. It is more
+                        like
+                        a label which only contains NAME field. From &#8220;MATCH_GOTO&#8221; or
+                        &#8220;GOTO&#8221; rule, we could jump to a dummy rule.
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                    <u3:p>&nbsp;</u3:p>
+                </p>
+
+                <p class=MsoNormal>
+                    <span style='mso-fareast-font-family:"Times New Roman"'>And,
+                        here is an example:
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p class=MsoNormal>
+                    <span style='mso-fareast-font-family:"Times New Roman"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># Required minimal
+                        engine
+                        version; the engine in v1.6.8 is version 2
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[MIN_ENGINE_VER]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>1
+                        <u1:p></u1:p>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p>&nbsp;</u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>The</span>
+                        author of this patch
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[AUTHOR]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span class=SpellE>
+                        <span class=GramE>
+                            <span style='font-size:10.0pt;font-family:"Courier New";
+color:black'>apkeditor
+                            </span>
+                        </span>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p><u1:p></u1:p>&nbsp;
+                        </u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>For</span>
+                        which package name
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[PACKAGE]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>*
+                        <u1:p></u1:p>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p>&nbsp;</u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>Add</span>
+                        files to target path
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[ADD_FILES]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>SOURCE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>layout.zip
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>
+                        <span class=GramE>res/layout
+                            <u1:p></u1:p>
+                        </span>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>EXTRACT
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:
+"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>
+                        <span class=GramE>true
+                            <u1:p></u1:p>
+                        </span>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>[/ADD_FILES]
+                        <u1:p></u1:p>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p>&nbsp;</u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># Remove files
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>Multiple</span>
+                        targets can be provided
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[REMOVE_FILES]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>TARGET:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='text-indent:24.0pt;mso-layout-grid-align:none;
+text-autospace:none'>
+                    <span class=GramE>
+                        <span style='font-size:10.0pt;
+font-family:"Courier New"'>res/values-xx
+                        </span>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='text-indent:24.0pt;mso-layout-grid-align:none;
+text-autospace:none'>
+                    <span class=GramE>
+                        <span style='font-size:10.0pt;
+font-family:"Courier New"'><u1:p></u1:p>res/values-
+                            <span class=SpellE>yy</span>
+                        </span>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'><u1:p></u1:p>
+                        [/REMOVE_FILES]
+                        <u1:p></u1:p>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p>&nbsp;</u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># Replace matched
+                        content
+                        inside target file, be careful when REGEX=true
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># All matched
+                        occurrences
+                        will be replaced
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># If REGEX=true, MATCH
+                        content must be in one line
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>Following</span>
+                        example will delete
+                        <span style='color:black'>internet</span>
+                        permission
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[MATCH_REPLACE]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>AndroidManifest.xml
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>MATCH
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>&lt;uses-permission
+                        <span class=SpellE>android
+                            <span class=GramE>:name</span>
+                        </span>
+                        =&quot;<span class=SpellE>android.permission.INTERNET</span>&quot; /&gt;<u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>REGEX
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>
+                        <span class=GramE>false
+                            <u1:p></u1:p>
+                        </span>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>REPLACE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:
+"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>[/MATCH_REPLACE]
+                        <u1:p></u1:p>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p>&nbsp;</u1:p>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p>&nbsp;</u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># MERGE is designed to
+                        merge
+                        resources and code from other
+                        <span class=SpellE>apk
+                            <u1:p></u1:p>
+                        </span>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># Merge resources and
+                        <span class=SpellE>
+                            <span style='color:black'>smali</span>
+                        </span>
+                        files inside
+                        extra.zip
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># res/values/public.xml
+                        must
+                        be provided inside extra.zip
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>The</span>
+                        patch engine will try to
+                        <span style='color:black'>refactor</span>
+                        all the
+                        added ids
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>The</span>
+                        added ids should be different with current existing ids
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[MERGE]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>SOURCE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>extra.zip
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>[/MERGE]
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+        </div>
+
+    </body>
+
+</html>

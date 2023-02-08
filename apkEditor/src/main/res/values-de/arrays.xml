@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compression_level_key">
+        <item>0 (Unkomprimiert)</item>
+        <item>1 (Sehr schnell)</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5 (Normal)</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9 (Beste Kompression)</item>
+    </string-array>
+    <string-array name="compression_level_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="fileTypeAudio">
+        <item>.mp3</item>
+        <item>.wav</item>
+        <item>.ogg</item>
+        <item>.midi</item>
+    </string-array>
+    <string-array name="fileTypeExcel">
+        <item>.xls</item>
+        <item>.xlsx</item>
+    </string-array>
+    <string-array name="fileTypeImage">
+        <item>.png</item>
+        <item>.gif</item>
+        <item>.jpg</item>
+        <item>.jpeg</item>
+        <item>.bmp</item>
+    </string-array>
+    <string-array name="fileTypePPT">
+        <item>.ppt</item>
+        <item>.pptx</item>
+    </string-array>
+    <string-array name="fileTypePackage">
+        <item>.jar</item>
+        <item>.zip</item>
+        <item>.rar</item>
+        <item>.gz</item>
+        <item>.apk</item>
+        <item>.img</item>
+    </string-array>
+    <string-array name="fileTypePdf">
+        <item>.pdf</item>
+    </string-array>
+    <string-array name="fileTypeText">
+        <item>.txt</item>
+        <item>.java</item>
+        <item>.c</item>
+        <item>.cpp</item>
+        <item>.py</item>
+        <item>.xml</item>
+        <item>.json</item>
+        <item>.log</item>
+    </string-array>
+    <string-array name="fileTypeVideo">
+        <item>.mp4</item>
+        <item>.rmvb</item>
+        <item>.avi</item>
+        <item>.flv</item>
+    </string-array>
+    <string-array name="fileTypeWebText">
+        <item>.htm</item>
+        <item>.html</item>
+        <item>.php</item>
+        <item>.jsp</item>
+    </string-array>
+    <string-array name="fileTypeWord">
+        <item>.doc</item>
+        <item>.docx</item>
+    </string-array>
+    <string-array name="order_key">
+        <item>Name der App</item>
+        <item>Installationsdatum</item>
+    </string-array>
+    <string-array name="order_value">
+        <item>Name der App</item>
+        <item>Installationsdatum</item>
+    </string-array>
+    <string-array name="signer_key">
+        <item>Testschl&#252;ssel</item>
+        <item>Schl&#252;ssel erstellt durch APK Editor</item>
+        <item>Eigene Schl&#252;ssel</item>
+    </string-array>
+    <string-array name="signer_value_dont_translate">
+        <item>testkey</item>
+        <item>editorkey</item>
+        <item>customkey</item>
+    </string-array>
+    <string-array name="decode_dir_key">
+        <item>Internes Verzeichnis</item>
+        <item>Eigenes Verzeichnis</item>
+    </string-array>
+    <string-array name="decode_dir_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="file_extract_rename_key">
+        <item>Automatisch (mit fortlaufender Nummer am Ende)</item>
+        <item>&#220;berschreiben</item>
+    </string-array>
+    <string-array name="file_extract_rename_value">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="language_key">
+        <item>Systemsprache</item>
+        <item>Arabisch</item>
+        <item>Chinesisch</item>
+        <item>Tschechisch</item>
+        <item>Holl&#228;ndisch</item>
+        <item>Englisch</item>
+        <item>Franz&#246;sisch</item>
+        <item>Deutsch</item>
+        <item>Hebr&#228;isch</item>
+        <item>Ungarisch</item>
+        <item>Persisch</item>
+        <item>Polnisch</item>
+        <item>Portugiesisch</item>
+        <item>Russisch</item>
+        <item>Slowakisch</item>
+        <item>Spanisch</item>
+        <item>T&#252;rkisch</item>
+        <item>Ukrainisch</item>
+        <item>Vietnamesisch</item>
+    </string-array>
+    <string-array name="language_value">
+        <item></item>
+        <item>ar</item>
+        <item>zh</item>
+        <item>cs</item>
+        <item>nl</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>de</item>
+        <item>iw</item>
+        <item>hu</item>
+        <item>fa</item>
+        <item>pl</item>
+        <item>pt</item>
+        <item>ru</item>
+        <item>sk</item>
+        <item>es</item>
+        <item>tr</item>
+        <item>uk</item>
+        <item>vi</item>
+    </string-array>
+    <string-array name="output_apkname_key">
+        <item>{Paketname}_[un]signed.apk</item>
+        <item>gen_[un]signed.apk</item>
+        <item>{App-Name}_[un]signed.apk</item>
+    </string-array>
+    <string-array name="output_apkname_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="theme_key">
+        <item>Helles Design</item>
+        <item>Dunkles Design #1</item>
+        <item>Dunkles Design #2</item>
+    </string-array>
+    <string-array name="theme_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="appicon_key">
+        <item>Standardsymbol</item>
+        <item>Das 2. neue Symbol</item>
+        <item>Das 3. neue Symbol</item>
+        <item>Das 4. neue Symbol</item>
+        <item>Das 5. neue Symbol</item>
+        <item>Das 6. neue Symbol</item>
+        <item>Das 7. neue Symbol</item>
+        <item>Das 8. neue Symbol</item>
+        <item>Das 9. neue Symbol</item>
+        <item>Das 10. neue Symbol</item>
+        <item>Das 11. neue Symbol</item>
+        <item>Das 12. neue Symbol</item>
+        <item>Das 13. neue Symbol</item>
+        <item>Das 14. neue Symbol</item>
+        <item>Das 15. neue Symbol</item>
+        <item>Das 16. neue Symbol</item>
+        <item>Das 17. neue Symbol</item>
+    </string-array>
+    <string-array name="appicon_value">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+        <item>13</item>
+        <item>14</item>
+        <item>15</item>
+        <item>16</item>
+        <item>17</item>
+    </string-array>
+    <string-array name="decode_mode_key">
+        <item>@string/decode_all_files</item>
+        <item>@string/decode_partial_files</item>
+        <item>Modi-Auswahldialog anzeigen</item>
+    </string-array>
+    <string-array name="decode_mode_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>

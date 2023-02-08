@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:orientation="horizontal"
+    android:paddingLeft="32.0dip">
+
+    <TextView
+        android:id="@+id/tv_filepath"
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dip"
+        android:layout_marginBottom="4dip"
+        android:layout_weight="1"
+        android:focusable="false"
+        android:padding="2.0dip"
+        android:textColor="@color/lightblack"
+        android:textSize="16.0sp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/progressbar_loading"
+        android:layout_width="20dip"
+        android:layout_height="20dip"
+        android:layout_margin="4dip"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/menu_replace"
+        android:layout_width="40dip"
+        android:layout_height="54dip"
+        android:background="@drawable/selector_menu_light">
+
+        <ImageView
+            android:id="@+id/image_replace"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_replace" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_edit"
+        android:layout_width="40dip"
+        android:layout_height="54dip"
+        android:background="@drawable/selector_menu_light">
+
+        <ImageView
+            android:id="@+id/image_edit"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/pencil" />
+    </RelativeLayout>
+
+</LinearLayout>

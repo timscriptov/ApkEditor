@@ -1,0 +1,80 @@
+.method public static checkString(Ljava/lang/String;)Ljava/lang/String;
+    .registers 6
+    .param p0, "str"    # Ljava/lang/String;
+
+    .prologue
+    .line 18
+#A  const-string v1, "com.whatsapp.provider.media"
+
+    .line 19
+    .local v1, "target":Ljava/lang/String;
+#B  const-string v0, "com.whatsapp.provider.mediam"
+
+    .line 20
+    .local v0, "modified":Ljava/lang/String;
+    const-string v2, "DEBUG"
+
+    new-instance v3, Ljava/lang/StringBuilder;
+
+    const-string v4, "string="
+
+    invoke-direct {v3, v4}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v3, p0}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v3
+
+    invoke-virtual {v3}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v3
+
+    invoke-static {v2, v3}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
+
+    .line 21
+    invoke-virtual {p0, v1}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_1f
+
+    .line 26
+    .end local v0    # "modified":Ljava/lang/String;
+    :goto_1e
+    return-object v0
+
+    .line 23
+    .restart local v0    # "modified":Ljava/lang/String;
+    :cond_1f
+    new-instance v2, Ljava/lang/StringBuilder;
+
+    const-string v3, "content://"
+
+    invoke-direct {v2, v3}, Ljava/lang/StringBuilder;-><init>(Ljava/lang/String;)V
+
+    invoke-virtual {v2, v1}, Ljava/lang/StringBuilder;->append(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+    move-result-object v2
+
+    invoke-virtual {v2}, Ljava/lang/StringBuilder;->toString()Ljava/lang/String;
+
+    move-result-object v2
+
+    invoke-virtual {p0, v2}, Ljava/lang/String;->startsWith(Ljava/lang/String;)Z
+
+    move-result v2
+
+    if-eqz v2, :cond_39
+
+    .line 24
+    invoke-virtual {p0, v1, v0}, Ljava/lang/String;->replace(Ljava/lang/CharSequence;Ljava/lang/CharSequence;)Ljava/lang/String;
+
+    move-result-object v0
+
+    goto :goto_1e
+
+    :cond_39
+    move-object v0, p0
+
+    .line 26
+    goto :goto_1e
+.end method

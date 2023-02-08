@@ -1,0 +1,76 @@
+
+.method public modifyPackageName(Landroid/content/Context;)V
+    .registers 9
+    .param p1, "base"    # Landroid/content/Context;
+
+    .prologue
+    .line 20
+    :try_start_0
+    const-string v5, "android.app.ContextImpl"
+
+    invoke-static {v5}, Ljava/lang/Class;->forName(Ljava/lang/String;)Ljava/lang/Class;
+
+    move-result-object v4
+
+    .line 21
+    .local v4, "obj_class":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
+    const-string v5, "mPackageInfo"
+
+    invoke-virtual {v4, v5}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v2
+
+    .line 22
+    .local v2, "field":Ljava/lang/reflect/Field;
+    const/4 v5, 0x1
+
+    invoke-virtual {v2, v5}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+
+    .line 23
+    invoke-virtual {v2, p1}, Ljava/lang/reflect/Field;->get(Ljava/lang/Object;)Ljava/lang/Object;
+
+    move-result-object v3
+
+    .line 25
+    .local v3, "mPackageInfo":Ljava/lang/Object;
+    invoke-virtual {v3}, Ljava/lang/Object;->getClass()Ljava/lang/Class;
+
+    move-result-object v5
+
+    const-string v6, "mPackageName"
+
+    invoke-virtual {v5, v6}, Ljava/lang/Class;->getDeclaredField(Ljava/lang/String;)Ljava/lang/reflect/Field;
+
+    move-result-object v1
+
+    .line 26
+    .local v1, "f":Ljava/lang/reflect/Field;
+    const/4 v5, 0x1
+
+    invoke-virtual {v1, v5}, Ljava/lang/reflect/Field;->setAccessible(Z)V
+
+    .line 27
+    const-string v5, "PACKAGE_NAME"
+
+    invoke-virtual {v1, v3, v5}, Ljava/lang/reflect/Field;->set(Ljava/lang/Object;Ljava/lang/Object;)V
+    :try_end_27
+    .catch Ljava/lang/Throwable; {:try_start_0 .. :try_end_27} :catch_28
+
+    .line 31
+    .end local v1    # "f":Ljava/lang/reflect/Field;
+    .end local v2    # "field":Ljava/lang/reflect/Field;
+    .end local v3    # "mPackageInfo":Ljava/lang/Object;
+    .end local v4    # "obj_class":Ljava/lang/Class;, "Ljava/lang/Class<*>;"
+    :goto_27
+    return-void
+
+    .line 28
+    :catch_28
+    move-exception v0
+
+    .line 29
+    .local v0, "e":Ljava/lang/Throwable;
+    invoke-virtual {v0}, Ljava/lang/Throwable;->printStackTrace()V
+
+    goto :goto_27
+.end method

@@ -1,0 +1,116 @@
+<resources>
+
+    <color name="white">#ffffffff</color>
+    <color name="skyblue">#ff1ca1d4</color>
+    <color name="grey">#ffb4cae9</color>
+    <color name="black">#ff000000</color>
+
+    <string name="appdm_backup">Backup</string>
+    <string name="appdm_backup_list">Backup List</string>
+    <string name="appdm_preference">Preference</string>
+    <string name="appdm_database">Database</string>
+    <string name="appdm_basic_info">Basic Info</string>
+    <string name="appdm_key">Key</string>
+    <string name="appdm_label_app_name">App Name: </string>
+    <string name="appdm_label_shared_preference">Shared Preference: </string>
+    <string name="appdm_search">Search</string>
+    <string name="appdm_save_apk">Saving the apk &#8230;</string>
+    
+    <string name="appdm_app_name">App Name</string>
+    <string name="appdm_package_name">Package Name</string>
+    <string name="appdm_app_size">App Size</string>
+    <string name="appdm_version">Version</string>
+    <string name="appdm_version_code">Version Code</string>
+    <string name="appdm_version_name">Version Name</string>
+    <string name="appdm_apk_file_path">Apk File Path</string>
+    <string name="appdm_apk_build_time">Apk Build Time</string>
+    <string name="appdm_install_time">Install Time</string>
+    <string name="appdm_signature">Signature</string>
+    
+    <string name="apk_saved_tip">Succeed! APK saved to SD card: \n%s</string>
+    <string name="warning_keyword_empty">Keyword can not be empty.</string>
+    
+    <string name="appdm_raw_file">Raw File</string>
+    <string name="appdm_file_too_big">File is too big to open.</string>
+    <string name="appdm_not_found">Not Found</string>
+    <string name="appdm_file_saved">File Saved.</string>
+    
+    <string name="appdm_files">Files</string>
+    <string name="appdm_file_size">File Size:</string>
+    <string name="appdm_open_in_editor">Open in Editor</string>
+    
+    <!--  
+    <string name="appdm_action_settings">Settings</string>
+    <string name="appdm_user_app">User Apps</string>
+    <string name="appdm_system_app">System Apps</string>
+    <string name="appdm_rate_it">Rate It</string>
+    <string name="appdm_exit">Exit</string>
+    <string name="appdm_loading">Loading</string>
+    <string name="appdm_label_app_name">App Name: </string>
+    <string name="appdm_label_shared_preference">Shared Preference: </string>
+    <string name="appdm_index">Index</string>
+    <string name="appdm_key">Key</string>
+    <string name="appdm_value">Value</string>
+    <string name="appdm_save">Save</string>
+    <string name="appdm_cancel">Cancel</string>
+    <string name="appdm_help">Help</string>
+    <string name="appdm_lt_flag">&lt;</string>
+    <string name="appdm_gt_flag">&gt;</string>
+    <string name="appdm_preference">Preference</string>
+    <string name="appdm_database">Database</string>
+    <string name="appdm_basic_info">Basic Info</string>
+    <string name="appdm_uninstall">Uninstall</string>
+    <string name="appdm_app_info">Application Info</string>
+    <string name="appdm_save_data">Backup Data</string>
+    <string name="appdm_backups">Backups</string>
+    <string name="appdm_backup">Backup</string>
+    <string name="appdm_backup_dlg_title">Input Information to Do Data Backup</string>
+    <string name="appdm_backup_name">Backup Name</string>
+    <string name="appdm_comment">Comment</string>
+    <string name="appdm_in_progress">Working in progress</string>
+    <string name="appdm_ok">OK</string>
+    <string name="appdm_get_pro">Get Pro</string>
+    <string name="appdm_set_max_backups">Set maximum allowed backup copies</string>
+    <string name="appdm_allowed_backup_copies">Allowed Backup Copies</string>
+    <string name="appdm_applist_order_summary">Set how to sort apps in the apps list.</string>
+    <string name="appdm_backup_copies_summary">Maximum allowed backup copies, earliest backup will be overwritten when backup copies are greater than the number.</string>
+    <string name="appdm_not_available">Not Available</string>
+    <string name="appdm_no_backup_found">No Backup Found!</string>
+    <string name="appdm_remove_ad_tip">AD will be removed if any of following paid apps is installed. (Click to view detail information for the app)</string>
+    
+    <string name="appdm_hack_user_app">Hack User Apps</string>
+    <string name="appdm_hack_system_app">Hack System Apps</string>
+    <string name="appdm_start_memory_hacking">Start Memory Hack</string>
+    <string name="appdm_stop_memory_hacking">Stop Memory Hack</string>
+    <string name="appdm_select_proc_to_hack">Please select a process to hack.</string>
+    <string name="appdm_open_game_to_hack">Please open a game to hack.</string>
+    <string name="appdm_tip_input_error">Invalid input or too big value?</string>
+    <string name="appdm_tip_hackmem_error">Can not hack the process, maybe it has set debuggable=false or SELinux not disabled.</string>
+    <string name="appdm_tip_after_search">%d addresses found.</string>
+    <string name="appdm_tip_disable_selinux">Sorry, we cannot do memory hacking as SELinux is enabled. You cloud manually disable it, but please note disable it may cause security issue.</string>
+    <string name="appdm_tip_disable_selinux_err">Can not disable SELinux: %s</string>
+    <string name="appdm_tip_toomany_addr">Too many addresses. Are you sure to set the new value?</string>
+    <string name="appdm_hide">Hide</string>
+    <string name="appdm_new_value">New Value</string>
+    <string name="appdm_dont_show">Don\'t show this dialog</string>
+    <string name="appdm_decline">Decline</string>
+    <string name="appdm_agree">Agree</string>
+    <string name="appdm_user_agreement">User Agreement</string>
+    
+    <string name="appdm_controls">Controls</string>
+    <string name="appdm_working_mode">Working Mode</string>
+    <string name="appdm_working_mode_summary">Use root mode or not (root mode can only be applied to rooted device)</string>
+    <string name="appdm_working">Working&#8230;</string>
+    <string name="appdm_make_it_hackable">Make it Hackable</string>
+    <string name="appdm_unable_make_hackable">Unable to make it hackable, as it already sets shared user id.</string>
+    <string name="appdm_warning_tip">Dangerous! The original app needs to be modified. Please note it may not work after modification. And more, reinstallation is needed which will make the original data lost.</string>
+    <string name="appdm_succeed_tip">Succeed!\nPlease first remove the original app by clicking Remove button, and then install the revised app by clicking Install button.</string>
+    <string name="appdm_continue_str">Continue</string>
+    <string name="appdm_remove">Remove</string>
+    <string name="appdm_install">Install</string>
+    <string name="appdm_donate">Support the Author</string>
+    <string name="appdm_settings">Settings</string>
+    <string name="appdm_not_rooted_tip">It seems that your device is not rooted. Non-Root working mode is enabled as the default. You could change it in settings.</string>
+    -->
+
+</resources>

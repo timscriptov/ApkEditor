@@ -1,0 +1,28 @@
+<resources>
+
+    <color name="blue">#ff0000ee</color>
+    <color name="green">#ff4cb648</color>
+    <color name="half_transparent">#80ffffff</color>
+    <color name="blue_transparent">#805997c4</color>
+    <color name="white">#ffffffff</color>
+    <color name="lightblue">#ff5997c4</color>
+    <color name="black">#ff000000</color>
+    <color name="lightblack">#ff303030</color>
+    <color name="darkblue">#ff1122cc</color>
+    <color name="littleblue">#ffe9f2fc</color>
+    <color name="red">#ffee0000</color>
+
+    <string name="searching">Searching</string>
+    <string name="loading">Loading</string>
+    <string name="close">Close</string>
+    <string name="find">Find</string>
+    <string name="keyword_hint">Please Input a Keyword</string>
+    <string name="keyword_cannot_empty">Keyword cannot be empty!</string>
+
+    <string name="app_list_order">App List Order By</string>
+    <string name="app_display">App Display</string>
+
+    <string name="hackable">Hackable</string>
+    <string name="unhackable">Un-Hackable</string>
+
+</resources>

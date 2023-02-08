@@ -1,0 +1,290 @@
+﻿<html>
+    <title>APK Editor és APK Editor Pro súgó</title>
+    <body>
+        <center>
+            <div style="max-width:800px;">
+
+                <p style="text-align: center;">
+                <center>
+                    <img
+                            alt="logo"
+                            class="aligncenter size-full"
+                            src="logo.jpg">
+                    <center>
+                </p>
+
+                <p style="text-align: left;">
+                <ul>
+                    <li style="text-align: left;">
+                        <a href="#about">Az APK Editor alkalmazásról...</a>
+                    </li>
+                    <li style="text-align: left;">Példák a használatára</li>
+                    <ol type="decimal">
+                        <li style="text-align: left;">
+                            <a href="#example1">Alkalmazás nevének módosítása</a>
+                        </li>
+                        <li style="text-align: left;">
+                            <a href="#example2">Tetszetős felület: háttérkép módosítása</a>
+                        </li>
+                        <li style="text-align: left;">
+                            <a href="#example3">Hirdetések eltávolítása</a>
+                        </li>
+                        <li style="text-align: left;">
+                            <a href="#example4">Áthelyezési lehetőség az SD-kártyára</a>
+                        </li>
+                        <li style="text-align: left;">
+                            <a href="#example5">Nemkívánatos engedélyek eltávolítása</a>
+                        </li>
+                    </ol>
+                    <li style="text-align: left;">
+                        <a href="#issues">Tudnivalók</a>
+                    </li>
+                </ul>
+
+                </p>
+
+
+                <p
+                        id="about"
+                        style="text-align: left;">
+                    Az
+                    <B>APK Editor</B>
+                    egy nagyszerű eszköz, amelynek segítségével apk állományainkban jó néhány dolgot
+                    átszerkeszthetünk.
+                    Segítségünkre lehet a szövegek lefordításában, ikonok cseréjében, elrendezés
+                    újratervezésében, hirdetések blokkolásában, ingyenes verziók korlátozásainak
+                    eltávolításában, stb. A szerkesztési lehetőségek módja attól függ, hogyan
+                    használjuk azokat. Ahhoz azonban, hogy jól használjuk, szükségünk van némi
+                    alapszintű szakmai ismeretre.
+                </p>
+                <p style="text-align: left;">Kezdésként, nyissunk meg egy apk fájlt egy mappából
+                    vagy a telepített alkalmazásokból. Ez meg fogja jeleníteni az APK fájlon belüli
+                    szerkeszthető információkat. Végezze el a kívánt módosításokat, majd kattintson
+                    a mentés gombra a jobb felső sarokban. A következő részben néhány példát fogok
+                    mutatni. Az egyszerűség kedvéért, cél apk fájlként az 'APK Creator'-t fogom
+                    használni. (Az APK Creator letölthető
+                    <a href="https://play.google.com/store/apps/details?id=com.gmail.heagoo.apkcreator">
+                        INNEN</a>)
+                </p>
+
+                <p
+                        id="example1"
+                        style="text-align: left;">
+                    <B>1. példa: Alkalmazás nevének módosítása</B>
+                    <br>
+                    <B>(1)</B>
+                    Válassza ki a cél alkalmazást a 'Telepített apk módosítása' gombra kattintva,
+                    majd válassza ki az 'APK Creator' alkalmazást.
+                    <br>
+                    <img src="example1_1.jpg">
+                    <br>
+                    <br>
+                    Ezt követően, kattintson a "Teljes szerkesztés (FORRÁS ÚJRAÉPÍTÉSE)" lehetőségre
+                    <br>
+                    <img src="example1_2.jpg">
+                    <br>
+                    <B>(2)</B>
+                    A szerkesztési tevékenységen belül 3 lap található, amelyben a 'Karakterlánc'
+                    van alapértelmezettként kiválasztva. Adja meg a 'creator' szót a kereséshez a
+                    megfelelő elemek megjelenítéséhez:
+                    <br>
+                    <img src="example1_3.jpg">
+                    <br>
+                    Ezután kattintson az elemre a kívánt szöveg megadásához. Például, itt
+                    módosíthatja azt "Alkalmazás készítő"-re
+                    <br>
+                    <img src="example1_4.jpg">
+                    <br>
+                    <B>(3)</B>
+                    Kattintson a Mentés gombra a jobb felső sarokban. Kicsivel később, informáljuk,
+                    ha a módosított apk a mentési helyére került:
+                    <br>
+                    <img src="example1_5.jpg">
+                    <br>
+                    <B>(4)</B>
+                    A módosított apk a fájlkezelőből telepíthető. (De kérjük, vegye figyelembe, hogy
+                    az eredeti alkalmazást a telepítés előtt el kell távolítania, mivel az apk egy
+                    másik kulccsal kerül aláírásra)
+                </p>
+
+                <p
+                        id="example2"
+                        style="text-align: left;">
+                    <B>2. példa: Háttérkép módosítása</B>
+                    <br>
+                    <B>(1)</B>
+                    Válassza ki a cél alkalmazást a 'Telepített apk módosítása' gombra kattintva,
+                    majd válassza ki az 'APK Creator' alkalmazást, és kattintson a 'Teljes
+                    szerkesztés'-re.
+                    <br>
+                    <B>(2)</B>
+                    Kattintson a 'Fájlok' lapra a szerkesztési tevékenység megjelenését követően,
+                    majd lépjen a res mappába, majd azon belül a 'layout' mappába az elemre
+                    kattintva. Kattintson az 'activity_main.xml' fájlra:
+                    <br>
+                    <img src="example2_1.jpg">
+                    <br>
+                    Az 'activity_main.xml' megnyitása után, nézzen bele és látni fogja, hogy a
+                    háttérkép 'bg':
+                    <br>
+                    <img src="example2_2.jpg">
+                    <br>
+                    <B>(3)</B>
+                    Lépjen vissza a 'res' mappába, majd írja be a 'bg' kifejezést, törölje a TXT
+                    kijelölést, majd kattintson a keresés ikonra a 'bg' kifejezést tartalmazó fájlok
+                    kereséséhez:
+                    <br>
+                    <img src="example2_3.jpg">
+                    <br>
+                    (Kérjük, vegye figyelembe: ha a TXT ikon ki van jelölve, azt jelenti, hogy olyan
+                    fájlokat keres, amelyek tartalmazzák a megadott szöveget a fájltartalomban,
+                    máskülönben azt jelenti, hogy olyan fájlokat keres, amelyek tartalmazzák a
+                    megadott szöveget a fájlnévben)
+                    <br>
+                    <B>(4)</B>
+                    Miután megjelenik a keresési eredmény, keressen olyan fájlnevet, mint a
+                    'bg.jpg', 'bg.png', jegyezze meg a fájl útvonalát és lépjen a fő szerkesztési
+                    oldalra a fájl cseréjéhez:
+                    <br>
+                    <img src="example2_4.jpg">
+                    <br>
+                    Itt keresse meg a res/drawable mappát, és kattintson a 'bg.jpg' gombra a
+                    cseréhez:
+                    <br>
+                    <img src="example2_5.jpg">
+                    <br>
+                    <font color="red">MEGJEGYZÉS:</font>
+                    Kérjük, ne válasszon ki nagy fájlt, mondjuk közvetlenül a kamera könyvtárából.
+                    <br>
+                    <B>(5)</B>
+                    A kép cseréje után, kattintson a 'mentés' gombra a jobb felső sarokban. Kicsivel
+                    később, informáljuk, ha a módosított apk a mentési helyére került.
+                    <br>
+                </p>
+
+                <p
+                        id="example3"
+                        style="text-align: left;">
+                    <B>3. példa: Hirdetés eltávolítása</B>
+                    <br>
+                    <B>(1)</B>
+                    Válassza ki a cél alkalmazást a 'Telepített apk módosítása' gombra kattintva,
+                    majd válassza ki az 'APK Creator' alkalmazást, és kattintson a 'Teljes
+                    szerkesztés'-re.
+                    <br>
+                    <B>(2)</B>
+                    Kattintson a 'Fájlok' lapra a szerkesztési forrás megjelenését követően, majd
+                    lépjen a res mappába, majd azon belül a 'layout' mappába az elemre kattintva.
+                    Kattintson az 'activity_main.xml' fájlra, és meg fog jelenni az
+                    activity_main.xml fájl tartalma. Görgessen az utolsó sorra, módosítsa a<br>
+                    layout_height="wrap_content" sort
+                    <br>
+                    erre:
+                    <br>
+                    layout_height="0dip"
+                    <br>
+                    <img src="example3_1.jpg">
+                    <br>
+                    Kattintson a mentés ikonra alul a módosítás mentéséhez.
+                    <br>
+                    (Kérjük, vegye figyelembe, hogy ez csak a főoldalon teszi láthatatlanná a
+                    hirdetést, de hasonló más oldalak esetén is)
+                    <br>
+                    <B>(3)</B>
+                    Közbeszúrt hirdetés esetén, távolítsa el az AdActivity bejegyzést az
+                    AndroidManifest.xml fájlban:
+                    <br>
+                    <img src="example3_2.jpg">
+                    <br>
+                    <B>(4)</B>
+                    A módosítások végrehajtása után kattintson a Mentés gombra a jobb felső
+                    sarokban. Kicsivel később, informáljuk, ha a módosított apk a mentési helyére
+                    került.
+                    <br>
+                </p>
+
+                <p
+                        id="example4"
+                        style="text-align: left;">
+                    <B>4. példa: Egy alkalmazás áthelyezése az SD-kártyára</B>
+                    <br>
+                    (CSAK a pro verzióban érhető el)
+                    <br>
+                    <B>(1)</B>
+                    Válassza ki a cél alkalmazást a 'Telepített apk módosítása' gombra kattintva,
+                    majd válassza ki az 'APK Creator' alkalmazást, és kattintson a 'Teljes
+                    szerkesztés'-re.
+                    <br>
+                    <B>(2)</B>
+                    Lépjen a 'Jegyzékfájl' lapra, majd kattintson a jegyzékfájl sorára (általában a
+                    2. sor)
+                    <br>
+                    <B>(3)</B>
+                    Kattintson a '+' ikonra a kulcs és az érték hozzáadásához
+                    (android:installLocation="auto", lásd alábbi grafikon), majd kattintson az 'OK'
+                    gombra; amikor visszatér az előző párbeszédablakba, kattintson a 'Mentés' gombra
+                    <br>
+                    <img src="example4_1.jpg">
+                    <br>
+                    (MEGJEGYZÉS: módosíthatja az 'auto'-t 'preferExternal' -ra)
+                    <br>
+                    <B>(4)</B>
+                    Kattintson a Mentés gombra a jobb felső sarokban. Kicsivel később, informáljuk,
+                    ha a módosított apk a mentési helyére került.
+                    <br>
+                </p>
+
+                <p
+                        id="example5"
+                        style="text-align: left;">
+                    <B>5. példa: Nemkívánatos engedélyek eltávolítása</B>
+                    <br>
+                    (CSAK a pro verzióban érhető el. Itt mi az internet engedély eltávolítását
+                    fogjuk bemutatni.)
+                    <br>
+                    <B>(1)</B>
+                    Válassza ki a cél alkalmazást a 'Telepített apk módosítása' gombra kattintva,
+                    majd válassza ki az 'APK Creator' alkalmazást, és kattintson a 'Teljes
+                    szerkesztés'-re.
+                    <br>
+                    <B>(2)</B>
+                    Lépjen a 'Jegyzékfájl' lapra, majd kattintson az 'uses-permission' sorára (a 3-5
+                    sor körül kell lennie). Keresse meg az "android.permission.INTERNET" bejegyzést
+                    tartalmazó sort.
+                    <br>
+                    <B>(3)</B>
+                    A sor hosszú megérintésével, az alábbi képen látható ablak fog megjelenni:
+                    <br>
+                    <img src="example5_1.jpg">
+                    <br>
+                    <B>(4)</B>
+                    Kattintson a 'Sor törlése' menüpontra.
+                    <br>
+                    <B>(5)</B>
+                    Kattintson a Mentés gombra a jobb felső sarokban. Kicsivel később, informáljuk,
+                    ha a módosított apk a mentési helyére került.
+                    <br>
+                </p>
+
+                <p
+                        id="issues"
+                        style="text-align: left;">
+                    A visszafejtés kihívást jelentő feladat,<B>vegye figyelembe</B>:
+                    <br>
+                    (1) A "Forráskészlet"/"Jegyzékfájl" lap hosszú megérintésével további
+                    lehetőségeket kínáló menü jeleníthető meg.
+                    <br>
+                    (2) Kérjük, ne használja nagy apk fájlok módosítására, mivel az sok memóriát és
+                    CPU erőforrást igényel, és túlmutathat készüléke képességein.
+                    <br>
+                    (3) Nem garantáljuk, hogy alkalmazásunk az összes apk szerkesztésére képes.
+                    <br>
+                    (4) A módosított apk lehet, hogy nem fog működni, így azt csak saját
+                    felelősségére használja.
+                    <br>
+                </p>
+
+            </div>
+        </center>
+    </body>
+</html>

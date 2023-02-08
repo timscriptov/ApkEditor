@@ -1,0 +1,971 @@
+<html>
+
+    <head>
+        <meta
+                content="text/html; charset=utf-8"
+                http-equiv=Content-Type>
+        <style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:̎ͥ;
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+@font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+@font-face
+	{font-family:"\@̎ͥ";
+	panose-1:2 1 6 0 3 1 1 1 1 1;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+p
+	{margin-right:0in;
+	margin-left:0in;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+
+        </style>
+
+    </head>
+
+    <body lang=EN-US>
+
+        <div class=WordSection1>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <b>
+                    <span style='font-family:"Arial",sans-serif;color:black'>О плагине
+                        автоперевода
+                    </span>
+                </b>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>Плагины автоматического
+                    перевода поддерживаются начиная с версии 1.6.2, однако мы только сейчас открыли
+                    интерфейс для разработчиков. Для создания плагинов вы должны разработать
+                    автономное приложение, которое может получить запрос на перевод, выполнить его и
+                    затем возвратить результат. Вот простое описание того, как разработать плагин
+                    перевода.
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <b>
+                    <span style='font-family:"Arial",sans-serif;color:black'>Получение запроса на
+                        перевод
+                    </span>
+                </b>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>Мы передаём запрос перевода
+                    через TranslateItem, который определяется как:
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>package
+                    com.gmail.heagoo.apkeditor.translate;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>import
+                    java.io.Serializable;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>// ДОЛЖНО быть определено
+                    как здесь, не может быть proguarded
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>открытый класс
+                    TranslateItem использует Serializable {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; private
+                    static final long serialVersionUID = -3101805950698159689L;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; public
+                    String name;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; public
+                    String originValue;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; public
+                    String translatedValue;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; public
+                    TranslateItem(String _n, String _o) {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    this.name = _n;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    this.originValue = _o;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; }</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; public
+                    TranslateItem(String _n, String _o, String _t) {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    this.name = _n;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    this.originValue = _o;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    this.translatedValue = _t;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; }</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>}</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>И, пожалуйста, используйте
+                    следующий код, чтобы получить все передаваемые параметры:
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;
+                    @Override
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;
+                    protected void onCreate(Bundle savedInstanceState) {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    super.onCreate(savedInstanceState);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    // ...
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Intent intent = getIntent();
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Bundle bundle = intent.getExtras();
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    // Код целевого языка, например "-de"
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    this.targetLanguageCode = bundle.getString(&quot;targetLanguageCode&quot;);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    // Переведённые элементы также проходят, так что можно будет пересмотреть их
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    this.translatedFilePath = bundle.getString(&quot;translatedList_file&quot;);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    this.translatedList = (List&lt;TranslateItem&gt;)
+                    readObjectFromFile(translatedFilePath);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    // Непереведённые элементы, которые должны быть переведены
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    String path =bundle.getString(&quot;untranslatedList_file&quot;);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    this.untranslatedList = (List&lt;TranslateItem&gt;) readObjectFromFile(path);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    // ...
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    }
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; public
+                    static Object readObjectFromFile(String filePath) {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Object result = null;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    File file = new File(filePath);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    ObjectInputStream objIn = null;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    try {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    objIn = new ObjectInputStream(new FileInputStream(file));
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    result = objIn.readObject();
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    } catch (IOException e) {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    e.printStackTrace();
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    } catch (ClassNotFoundException e) {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    e.printStackTrace();
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    } finally {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    closeWithoutThrow(objIn);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    }
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    return result;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; }</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <b>
+                    <span style='font-family:"Arial",sans-serif;color:black'>Получение результата
+                        перевода
+                    </span>
+                </b>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>После выполнения перевода
+                    вы должны вернуть результат, используя следующий код:
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; private
+                    void setResult(List&lt;TranslateItem&gt; stringValues) {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Intent intent = new Intent();
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    intent.putExtra(&quot;targetLanguageCode&quot;, this.targetLanguageCode);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    writeObjectToFile(this.translatedFilePath, stringValues);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    intent.putExtra(&quot;translatedList_file&quot;, this.translatedFilePath);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    this.setResult(RESULT_OK, intent);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; }</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; public
+                    static void writeObjectToFile(String filePath, Object obj) {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    File file = new File(filePath);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    ObjectOutputStream objOut = null;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    try {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    objOut = new ObjectOutputStream(new FileOutputStream(file));
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    objOut.writeObject(obj);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    objOut.flush();
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    } catch (IOException e) {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    e.printStackTrace();
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    } finally {
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    closeWithoutThrow(objOut);
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    }
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; }</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <b>
+                    <span style='font-family:"Arial",sans-serif;color:black'>Разрешения
+                        AndroidManifest
+                    </span>
+                </b>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>Запрашиваемые разрешения
+                    (так мы сможем использовать онлайн-переводчики):
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; &lt;uses-permission
+                    android:name=&quot;android.permission.WRITE_EXTERNAL_STORAGE&quot; /&gt;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp; &lt;uses-permission
+                    android:name=&quot;android.permission.INTERNET&quot; /&gt;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-size:12.0pt;font-family:"Times New Roman",serif'>&nbsp;</span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>И, чтобы APK Editor мог
+                    найти плагин, вы должны декларировать активность:
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &lt;activity android:name=&quot;xx.xx.TranslateActivity&quot; android:<b>
+                        exported</b>=&quot;true&quot; &gt;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &lt;intent-filter&gt;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &lt;action android:name=&quot;android.intent.action.VIEW&quot; /&gt;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &lt;category android:name=&quot;android.intent.category.DEFAULT&quot; /&gt;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &lt;data android:mimeType=&quot;<b>
+                        application/com.gmail.heagoo.apkeditor-translate</b>&quot; /&gt;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &lt;/intent-filter&gt;
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='margin-bottom:0in;margin-bottom:.0001pt;line-height:
+normal'>
+                <span style='font-family:"Arial",sans-serif;color:black'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &lt;/activity&gt;
+                </span>
+            </p>
+
+            <p class=MsoNormal>&nbsp;</p>
+
+        </div>
+
+    </body>
+
+</html>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/decode_all_files"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/textview_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:singleLine="true"
+        android:text="@string/decode_all_files"
+        android:textColor="@color/textview_color"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#555555" />
+
+    <TextView
+        android:id="@+id/decode_partial_files"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/textview_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:singleLine="true"
+        android:text="@string/decode_partial_files"
+        android:textColor="@color/textview_color"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#555555" />
+
+    <TextView
+        android:id="@+id/cancel"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/textview_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:singleLine="true"
+        android:text="@android:string/cancel"
+        android:textColor="@color/textview_color"
+        android:textSize="20sp" />
+
+
+</LinearLayout>

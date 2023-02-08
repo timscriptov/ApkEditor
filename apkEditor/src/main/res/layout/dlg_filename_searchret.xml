@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/res_header_selection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/littleblue"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <RelativeLayout
+                android:id="@+id/menu_done"
+                android:layout_width="48dip"
+                android:layout_height="wrap_content"
+                android:background="@drawable/selector_menu_light"
+                android:paddingTop="4dip"
+                android:paddingBottom="4dip">
+
+                <ImageView
+                    android:layout_width="32dip"
+                    android:layout_height="32dip"
+                    android:layout_centerInParent="true"
+                    android:adjustViewBounds="true"
+                    android:src="@drawable/ic_done" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/selection_tip"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginLeft="4dip"
+                android:layout_weight="1"
+                android:background="@color/littleblue" />
+
+            <RelativeLayout
+                android:id="@+id/menu_select"
+                android:layout_width="48dip"
+                android:layout_height="match_parent"
+                android:background="@drawable/selector_menu_light"
+                android:paddingTop="4dip"
+                android:paddingBottom="4dip">
+
+                <ImageView
+                    android:layout_width="32dip"
+                    android:layout_height="32dip"
+                    android:layout_centerInParent="true"
+                    android:src="@drawable/ic_select" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/littleblue"
+            android:gravity="center_vertical"
+            android:minHeight="40dip"
+            android:paddingLeft="4dip"
+            android:text=""
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/lightblue" />
+    </FrameLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:background="#ffe3e3e3" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#ffffffff">
+
+        <ListView
+            android:id="@+id/file_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="4.0dip"
+            android:layout_marginRight="4.0dip"
+            android:cacheColorHint="#00000000"
+            android:fadingEdge="none"
+            android:groupIndicator="@null"
+            android:listSelector="@drawable/list_selector" />
+
+        <LinearLayout
+            android:id="@id/searching_layout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ProgressBar
+                android:id="@id/progress_bar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/commonutil_progressbar" />
+
+            <TextView
+                android:id="@id/tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16.0dip"
+                android:maxLines="2"
+                android:text="@string/searching"
+                android:textColor="@color/lightblue" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/delete"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/close" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,6 @@
+*.apk
+*/build/
+apkEditorPro/release/
+build/
+gradle/
+.gradle/

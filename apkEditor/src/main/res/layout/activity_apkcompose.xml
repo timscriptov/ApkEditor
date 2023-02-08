@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:id="@+id/layout_apk_composing"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/apked_white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:id="@+id/progressBar1"
+                    style="?android:attr/progressBarStyleLarge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:indeterminateDrawable="@drawable/commonutil_progressbar" />
+
+                <TextView
+                    android:id="@+id/progress_tip"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20.0dip"
+                    android:text="@string/in_progress"
+                    android:textAppearance="?android:attr/textAppearanceLarge"
+                    android:textColor="@color/lightblue" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_bg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dip"
+                android:text="@string/put_to_background" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/layout_apk_composed"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/apked_white"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/result_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/succeed" />
+
+            <Button
+                android:id="@+id/btn_hide_warning"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="4dip"
+                android:paddingRight="4dip"
+                android:text="@string/hide_warnings"
+                android:visibility="gone" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1">
+
+                <ListView
+                    android:id="@+id/failed_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+                <ScrollView
+                    android:id="@+id/succeeded_view"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fadingEdge="none"
+                    android:fillViewport="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/result"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="12.0dip"
+                            android:layout_marginRight="12.0dip"
+                            android:textAppearance="?android:attr/textAppearanceMedium"
+                            android:textColor="@color/lightblue" />
+                    </LinearLayout>
+                </ScrollView>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/fix_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_fix_tip"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/fix_invalid_name_tip" />
+
+                <Button
+                    android:id="@+id/btn_fix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:text="@string/fix" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/patch_dex_layout"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:padding="4dip"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_patch_tip"
+                    android:layout_width="0dip"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    android:text="@string/patch_code_cache_tip" />
+
+                <Button
+                    android:id="@+id/btn_patch"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dip"
+                    android:text="@string/patch" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dip">
+
+                <Button
+                    android:id="@+id/btn_remove"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_weight="1"
+                    android:text="@string/remove"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_copy_errmsg"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_weight="2"
+                    android:text="@string/copy_error_msg"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/btn_install"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_marginRight="4dip"
+                    android:layout_weight="1"
+                    android:text="@string/install" />
+
+                <Button
+                    android:id="@+id/btn_close"
+                    android:layout_width="0dip"
+                    android:layout_height="40dip"
+                    android:layout_weight="1"
+                    android:text="@string/close" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+
+</LinearLayout>

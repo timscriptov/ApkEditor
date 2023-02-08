@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="ROOT">
+
+    <PreferenceCategory
+        android:key="Appearance"
+        android:title="@string/appearance">
+        <com.gmail.heagoo.apkeditor.util.IconPickerPreference
+            android:entries="@array/appicon_key"
+            android:entryValues="@array/appicon_value"
+            android:key="MyIcon"
+            android:layout="@layout/item_iconlistpref"
+            android:title="@string/launcher_icon" />
+
+        <CheckBoxPreference
+            android:key="FullScreen"
+            android:summary="@string/full_screen_desc"
+            android:title="@string/full_screen"></CheckBoxPreference>
+
+        <ListPreference
+            android:entries="@array/theme_key"
+            android:entryValues="@array/theme_value"
+            android:key="AppTheme"
+            android:summary="@string/select_theme_desc"
+            android:title="@string/app_theme"></ListPreference>
+
+        <ListPreference
+            android:entries="@array/language_key"
+            android:entryValues="@array/language_value"
+            android:key="Language"
+            android:summary="@string/select_language_desc"
+            android:title="@string/preferred_language"></ListPreference>
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/app_display">
+        <ListPreference
+            android:entries="@array/order_key"
+            android:entryValues="@array/order_value"
+            android:key="AppListOrder"
+            android:title="@string/app_list_order" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="DecodeCategory"
+        android:title="@string/apk_decoding">
+        <ListPreference
+            android:entries="@array/decode_mode_key"
+            android:entryValues="@array/decode_mode_value"
+            android:key="DecodeMode"
+            android:title="@string/decode_mode" />
+        <EditTextPreference
+            android:key="DecodeDirectory"
+            android:summary="@string/decode_dir_summary_may_change"
+            android:title="@string/decode_dir" />
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="ApkBuilding"
+        android:title="@string/apk_building">
+        <ListPreference
+            android:entries="@array/compression_level_key"
+            android:entryValues="@array/compression_level_value"
+            android:key="CompressionLevel"
+            android:summary="@string/compression_level_summary"
+            android:title="@string/compression_level" />
+
+        <com.gmail.heagoo.apkeditor.KeyListPreference
+            android:entries="@array/signer_key"
+            android:entryValues="@array/signer_value_dont_translate"
+            android:key="SignApkWith"
+            android:summary="@string/sign_apk_with_summary"
+            android:title="@string/sign_apk_with" />
+
+        <ListPreference
+            android:entries="@array/output_apkname_key"
+            android:entryValues="@array/output_apkname_value"
+            android:key="OutputApkName"
+            android:summary="@string/output_apk_name_summary"
+            android:title="@string/output_apk_name" />
+
+        <CheckBoxPreference
+            android:key="SmaliEditingEnabled"
+            android:summary="@string/smali_edit_summary"
+            android:title="@string/smali_editing"></CheckBoxPreference>
+
+        <CheckBoxPreference
+            android:key="RebuildConfirmation"
+            android:summary="@string/rebuild_confirm_d_summary"
+            android:title="@string/rebuild_confirmation"></CheckBoxPreference>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/others">
+        <Preference
+            android:key="CleanGarbage"
+            android:summary="@string/clean_garbage_summary"
+            android:title="@string/clean_garbage" />
+        <ListPreference
+            android:entries="@array/file_extract_rename_key"
+            android:entryValues="@array/file_extract_rename_value"
+            android:key="FileRenameOption"
+            android:summary="@string/file_extract_rename_summary"
+            android:title="@string/file_rename" />
+
+    </PreferenceCategory>
+
+</PreferenceScreen>

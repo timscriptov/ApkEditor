@@ -1,0 +1,46 @@
+# virtual methods
+.method public patch()V
+    .registers 4
+
+    .prologue
+    .line 10
+    const/4 v0, 0x0
+
+    .local v0, "i":I
+    :goto_1
+    sget-object v1, Lcom/whatsapp/App;->cb:[Ljava/lang/String;
+
+    array-length v1, v1
+
+    if-lt v0, v1, :cond_7
+
+    .line 15
+    return-void
+
+    .line 11
+    :cond_7
+    sget-object v1,  Lcom/whatsapp/App;->cb:[Ljava/lang/String;
+
+    aget-object v1, v1, v0
+
+    const-string v2, "com.whatsapp"
+
+    invoke-virtual {v1, v2}, Ljava/lang/String;->equals(Ljava/lang/Object;)Z
+
+    move-result v1
+
+    if-eqz v1, :cond_19
+
+    .line 12
+    sget-object v1,  Lcom/whatsapp/App;->cb:[Ljava/lang/String;
+
+    const-string v2, "com.whatsapp.xy"
+
+    aput-object v2, v1, v0
+
+    .line 10
+    :cond_19
+    add-int/lit8 v0, v0, 0x1
+
+    goto :goto_1
+.end method

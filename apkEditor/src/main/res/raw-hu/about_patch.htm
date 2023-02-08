@@ -1,0 +1,1689 @@
+<html xmlns="http://www.w3.org/TR/REC-html40"
+        xmlns:o="urn:schemas-microsoft-com:office:office">
+
+    <head>
+        <meta
+                content="text/html; charset=UTF-8"
+                http-equiv=Content-Type>
+        <meta
+                content=Word.Document
+                name=ProgId>
+        <meta
+                content="Microsoft Word 15"
+                name=Generator>
+        <meta
+                content="Microsoft Word 15"
+                name=Originator>
+        </style>
+    </head>
+
+    <body
+            lang=HU-HU
+            link="#0563C1"
+            style='tab-interval:.5in'
+            vlink="#954F72">
+
+        <div class=WordSection1>
+
+            <p
+                    class=MsoNormal
+                    style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                <b style='mso-bidi-font-weight:normal'>
+                    <u>
+                        <span style='mso-bidi-font-size:11.0pt'>A Patch
+                            modulról…
+                            <u1:p></u1:p>
+                        </span>
+                    </u>
+                </b>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>A patch az APK Editor Pro
+                    1.6.0 változata óta támogatott. Általában ez egy zip fájl, amelyben a patch.txt
+                    és egyéb szükséges fájlok kaptak helyet. A zip fájlban lévő patch.txt állomány
+                    tartalmazza a szabályokat, és az egyéb fájlok által biztosított patch
+                    készleteket.
+                    <o:p></o:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Ez a módszer még nincs
+                    teljesen
+                    kiforrva, így legyen körültekintő, ha egyéb módosításokkal kombinálja.
+                    <o:p></o:p>
+                </span>
+            </p>
+
+            <p class=MsoNormal>
+                <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt;
+mso-fareast-font-family:"Times New Roman"'>Továbbá, van egy patch-szerkesztő (egy
+                    nyílt forráskódú projekt), amely itt érhető el:
+                    <a href="https://github.com/SnowVolf/PCompiler">
+                        https://github.com/SnowVolf/PCompiler
+                    </a>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </span>
+            </p>
+
+            <p class=MsoNormal>
+                <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>
+                    <o:p>&nbsp;</o:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                <b style='mso-bidi-font-weight:normal'>
+                    <u>
+                        <span style='mso-bidi-font-size:11.0pt'>Patch
+                            formátum
+                            <u1:p></u1:p>
+                        </span>
+                    </u>
+                </b>
+            </p>
+
+            <p
+                    class=MsoNormal
+                    style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Egy patch főként
+                    szabályokból
+                    áll. Jelenleg 8 patch szabályt támogat:
+                    <o:p></o:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpFirst
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>ADD_FILES
+                    <u3:p></u3:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpMiddle
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>REMOVE_FILES
+                    <u3:p></u3:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpMiddle
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>MATCH_REPLACE
+                    <u3:p></u3:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpMiddle
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>MATCH_ASSIGN
+                    <u3:p></u3:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpMiddle
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>MATCH_GOTO
+                    <u3:p></u3:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpMiddle
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>GOTO
+                    <u3:p></u3:p>
+                </span>
+            </p>
+
+            <p
+                    class=MsoListParagraphCxSpMiddle
+                    style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                    <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    </span>
+                    </span>
+                </span>
+                <![endif]>
+                <span style='font-size:10.0pt;font-family:"Courier New"'>MERGE</span>
+                <u3:p></u3:p>
+                <o:p></o:p>
+            </p>
+
+            <span style='font-variant-ligatures: normal;font-variant-caps: normal;
+orphans: 2;text-align:start;widows: 2;-webkit-text-stroke-width: 0px;
+text-decoration-style: initial;text-decoration-color: initial;float:none;
+word-spacing:0px'>
+
+                <p
+                        class=MsoListParagraphCxSpMiddle
+                        style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                    <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                        <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                        </span>
+                    </span>
+                    <![endif]>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>EXECUTE_DEX</span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoListParagraphCxSpLast
+                        style='text-indent:-.25in;mso-list:l0 level1 lfo2;
+mso-layout-grid-align:none;text-autospace:none'><![if !supportLists]>
+                    <span style='font-family:Symbol;mso-fareast-font-family:Symbol;mso-bidi-font-family:
+Symbol'>
+                        <span style='mso-list:Ignore'>&middot;<span style='font:7.0pt "Times New Roman"'>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        </span>
+                        </span>
+                    </span>
+                    <![endif]>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='font-variant-ligatures: normal;font-variant-caps: normal;orphans: 2;
+text-align:start;widows: 2;-webkit-text-stroke-width: 0px;text-decoration-style: initial;
+text-decoration-color: initial;float:none;word-spacing:0px'>DUMMY
+                        </span>
+                    </span>
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                    <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Egy szabályon belül
+                        minden
+                        sor a &#8216;#&#8217; karakterrel kezdődik, amely egy megjegyzés sort
+                        jelent,
+                        és mindegyik konfiguráció egy új sorban kezdődik.
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                    <span style='font-size:10.0pt;mso-bidi-font-size:12.0pt'>Kérjük, kövesse az
+                        alábbi
+                        illusztrációkat és példákat a patch.txt létrehozásához. Patch példák is
+                        rendelkezésre
+                        állnak, amelyeket menthet és beletekinthet.
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[ADD_FILES]
+                    (Fájlok hozzáadása)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>A fájlok alkalmazáshoz
+                        való hozzáadására használható.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>NAME
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a szabály nevét határozza meg.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>SOURCE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        az archívumban lévő fájl nevét határozza meg, amelyet át kell másolni az
+                        alkalmazásba.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        az elérési útvonalat határozza meg az alkalmazáson belül.
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[REMOVE_FILES]
+                    (Fájlok törlése)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Az alkalmazásban lévő
+                        fájlok
+                        vagy mappák törlésére használható.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>NAME
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a szabály nevét határozza meg.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        az alkalmazáson belül törölni kívánt cél útvonalat határozza meg. Ha több
+                        fájlt kell egyszerre törölni, meg kell adnia az összes fájl vagy mappa
+                        nevét,
+                        és mindegyik névnek új sorban kell kezdődnie.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Például:
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>[REMOVE_FILES]
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>TARGET:
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span class=GramE>
+                        <span style='font-size:10.0pt;font-family:"Courier New"'>res/values-
+                            <span class=SpellE>hu</span>
+                        </span>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span class=GramE>
+                        <span style='font-size:10.0pt;font-family:"Courier New"'><u3:p></u3:p>
+                            res/values-
+                            <span class=SpellE>hz</span>
+                        </span>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'><u3:p></u3:p>res/values
+                    </span>
+                    <span class=GramE>
+                        <span style='font-size:10.0pt;font-family:"Cambria Math",serif;
+mso-bidi-font-family:"Cambria Math"'>&#8203;&#8203;
+                        </span>
+                        <span style='font-size:10.0pt;font-family:"Courier New"'>/</span>
+                    </span>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>strings.xml
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>[/REMOVE_FILES]
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                    <span style='mso-spacerun:yes'>&nbsp;</span>[MATCH_REPLACE] (Keresés és csere)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>A talált eredmények
+                        keresésére
+                        és cseréjére használható.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>Name
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a szabály nevét határozza meg. (Üresen hagyhatja, de ha más helyekről
+                        szeretne
+                        erre a szabályra ugrani, a név megadása kötelező)
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a fájl elérési útvonalát határozza meg a keresés és csere művelet
+                        elvégzéséhez.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>MATCH
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a keresendő szöveget határozza meg.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>REGEX
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        igaz vagy hamis. Az igaz azt jelenti, hogy a karakterlánc egyezés egy
+                        reguláris kifejezés.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>REPLACE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:
+"Courier New"'>: a talált eredmények helyébe lépő szöveget határozza meg. (Az üresen
+                        hagyott mezővel töröltetheti a találatot)
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[MATCH_ASSIGN]
+                    (Változók meghatározása)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>A változók
+                        meghatározására szolgál.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>Name
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a szabály nevét határozza meg. (Üresen hagyhatja, de ha más helyekről
+                        szeretne
+                        erre a szabályra ugrani, a név megadása kötelező)
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a fájl elérési útvonalát határozza meg az egyeztetési művelet elvégzéséhez.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>MATCH
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a keresendő szöveget határozza meg.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>REGEX
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        igaz vagy hamis. Az igaz azt jelenti, hogy a karakterlánc egyezés egy
+                        reguláris kifejezés.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>ASSIGN
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a változó nevét és értékét határozza meg. (Például: p1 = $ {GROUP1}) Ha
+                        egynél több
+                        változó van, akkor minden további változónak új sorban kell
+                        kezdődnie.
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[MATCH_GOTO]
+                    (Ha egyezik, akkor a cél szabályra lép)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Megadott fájlokban lévő
+                        bizonyos
+                        szövegek megkeresésére használható, és sikeres egyezés esetén a "GOTO"
+                        mezőbe írt
+                        szabály végrehajtására ugrik.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Ha a szöveg nem
+                        található,
+                        akkor az azt követő szabály után végrehajtandó szabályt fogja végrehajtani.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>Name
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a szabály nevét határozza meg.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a fájl elérési útvonalát határozza meg az egyeztetési művelet elvégzéséhez.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>MATCH
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a keresendő szöveget határozza meg.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>REGEX
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        igaz vagy hamis. Az igaz azt jelenti, hogy a karakterlánc egyezés egy
+                        reguláris kifejezés.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>GOTO
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a következő szabály nevét határozza meg. Ha egyezik, akkor végrehajtja ezt a
+                        szabályt.
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                    <span style='mso-spacerun:yes'>&nbsp;</span>[GOTO] (Átirányítás bizonyos
+                    szabályra)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Más szabályra való
+                        átirányításra
+                        használható.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>GOTO
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a következő szabály nevét adja meg.
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[MERGE]
+                    (Hivatkozás források)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Ez egy erőteljes
+                        szabály,
+                        amely egyesíti a meghatározott erőforrásokat a jelenlegi alkalmazással. Ez
+                        azt
+                        jelenti, hogy az erőforrás hozzáadásra kerül, az AZONOSÍTÓK újratervezésével
+                        együtt, az erőforrásokkal való ütközés elkerülése érdekében.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>NAME
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        a szabály nevét határozza meg.
+                        <u3:p></u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>SOURCE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        az összevonni kívánt erőforrás fájl neve.
+                        <u3:p></u3:p>
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <o:p>&nbsp;</o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[EXECUTE_DEX]
+                    (A
+                    <span class=SpellE>dex</span>
+                    parancsfájl végrehajtása)
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Szabály egy
+                        testreszabott
+                        parancsfájl végrehajtására.
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>SCRIPT
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        A végrehajtandó zip állományon belüli cél parancsfájl.
+                        <u3:p></u3:p>
+                        Egy
+                        <span class=SpellE>dex</span>
+                        fájlnak kell lennie, amely a következő parancsokkal
+                        hozható létre:
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'>
+                    <span class=SpellE>
+                        <span class=GramE>
+                            <span style='font-size:10.0pt;font-family:"Courier New"'>javac</span>
+                        </span>
+                    </span>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>-source 1.7 -target 1.7
+                        test/AddDebugInfo.java
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'>
+                    <span class=GramE>
+                        <span style='font-size:10.0pt;
+font-family:"Courier New"'>dx
+                        </span>
+                    </span>
+                    <span style='font-size:10.0pt;
+font-family:"Courier New"'>--
+                        <span class=SpellE>dex</span>
+                        --output=
+                        <span class=SpellE>script.dex</span>
+                        test/
+                        <span class=SpellE>AddDebugInfo.class</span>
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>SMALI_NEEDED
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:
+"Courier New"'>: Azt jelzi, hogy a parancsfájlnak szüksége van-e
+                        <span class=SpellE>smali</span>
+                        kódra
+                        vagy sem.
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='text-indent:.5in;mso-layout-grid-align:none;
+text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Ha
+                        igaz (true), és a
+                        <span class=SpellE>smali</span>
+                        kód még nincs létrehozva,
+                        akkor amikor a szabály végrehajtásra kerül, a patch létre fogja hozni a
+                        <span class=SpellE>smali</span>
+                        kódot az első lépésként.
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>MAIN_CLASS
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:
+"Courier New"'>: Az osztály elérési útvonala, amely tartalmazza a belépést
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>ENTRANCE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:
+"Courier New"'>: Végrehajtandó cél módja, a módszernek 4 karakterlánc paramétert
+                        kell elfogadnia.
+                        <o:p></o:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>PARAM
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        Az utolsó paraméter átadása a cél módba.
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>[DUMMY]
+                    (Dummy szabály)
+                    <u3:p></u3:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>Dummy szabály. Ez
+                        inkább egy
+                        címke, amely csak NÉV mezőt tartalmaz. A &#8220;MATCH_GOTO&#8221; vagy
+                        &#8220;GOTO&#8221; szabályból, tudunk ugrani egy dummy szabályra.
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-margin-top-alt:auto;mso-margin-bottom-alt:auto'>
+                    <u3:p>&nbsp;</u3:p>
+                </p>
+
+                <p class=MsoNormal>
+                    <span style='mso-fareast-font-family:"Times New Roman"'>És,
+                        itt egy példa:
+                        <u3:p></u3:p>
+                    </span>
+                    <o:p></o:p>
+                </p>
+
+                <p class=MsoNormal>
+                    <span style='mso-fareast-font-family:"Times New Roman"'>
+                        <u3:p>&nbsp;</u3:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># Szükséges minimális
+                        modul
+                        verzió; a modul a 1.6.8-ban a 2-es verzió
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[MIN_ENGINE_VER]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>1
+                        <u1:p></u1:p>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p>&nbsp;</u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>Ez</span>
+                        a patch készítője
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[AUTHOR]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span class=SpellE>
+                        <span class=GramE>
+                            <span style='font-size:10.0pt;font-family:"Courier New";
+color:black'>apkeditor
+                            </span>
+                        </span>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p><u1:p></u1:p>&nbsp;
+                        </u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>A</span>
+                        csomag neve
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[PACKAGE]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>*
+                        <u1:p></u1:p>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p>&nbsp;</u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>Fájlok</span>
+                        hozzáadása a cél helyhez
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[ADD_FILES]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>SOURCE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>layout.zip
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>
+                        <span class=GramE>res/layout
+                            <u1:p></u1:p>
+                        </span>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>EXTRACT
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:
+"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>
+                        <span class=GramE>true
+                            <u1:p></u1:p>
+                        </span>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>[/ADD_FILES]
+                        <u1:p></u1:p>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p>&nbsp;</u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># Fájlok eltávolítása
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>Több</span>
+                        cél is megadható
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[REMOVE_FILES]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>TARGET:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='text-indent:24.0pt;mso-layout-grid-align:none;
+text-autospace:none'>
+                    <span class=GramE>
+                        <span style='font-size:10.0pt;
+font-family:"Courier New"'>res/values-xx
+                        </span>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='text-indent:24.0pt;mso-layout-grid-align:none;
+text-autospace:none'>
+                    <span class=GramE>
+                        <span style='font-size:10.0pt;
+font-family:"Courier New"'><u1:p></u1:p>res/values-
+                            <span class=SpellE>yy</span>
+                        </span>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'><u1:p></u1:p>
+                        [/REMOVE_FILES]
+                        <u1:p></u1:p>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p>&nbsp;</u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># Egyező tartalmak
+                        lecserélése a cél fájlban. Legyen óvatos a REGEX=true beállítással.
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># Az összes egyező
+                        előfordulás
+                        lecserélődik
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># REGEX=igaz állás
+                        esetén,
+                        az EGYEZŐ tartalomnak egy sorban kell lennie
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>A következő</span>
+                        példa törölni fogja az
+                        <span style='color:black'>internet</span>
+                        engedélyt
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[MATCH_REPLACE]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>TARGET
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>AndroidManifest.xml
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>MATCH
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>&lt;uses-permission
+                        <span class=SpellE>android
+                            <span class=GramE>:name</span>
+                        </span>
+                        =&quot;<span class=SpellE>android.permission.INTERNET</span>&quot; /&gt;<u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>REGEX
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>
+                        <span class=GramE>false
+                            <u1:p></u1:p>
+                        </span>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>REPLACE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:
+"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>[/MATCH_REPLACE]
+                        <u1:p></u1:p>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p>&nbsp;</u1:p>
+                    </span>
+                    <u3:p></u3:p>
+                    <o:p></o:p>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <u1:p>&nbsp;</u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># A MERGE parancsot az
+                        erőforrások és kód egyesítésére tervezték más apk fájlokból
+                        <span class=SpellE>apk
+                            <u1:p></u1:p>
+                        </span>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># A források és a
+                        <span class=SpellE>
+                            <span style='color:black'>smali fájlok</span>
+                        </span>
+                        egyesítése
+                        az extra.zip archívumon belül
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'># res/values/public.xml
+                        meg
+                        kell adni az extra.zip archívumon belül
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>A</span>
+                        patch motor megpróbálja
+                        <span style='color:black'>újraírni</span>
+                        a hozzáadott
+                        azonosítók mindegyikét
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>#
+                        <span class=GramE>A</span>
+                        hozzáadott azonosítóknak különböznie kell a már meglévő azonosítóktól
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New";color:red'>[MERGE]
+                            <u1:p></u1:p>
+                        </span>
+                    </b>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <b style='mso-bidi-font-weight:normal'>
+                        <span style='font-size:10.0pt;font-family:
+"Courier New"'>SOURCE
+                        </span>
+                    </b>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>:
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>
+                        <span style='mso-spacerun:yes'>&nbsp;&nbsp;&nbsp;</span>extra.zip
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+                <p
+                        class=MsoNormal
+                        style='mso-layout-grid-align:none;text-autospace:none'>
+                    <span style='font-size:10.0pt;font-family:"Courier New"'>[/MERGE]
+                        <u1:p></u1:p>
+                    </span>
+                </p>
+
+        </div>
+
+    </body>
+
+</html>

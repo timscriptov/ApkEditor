@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="compression_level_key">
+        <item>0 (Без сціскання)</item>
+        <item>1 (Найлепшая хуткасць)</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5 (Сярэдне)</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9 (Найлепшае сцісканне)</item>
+    </string-array>
+    <string-array name="order_key">
+        <item>"Па назве дадатка "</item>
+        <item>Па часе ўсталёўкі</item>
+    </string-array>
+    <string-array name="order_value">
+        <item>"Па назве дадатка "</item>
+        <item>Па часе ўсталёўкі</item>
+    </string-array>
+    <string-array name="signer_key">
+        <item>testkey</item>
+        <item>Ключ створаны ў APK Editor</item>
+        <item>custom key</item>
+    </string-array>
+    <string-array name="appicon_key">
+        <item>Прадвызначаны значок (1)</item>
+        <item>(2)</item>
+        <item>(3)</item>
+        <item>(4)</item>
+        <item>(5)</item>
+        <item>(6)</item>
+        <item>(7)</item>
+        <item>(8)</item>
+        <item>(9)</item>
+        <item>(10)</item>
+        <item>(11)</item>
+        <item>(12)</item>
+        <item>(13)</item>
+        <item>(14)</item>
+        <item>(15)</item>
+        <item>(16)</item>
+        <item>(17)</item>
+    </string-array>
+    <string-array name="decode_dir_key">
+        <item>"Унутраны каталог "</item>
+        <item>"Адвольны каталог "</item>
+    </string-array>
+    <string-array name="file_extract_rename_key">
+        <item>Аўтаматычна (дадаваць суфікс ліку)</item>
+        <item>Перазапісаць</item>
+    </string-array>
+    <string-array name="language_key">
+        <item>"Прадвызначана "</item>
+        <item>"Арабская "</item>
+        <item>"Кітайская "</item>
+        <item>"Чэшская "</item>
+        <item>Галандская</item>
+        <item>"Англійская "</item>
+        <item>"Французская "</item>
+        <item>"Нямецкая "</item>
+        <item>Іўрыт</item>
+        <item>Венгерская</item>
+        <item>Персідская</item>
+        <item>Польская</item>
+        <item>"Партугальская "</item>
+        <item>"Расійская "</item>
+        <item>Славацкая</item>
+        <item>Іспанская</item>
+        <item>"Турэцкая "</item>
+        <item>Украінская</item>
+        <item>В’етнамская</item>
+    </string-array>
+    <string-array name="signer_value_dont_translate">
+        <item>testkey</item>
+        <item>editorkey</item>
+        <item>customkey</item>
+    </string-array>
+    <string-array name="theme_key">
+        <item>Светлая тэма</item>
+        <item>Цёмная тэма 1</item>
+        <item>Цёмная тэма 2</item>
+    </string-array>
+</resources>

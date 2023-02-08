@@ -1,0 +1,66 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+APP_ABI	Application.mk	/^APP_ABI := armeabi,x86$/;"	m
+EVENT_NUM	filemon.c	67;"	d	file:
+Java_com_gmail_heagoo_filemon_FilemonService_readEvent	filemon.c	/^JNIEXPORT jint JNICALL Java_com_gmail_heagoo_filemon_FilemonService_readEvent$/;"	f
+Java_com_gmail_heagoo_filemon_FilemonService_readEvents	filemon.c	/^JNIEXPORT jint JNICALL Java_com_gmail_heagoo_filemon_FilemonService_readEvents$/;"	f
+Java_com_gmail_heagoo_filemon_FilemonService_startFilemon	filemon.c	/^JNIEXPORT jint JNICALL Java_com_gmail_heagoo_filemon_FilemonService_startFilemon$/;"	f
+Java_com_gmail_heagoo_filemon_FilemonService_stopFilemon	filemon.c	/^JNIEXPORT jint JNICALL Java_com_gmail_heagoo_filemon_FilemonService_stopFilemon$/;"	f
+LOCAL_LDLIBS	Android.mk	/^LOCAL_LDLIBS := -llog$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE    := filemon$/;"	m
+LOCAL_PATH	Android.mk	/^LOCAL_PATH := $(call my-dir)$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := filemon.c$/;"	m
+LOGD	common.h	5;"	d
+LOG_TAG	common.h	4;"	d
+MAX_BUF_SIZE	filemon.c	68;"	d	file:
+MAX_NODE_SIZE	filemon.c	34;"	d	file:
+Node	filemon.c	/^} Node;$/;"	t	typeref:struct:_Node	file:
+_COMMON_H	common.h	2;"	d
+_Node	filemon.c	/^typedef struct _Node {$/;"	s	file:
+_request_hdr	common.h	/^typedef struct _request_hdr {$/;"	s
+_response_hddr	common.h	/^typedef struct _response_hddr {$/;"	s
+allocateNode	filemon.c	/^static Node *allocateNode()$/;"	f	file:
+code	common.h	/^	int code;$/;"	m	struct:_request_hdr
+do_request	monitor.c	/^static void do_request(request_hdr *request, response_hdr *response) {$/;"	f	file:
+event_array	filemon.c	/^const char * event_array[] = {  $/;"	v
+event_id	filemon.c	/^static int event_id = 0;$/;"	v	file:
+expandChildNode	filemon.c	/^static int expandChildNode(Node *p)$/;"	f	file:
+fd	filemon.c	/^static int fd = 0;$/;"	v	file:
+filePathFieldId	filemon.c	/^static jfieldID filePathFieldId;$/;"	v	file:
+fileop_class	filemon.c	/^static jclass fileop_class;$/;"	v	file:
+findNodeByWd	filemon.c	/^static Node *findNodeByWd(int wd)$/;"	f	file:
+g_nodeSize	filemon.c	/^static int g_nodeSize = 0; $/;"	v	file:
+g_nodes	filemon.c	/^static Node g_nodes[MAX_NODE_SIZE];$/;"	v	file:
+getNextEvent	filemon.c	/^static struct inotify_event *getNextEvent()$/;"	f	file:
+getNextNode	filemon.c	/^static Node *getNextNode(Node *p)$/;"	f	file:
+idFieldId	filemon.c	/^static jfieldID idFieldId;$/;"	v	file:
+index	common.h	/^	int index;$/;"	m	struct:_request_hdr
+index	common.h	/^	int index;$/;"	m	struct:_response_hddr
+initChildNode	filemon.c	/^static void initChildNode(Node *parent, Node *child, struct dirent *ent)$/;"	f	file:
+is_rootMode	filemon.c	/^static int is_rootMode = 0;$/;"	v	file:
+is_running	filemon.c	/^static int is_running = 0;$/;"	v	file:
+main	filemon.c	/^int main(int argc,char *argv[])$/;"	f
+opCodeFieldId	filemon.c	/^static jfieldID opCodeFieldId;$/;"	v	file:
+param_num	common.h	/^	int param_num;$/;"	m	struct:_request_hdr
+params	common.h	/^	int params[1];$/;"	m	struct:_request_hdr
+path	filemon.c	/^	char *path;$/;"	m	struct:_Node	file:
+pathLen	filemon.c	/^	int pathLen;$/;"	m	struct:_Node	file:
+pid	common.h	/^	int pid;$/;"	m	struct:_request_hdr
+pid	common.h	/^	int pid;$/;"	m	struct:_response_hddr
+request_filepath	monitor.c	/^char *request_filepath = NULL;$/;"	v
+request_hdr	common.h	/^} request_hdr;$/;"	t	typeref:struct:_request_hdr
+response_filepath	monitor.c	/^char *response_filepath = NULL;$/;"	v
+response_hdr	common.h	/^} response_hdr;$/;"	t	typeref:struct:_response_hddr
+result_num	common.h	/^	int result_num;$/;"	m	struct:_response_hddr
+results	common.h	/^	void *results[1];$/;"	m	struct:_response_hddr
+ret	common.h	/^	int ret;$/;"	m	struct:_response_hddr
+service_thread	monitor.c	/^void *service_thread(void *param) {$/;"	f
+setRecordValue	filemon.c	/^static void setRecordValue$/;"	f	file:
+so_entry	monitor.c	/^int so_entry(char * a) {$/;"	f
+startFileMon	filemon.c	/^int startFileMon(const char *dirPath)$/;"	f
+timeFieldId	filemon.c	/^static jfieldID timeFieldId;$/;"	v	file:
+wd	filemon.c	/^	int wd;$/;"	m	struct:_Node	file:

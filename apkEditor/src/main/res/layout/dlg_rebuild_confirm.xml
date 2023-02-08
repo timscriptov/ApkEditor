@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ExpandableListView
+        android:id="@+id/modificationList"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_marginTop="4dip"
+        android:layout_marginBottom="8dip"
+        android:layout_weight="1"
+        android:groupIndicator="@null"></ExpandableListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginBottom="8dip"
+        android:background="#ff808080" />
+
+    <CheckBox
+        android:id="@+id/cb_rebuild_dex"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rebuild_dex_file" />
+
+    <CheckBox
+        android:id="@+id/cb_rebuild_res"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/rebuild_res_file" />
+
+    <CheckBox
+        android:id="@+id/cb_resign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dip"
+        android:text="@string/sign_the_apk" />
+
+</LinearLayout>

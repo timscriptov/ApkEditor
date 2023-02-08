@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/overall_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#808080"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/image_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical"></LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#111111">
+
+        <HorizontalScrollView
+            android:id="@+id/tools_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="4dip"
+            android:scrollbarSize="1dip"
+            android:scrollbarThumbHorizontal="@color/pnge_grey">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_remove_bg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/remove_bg"
+                    android:textColor="#ffffffff"
+                    app:backgroundTint="#ff606060" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_replace_color"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/replace_color"
+                    android:textColor="#ffffffff"
+                    android:visibility="gone"
+                    app:backgroundTint="#ff606060" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_resize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/resize"
+                    android:textColor="#ffffffff"
+                    app:backgroundTint="#ff606060" />
+
+                <android.support.v7.widget.AppCompatButton
+                    android:id="@+id/btn_transparency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/transparency"
+                    android:textColor="#ffffffff"
+                    app:backgroundTint="#ff606060" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+        <LinearLayout
+            android:id="@+id/remove_bg_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/bg_color"
+                android:textColor="@color/white" />
+
+            <View
+                android:id="@+id/bg_color_view"
+                android:layout_width="12dip"
+                android:layout_height="12dip"
+                android:layout_margin="8dip"
+                android:background="@color/white" />
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:id="@+id/seekbar_tolerance"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="99"
+                    android:maxHeight="2dp"
+                    android:minHeight="2dp"
+                    android:progressDrawable="@drawable/pngeditor_seekbar"
+                    android:thumbTint="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_tolerance"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_remove_it"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/remove"
+                android:textColor="#ffffffff"
+                app:backgroundTint="#ff606060" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/resize_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentTop="true"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_new_size"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="8dip"
+                        android:paddingTop="4dip"
+                        android:paddingBottom="4dip"
+                        android:text="@string/new_size"
+                        android:textColor="@color/white" />
+
+                    <LinearLayout
+                        android:id="@+id/width_labelvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dip"
+                        android:paddingBottom="4dip">
+
+                        <TextView
+                            android:id="@+id/tv_width_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dip"
+                            android:text="@string/width"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_width_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dip"
+                            android:minWidth="32dip"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/height_labelvalue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="4dip"
+                        android:paddingBottom="4dip">
+
+                        <TextView
+                            android:id="@+id/tv_height_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dip"
+                            android:text="@string/height"
+                            android:textColor="@color/white" />
+
+                        <TextView
+                            android:id="@+id/tv_height_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="4dip"
+                            android:minWidth="32dip"
+                            android:textColor="@color/white"
+                            android:textSize="12sp" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <CheckBox
+                    android:id="@+id/cb_without_zoom"
+                    style="@style/CheckBoxStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentBottom="true"
+                    android:text="@string/resize_without_zooming"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_do_resize"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="@string/resize"
+                android:textColor="#ffffffff"
+                app:backgroundTint="#ff606060" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/transparency_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:visibility="invisible">
+
+            <LinearLayout
+                android:layout_width="0dip"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <SeekBar
+                    android:id="@+id/seekbar_transparency"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:max="255"
+                    android:maxHeight="2dp"
+                    android:minHeight="2dp"
+                    android:progressDrawable="@drawable/pngeditor_seekbar"
+                    android:thumbTint="@color/white" />
+
+                <TextView
+                    android:id="@+id/tv_transparency"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/white"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+            <android.support.v7.widget.AppCompatButton
+                android:id="@+id/btn_transparency_preview"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/preview"
+                android:textColor="#ffffffff"
+                app:backgroundTint="#ff606060" />
+        </LinearLayout>
+    </FrameLayout>
+
+
+</LinearLayout>

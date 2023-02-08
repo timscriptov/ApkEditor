@@ -1,0 +1,58 @@
+plugins {
+    id 'com.android.application'
+}
+
+android {
+    compileSdk 33
+
+    defaultConfig {
+        applicationId "com.gmail.heagoo.apkeditor.pro"
+        minSdk 14
+        targetSdk 26
+        multiDexEnabled true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles 'proguard-project.txt'
+
+            ndk {
+                abiFilters 'x86', 'armeabi-v7a', 'arm64-v8a', 'x86_64'
+            }
+        }
+    }
+    namespace 'com.gmail.heagoo.apkeditor.pro'
+}
+
+dependencies {
+    implementation project(':apkEditor')
+    implementation project(':appDataEditor')
+   // implementation 'com.android.support:appcompat-v7:28.0.0'
+    // https://mvnrepository.com/artifact/org.smali/smali
+    implementation 'org.smali:baksmali:2.4.0'
+    implementation 'org.smali:smali:2.4.0'
+//    implementation files('libs/baksmali-2.4.0.jar')
+//    implementation files('libs/smali-2.4.0.jar')
+
+    // Dependencies for jadx
+    implementation 'commons-io:commons-io:2.5'
+    implementation 'asm:asm-all:3.3.1'
+    implementation files('libs/dx-1.10.jar')
+    implementation files('libs/android-5.1-clst-core.jar')
+    implementation 'org.slf4j:slf4j-api:1.7.21'
+    implementation 'uk.com.robust-it:cloning:1.9.2'
+    implementation 'com.intellij:annotations:12.0@jar'
+}

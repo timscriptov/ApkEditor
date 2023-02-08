@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="compression_level_key">
+        <item>0 (Bez Kompresji)</item>
+        <item>1 (Najlepsza Szybkość)</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5 (Średnia)</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9 (Najlepsza Kompresja)</item>
+    </string-array>
+    <string-array name="compression_level_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+    </string-array>
+    <string-array name="fileTypeAudio">
+        <item>.mp3</item>
+        <item>.wav</item>
+        <item>.ogg</item>
+        <item>.midi</item>
+    </string-array>
+    <string-array name="fileTypeExcel">
+        <item>.xls</item>
+        <item>.xlsx</item>
+    </string-array>
+    <string-array name="fileTypeImage">
+        <item>.png</item>
+        <item>.gif</item>
+        <item>.jpg</item>
+        <item>.jpeg</item>
+        <item>.bmp</item>
+    </string-array>
+    <string-array name="fileTypePPT">
+        <item>.ppt</item>
+        <item>.pptx</item>
+    </string-array>
+    <string-array name="fileTypePackage">
+        <item>.jar</item>
+        <item>.zip</item>
+        <item>.rar</item>
+        <item>.gz</item>
+        <item>.apk</item>
+        <item>.img</item>
+    </string-array>
+    <string-array name="fileTypePdf">
+        <item>.pdf</item>
+    </string-array>
+    <string-array name="fileTypeText">
+        <item>.txt</item>
+        <item>.java</item>
+        <item>.c</item>
+        <item>.cpp</item>
+        <item>.py</item>
+        <item>.xml</item>
+        <item>.json</item>
+        <item>.log</item>
+    </string-array>
+    <string-array name="fileTypeVideo">
+        <item>.mp4</item>
+        <item>.rmvb</item>
+        <item>.avi</item>
+        <item>.flv</item>
+    </string-array>
+    <string-array name="fileTypeWebText">
+        <item>.htm</item>
+        <item>.html</item>
+        <item>.php</item>
+        <item>.jsp</item>
+    </string-array>
+    <string-array name="fileTypeWord">
+        <item>.doc</item>
+        <item>.docx</item>
+    </string-array>
+    <string-array name="order_key">
+        <item>Wg Nazwy Aplikacji</item>
+        <item>Wg Czasu Instalacji</item>
+    </string-array>
+    <string-array name="order_value">
+        <item>Wg Nazwy Aplikacji</item>
+        <item>Wg Czasu Instalacji</item>
+    </string-array>
+    <string-array name="signer_key">
+        <item>Testowy klucz</item>
+        <item>Klucz stworzony przez APK Editor</item>
+        <item>Niestandardowy klucz</item>
+    </string-array>
+
+    <string-array name="output_apkname_key">
+        <item>{nazwa paczki}_[un]signed.apk</item>
+        <item>gen_[un]signed.apk</item>
+        <item>{nazwa aplikacji}_[un]signed.apk</item>
+    </string-array>
+    <string-array name="output_apkname_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+    <string-array name="theme_key">
+        <item>Jasny Motyw</item>
+        <item>Ciemny Motyw 1</item>
+        <item>Ciemny Motyw 2</item>
+    </string-array>
+    <string-array name="theme_value">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+    </string-array>
+</resources>
+

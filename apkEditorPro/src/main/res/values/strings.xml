@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">APK Editor Pro</string>
+    <string name="why_get_pro" translatable="false">Warum sollten Sie die Pro-Version verwenden?</string>
+    <string name="pro_promote" translatable="false">"● Die Werbung wird entfernt.</string>
+
+</resources>
+

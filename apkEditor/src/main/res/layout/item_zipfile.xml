@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingLeft="6.0dip"
+    android:paddingRight="6.0dip">
+
+    <ImageView
+        android:id="@+id/file_icon"
+        android:layout_width="32.0dip"
+        android:layout_height="32.0dip"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="5.0dip"
+        android:layout_marginRight="11.0dip"
+        android:contentDescription="@string/app_name"
+        android:scaleType="fitCenter" />
+
+    <LinearLayout
+        android:layout_width="0dip"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:minHeight="40dip"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/filename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="2.0dip"
+            android:ellipsize="marquee"
+            android:singleLine="true"
+            android:textAppearance="?android:textAppearanceMedium"
+            android:textColor="@color/lightblack"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/detail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="-4.0dip"
+            android:textAppearance="?android:textAppearanceSmall"
+            android:textColor="@color/lightblack"
+            android:textSize="5.0pt" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_edit"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:background="@drawable/selector_menu_light">
+
+        <ImageView
+            android:id="@+id/image_replace"
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/handdraw_edit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/menu_save"
+        android:layout_width="40dip"
+        android:layout_height="40dip"
+        android:background="@drawable/selector_menu_light">
+
+        <ImageView
+            android:layout_width="24dip"
+            android:layout_height="24dip"
+            android:layout_centerInParent="true"
+            android:src="@drawable/handdraw_save" />
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffffff"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/blue"
+        android:focusable="false"
+        android:padding="2dip"
+        android:text="@string/add_a_language"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="@color/apked_white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="#ffc0c0c0" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:padding="4dip">
+
+        <TextView
+            android:id="@+id/language_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/language_spinner"
+            android:layout_margin="4dip"
+            android:focusable="false"
+            android:text="@string/language"
+            android:textColor="@color/lightblue" />
+
+        <Spinner
+            android:id="@+id/language_spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@id/language_tv"
+            android:background="@drawable/selector_slim_spinner" />
+
+        <EditText
+            android:id="@+id/language_code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/language_spinner"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="4dip"
+            android:layout_toRightOf="@id/language_tv"
+            android:inputType="text"
+            android:maxLines="10" />
+
+        <TextView
+            android:id="@+id/code_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/language_tv"
+            android:layout_alignBottom="@id/language_code"
+            android:layout_margin="4dip"
+            android:focusable="false"
+            android:text="@string/code"
+            android:textColor="@color/lightblue" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_addlang_ok"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@android:string/ok" />
+
+        <Button
+            android:id="@+id/btn_addlang_cancel"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:text="@android:string/cancel" />
+    </LinearLayout>
+
+</LinearLayout>

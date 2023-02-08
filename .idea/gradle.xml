@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="GradleSettings">
+    <option name="linkedExternalProjectsSettings">
+      <GradleProjectSettings>
+        <option name="testRunner" value="GRADLE" />
+        <option name="distributionType" value="DEFAULT_WRAPPED" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/PngEditor" />
+            <option value="$PROJECT_DIR$/_AndroidCommon" />
+            <option value="$PROJECT_DIR$/_AndroidEditor" />
+            <option value="$PROJECT_DIR$/apkEditor" />
+            <option value="$PROJECT_DIR$/apkEditorPro" />
+            <option value="$PROJECT_DIR$/apkLibrary" />
+            <option value="$PROJECT_DIR$/appDataEditor" />
+            <option value="$PROJECT_DIR$/appListUtil" />
+            <option value="$PROJECT_DIR$/httpServer" />
+            <option value="$PROJECT_DIR$/imageViewLib" />
+            <option value="$PROJECT_DIR$/sqliteUtil" />
+          </set>
+        </option>
+      </GradleProjectSettings>
+    </option>
+  </component>
+</project>

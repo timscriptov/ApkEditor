@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/littleblue"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:paddingLeft="4dip" >
+
+            <TextView
+                android:id="@+id/label_appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:text="@string/appdm_label_app_name"
+                android:textColor="@color/lightblack" />
+
+            <TextView
+                android:id="@+id/tv_appname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="4dip"
+                android:layout_toRightOf="@id/label_appname"
+                android:minWidth="120dip"
+                android:singleLine="true"
+                android:textColor="@color/lightblue" />
+
+            <TextView
+                android:id="@+id/label_prefname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignRight="@id/label_appname"
+                android:layout_below="@id/label_appname"
+                android:singleLine="true"
+                android:text="@string/appdm_label_shared_preference"
+                android:textColor="@color/lightblack" />
+
+            <TextView
+                android:id="@+id/tv_prefname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_appname"
+                android:layout_marginLeft="4dip"
+                android:layout_toRightOf="@id/label_prefname"
+                android:singleLine="true"
+                android:textColor="@color/lightblue" />
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_raw_file"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:text="@string/appdm_raw_file" />
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="0dip"
+        android:layout_gravity="center"
+        android:layout_weight="1"
+        android:indeterminateDrawable="@drawable/commonutil_progressbar" />
+
+    <ScrollView
+        android:id="@+id/scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:scrollbars="horizontal|vertical"
+        android:visibility="gone" >
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fillViewport="true"
+            android:scrollbars="horizontal|vertical" >
+
+            <TableLayout
+                android:id="@+id/valueTable"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:stretchColumns="*" >
+            </TableLayout>
+        </HorizontalScrollView>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@color/littleblue"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="4.0dip" >
+
+        <EditText
+            android:id="@+id/tv_keyword"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/button_search"
+            style="@style/button"
+            android:layout_width="96dip"
+            android:layout_height="40dip"
+            android:text="@string/appdm_search" />
+
+        <Button
+            android:id="@+id/button_close"
+            style="@style/button"
+            android:layout_width="96dip"
+            android:layout_height="40dip"
+            android:layout_gravity="center"
+            android:text="@string/close" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+</LinearLayout>

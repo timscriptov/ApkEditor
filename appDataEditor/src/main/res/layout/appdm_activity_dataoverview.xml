@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/header_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/littleblue"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/app_icon"
+            android:layout_width="64.0dip"
+            android:layout_height="64.0dip"
+            android:contentDescription="@android:string/no"
+            android:padding="10.0dip"
+            android:src="@android:drawable/btn_dialog" />
+
+        <LinearLayout
+            android:layout_width="0.0dip"
+            android:layout_height="fill_parent"
+            android:layout_gravity="center"
+            android:layout_weight="1.0"
+            android:gravity="center"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/app_name"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="marquee"
+                android:padding="2.0dip"
+                android:singleLine="true"
+                android:textColor="@color/lightblue"
+                android:textSize="16.0sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/app_pkgpath"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="2dip"
+                android:ellipsize="marquee"
+                android:paddingLeft="2.0dip"
+                android:singleLine="true"
+                android:textColor="@color/lightblue"
+                android:textSize="10.0sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/button_backup"
+            style="@style/button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dip"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="4dip"
+            android:text="@string/appdm_backup" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0.0dip"
+        android:layout_weight="1.0"
+        android:background="@color/white" >
+
+        <!-- APP Info (Signature) -->
+
+        <ListView
+            android:id="@+id/appInfo_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="4.0dip"
+            android:cacheColorHint="#00000000"
+            android:groupIndicator="@null"
+            android:visibility="visible" />
+
+        <!-- Database -->
+
+        <ListView
+            android:id="@+id/database_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="4.0dip"
+            android:cacheColorHint="#00000000"
+            android:groupIndicator="@null"
+            android:visibility="invisible" />
+
+        <!-- Preference -->
+
+        <ListView
+            android:id="@+id/preference_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="4.0dip"
+            android:cacheColorHint="#00000000"
+            android:groupIndicator="@null"
+            android:visibility="invisible" />
+        
+        <!-- File list -->
+        <ListView
+            android:id="@+id/files_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_margin="4.0dip"
+            android:cacheColorHint="#00000000"
+            android:groupIndicator="@null"
+            android:visibility="invisible" />
+
+        <LinearLayout
+            android:id="@+id/layout_scanning"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/white"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:visibility="invisible" >
+
+            <ProgressBar
+                android:id="@+id/progress_bar"
+                style="?android:attr/progressBarStyleLarge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:indeterminateDrawable="@drawable/commonutil_progressbar" />
+
+            <TextView
+                android:id="@+id/tv_tip"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="16.0dip"
+                android:text="@string/loading"
+                android:textColor="@color/lightblue" />
+        </LinearLayout>
+    </FrameLayout>
+
+    <RadioGroup
+        android:id="@+id/main_radio"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/littleblue"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/tab_appinfo"
+            style="@style/main_tab_bottom"
+            android:checked="true"
+            android:drawableTop="@drawable/appdm_info_blue"
+            android:singleLine="true"
+            android:text="@string/appdm_basic_info" />
+
+        <RadioButton
+            android:id="@+id/tab_preference"
+            style="@style/main_tab_bottom"
+            android:checked="true"
+            android:drawableTop="@drawable/appdm_config"
+            android:singleLine="true"
+            android:text="@string/appdm_preference" />
+
+        <RadioButton
+            android:id="@+id/tab_database"
+            style="@style/main_tab_bottom"
+            android:checked="false"
+            android:drawableTop="@drawable/appdm_db"
+            android:singleLine="true"
+            android:text="@string/appdm_database" />
+
+        <RadioButton
+            android:id="@+id/tab_files"
+            style="@style/main_tab_bottom"
+            android:checked="false"
+            android:drawableTop="@drawable/appdm_files"
+            android:singleLine="true"
+            android:text="@string/appdm_files" />
+    </RadioGroup>
+
+    <LinearLayout
+        android:id="@+id/adViewLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+</LinearLayout>

@@ -1,0 +1,17 @@
+<resources>
+
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/deepblue</item>
+        <item name="colorPrimaryDark">@color/deepblue</item>
+        <item name="colorAccent">@color/lightblue</item>
+        <item name="android:actionModeBackground">@color/deepblue</item>
+    </style>
+
+    <style name="CheckBoxStyle" parent="Base.Theme.AppCompat">
+        <item name="colorPrimary">@color/deepblue</item>
+        <item name="colorPrimaryDark">@color/deepblue</item>
+        <item name="colorAccent">@color/lightblue</item>
+    </style>
+</resources>

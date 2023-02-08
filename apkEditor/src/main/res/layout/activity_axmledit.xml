@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/overview_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/littleblue"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/apk_icon"
+            android:layout_width="20.0dip"
+            android:layout_height="20.0dip"
+            android:layout_gravity="center"
+            android:layout_marginLeft="12.0dip"
+            android:layout_marginTop="4dip"
+            android:layout_marginRight="12.0dip"
+            android:layout_marginBottom="4dip"
+            android:contentDescription="@android:string/no" />
+
+        <TextView
+            android:id="@+id/apk_label"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:padding="2.0dip"
+            android:singleLine="true"
+            android:textColor="@color/lightblack"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_summary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="2dip"
+            android:layout_marginRight="2dip"
+            android:textColor="@color/lightblue" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1"
+        android:background="#ffffffff">
+
+        <ListView
+            android:id="@+id/files_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </ListView>
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/commonutil_progressbar" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/bottom_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/littleblue"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="4.0dip"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/save"
+            android:textSize="14.0dip"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/btn_close"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_margin="4.0dip"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:text="@string/close"
+            android:textSize="14.0dip" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,197 @@
+﻿<html>
+    <body>
+        <p>
+            <center>
+        <H1>APK Editor</H1>
+        </center></p>
+
+        <p>
+        <ul>
+            <li>
+                <a href="#about">Az APK Editor alkalmazásról…</a>
+            </li>
+            <li>Példák a használatára</li>
+            <ol type="decimal">
+                <li>
+                    <a href="#example1">Alkalmazás nevének módosítása</a>
+                </li>
+                <li>
+                    <a href="#example2">Háttérkép módosítása</a>
+                </li>
+                <li>
+                    <a href="#example3">Hirdetések eltávolítása</a>
+                </li>
+                <li>
+                    <a href="#example4">Alkalmazás áthelyezése az SD-kártyára</a>
+                </li>
+                <li>
+                    <a href="#example5">Nemkívánatos engedélyek eltávolítása</a>
+                </li>
+            </ol>
+            <li>
+                <a href="#issues">Tudnivalók</a>
+            </li>
+        </ul>
+
+        </p>
+
+
+        <p id="about">
+            Az
+            <B>APK Editor</B>
+            egy nagyszerű eszköz, amelynek segítségével apk állományainkban jó néhány dolgot
+            átszerkeszthetünk.
+            Ez jó pár dologban segítségünkre lehet, például a karakterláncok honosításában,
+            háttérképek cseréjében, elrendezés újratervezésében, hirdetések blokkolásában,
+            engedélyek eltávolításában, stb. A szerkesztési lehetőségek módja a használattól függ.
+            Ahhoz azonban, hogy jól használja, szükség van néhány alapszintű szakmai ismeretre.
+            <br>
+            A kezdéshez, csak nyisson meg egy apk fájlt egy mappából vagy a telepített alkalmazások
+            közül. Ekkor néhány szerkeszthető információ jelenik meg az apk állományon belül. Hajtsa
+            végre a módosításokat, amit csak szeretne, majd nyomja meg a mentés gombot a jobb felső
+            sarokban. Ez minden! Könnyen használható, nem igaz? A következő részben mutatok néhány
+            példát. Az egyszerűség kedvéért, a 'Hack App Data' alkalmazást használom cél apk
+            fájlként. (A Hack App Data letölthető a saját alkalmazás listámról)
+        </p>
+
+        <p id="example1">
+            <B>1. példa: Alkalmazás nevének módosítása</B>
+            <br>
+            (1) Válassza ki a kívánt alkalmazást a 'Telepített apk módosítása' gombra kattintva,
+            majd válassza ki a 'Hack App Data' alkalmazást.
+            <br>
+            <img src="example1_step1.jpg">
+            <br>
+            (2) A szerkeszthető adatok meg fognak jelenni, amint rákattintott az alkalmazásra, írja
+            be a 'Hack' kifejezést a cél karakterlánc megtalálására, majd módosítsa az értéket kedve
+            szerint. Például, változtassa azt 'App Data Hacker'-re
+            <br>
+            <img src="example1_step2.jpg">
+            <br>
+            (3) Kattintson a Mentés gombra a jobb felső sarokban. Egy picivel később, látni fogja a
+            módosított apk fájl mentési helyét.
+            <br>
+            <img src="example1_step3.jpg">
+            <br>
+            (4) A módosított apk a fájlkezelőből telepíthető. (De vegye figyelembe, hogy az eredeti
+            alkalmazást el kell távolítani a telepítés előtt, mivel a csomag neve nem változott)
+        </p>
+
+        <p id="example2">
+            <B>2. példa: Háttérkép módosítása</B>
+            <br>
+            (1) Válassza ki a kívánt alkalmazást a 'Telepített apk módosítása' gombra kattintva,
+            majd válassza ki a 'Hack App Data' alkalmazást.
+            <br>
+            (2) Kattintson a 'Forráskészlet' lapra, miután a szerkeszthető készletek megjelentek,
+            majd az elemre kattintva lépjen be a 'drawable' mappába. Kattintson a 'hacker_bg.jpg'
+            fájlra, ekkor az alkalmazást azt kéri tőlünk, hogy válasszunk egy képet a cseréhez. Csak
+            válassza ki a képet, amit készített. (A formátumnak meg kell egyeznie, esetünkben jpg
+            fájl szükséges)
+            <br>
+            (3) Kattintson a Mentés gombra a jobb felső sarokban. Egy picivel később, látni fogja a
+            módosított apk fájl mentési helyét.
+            <br>
+        </p>
+
+        <p id="example3">
+            <B>3. példa: Hirdetés eltávolítása</B>
+            <br>
+            (1) Válassza ki a kívánt alkalmazást a 'Telepített apk módosítása' gombra kattintva,
+            majd válassza ki a 'Hack App Data' alkalmazást.
+            <br>
+            (2) Kattintson a 'Forráskészlet' fülre, miután a szerkeszthető készletek megjelentek,
+            majd az elemre kattintva lépjen be a 'layout' mappába. Kattintson az 'activity_main.xml'
+            fájlra, amely megjeleniti az activity_main.xml fájl tartalmát. Kattintson a
+            'Szerkesztés' gombra, majd görgessen a legutolsó sorra, itt módosítsa a<br>
+            layout_height="wrap_content" részt
+            <br>
+            erre:
+            <br>
+            layout_height="0dip"
+            <br>
+            <img src="example3_step2.jpg">
+            <br>
+            Ezt követően, kattintson az alábbi 'Mentés' gombra a módosítás mentéséhez.
+            <br>
+            (Kérjük, vegye figyelembe, hogy ez csak a főoldalon látható hirdetést teszi
+            láthatatlanná, de hasonlóképpen működik más oldalakon is)
+            <br>
+            (3) Kattintson a Mentés gombra a jobb felső sarokban. Egy picivel később, látni fogja a
+            módosított apk fájl mentési helyét.
+            <br>
+        </p>
+
+        <p id="example4">
+            <B>4. példa: Egy alkalmazás felkészítése arra, hogy áthelyezhető legyen az SD-kártyára
+            </B>
+            <br>
+            (CSAK a pro változatban érhető el. Próbálja ki az
+            <a href="https://play.google.com/store/apps/details?id=com.gmail.heagoo.sdcardmovable">
+                "Apps Movable"
+            </a>
+            nevű alkalmazásunkat, ha nem rendelkezik a pro verzióval)
+            <br>
+            (1) Válassza ki a kívánt alkalmazást a 'Telepített apk módosítása' gombra kattintva,
+            majd válassza ki a 'Hack App Data' alkalmazást.
+            <br>
+            (2) Kattintson a 'Jegyzékfájl' fülre, majd kattintson a jegyzékfájl sorára (általában a
+            2. sor)
+            <br>
+            (3) Kattintson a '+' ikonra egy kulcs vagy érték hozzáadásához
+            (android:installLocation="auto", lásd az alábbi grafikon), majd kattintson az 'OK'
+            gombra; amikor visszatér a korábbi párbeszédablakba, kattintson a 'Mentés'-re
+            <br>
+            <img src="example4_step3.jpg">
+            <br>
+            (4) Kattintson a Mentés gombra a jobb felső sarokban. Egy picivel később, látni fogja a
+            módosított apk fájl mentési helyét.
+            <br>
+        </p>
+
+        <p id="example5">
+            <B>5. példa: Nemkívánatos engedélyek eltávolítása</B>
+            <br>
+            (CSAK a pro verzióban érhető el. Itt mi az internet engedély eltávolítását fogjuk
+            bemutatni.)
+            <br>
+            (1) Válassza ki a kívánt alkalmazást a 'Telepített apk módosítása' gombra kattintva,
+            majd válassza ki a 'Hack App Data' alkalmazást.
+            <br>
+            (2) Kattintson a 'Jegyzékfájl' fülre, majd kattintson a felhasználási engedélyek sorra
+            (általában a 4-6. sor). Keresse meg az "android.permission.INTERNET" nevet tartalmazó
+            sort.
+            <br>
+            (3) Hosszan érintse meg a sort, az alábbi képen látható ablak fog megjelenni:
+            <br>
+            <img src="example5_step3.jpg">
+            <br>
+            (4) Kattintson a 'Törlés' menüelemre.
+            <br>
+            (5) Kattintson a Mentés gombra a jobb felső sarokban. Egy picivel később, látni fogja a
+            módosított apk fájl mentési helyét.
+            <br>
+        </p
+
+        <p id="issues">
+            A kódvisszafejtés nem egyszerű feladat,<B>kérjük, vegye figyelembe</B>:
+            <br>
+            (1) A "Forráskészlet"/"Jegyzékfájl" lap hosszú megérintésével további lehetőségeket
+            kínáló menü jeleníthető meg.
+            <br>
+            (2) A legtöbb problémát az elfogyott memória okozza. Ebben az esetben, állítson le
+            minden felesleges alkalmazást, lépjen ki teljesen az APK Editor-ból, majd próbálkozzon
+            újra.
+            <br>
+            (3) Kérjük, ne használja nagy apk fájlok módosítására, mivel az sok memóriát és CPU
+            erőforrást igényel, és túlmutathat készüléke képességein.
+            <br>
+            (4) Nem garantáljuk, hogy alkalmazásunk az összes apk szerkesztésére képes.
+            <br>
+            (5) A módosított apk lehet, hogy nem fog működni, így azt csak saját felelősségére
+            használja.
+            <br>
+        </p>
+
+    </body>
+</html>

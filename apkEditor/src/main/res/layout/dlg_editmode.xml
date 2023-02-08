@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/full_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/textview_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:singleLine="true"
+        android:text="@string/full_edit"
+        android:textColor="@color/textview_color"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#555555" />
+
+    <TextView
+        android:id="@+id/simple_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/textview_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:singleLine="true"
+        android:text="@string/simple_edit"
+        android:textColor="@color/textview_color"
+        android:textSize="20sp" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#555555" />
+
+    <TextView
+        android:id="@+id/common_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/textview_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:singleLine="true"
+        android:text="@string/common_edit"
+        android:textColor="@color/textview_color"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/xml_edit_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:layout_width="fill_parent"
+            android:layout_height="1px"
+            android:background="#555555" />
+
+        <TextView
+            android:id="@+id/xml_edit"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:background="@drawable/textview_bg"
+            android:gravity="center_vertical"
+            android:paddingLeft="8dip"
+            android:singleLine="true"
+            android:text="@string/xml_file_edit"
+            android:textColor="@color/textview_color"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/data_edit_divide"
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="#555555"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/data_edit"
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:background="@drawable/textview_bg"
+        android:gravity="center_vertical"
+        android:paddingLeft="8dip"
+        android:singleLine="true"
+        android:text="@string/edit_data_root"
+        android:textColor="@color/textview_color"
+        android:textSize="20sp"
+        android:visibility="gone" />
+
+</LinearLayout>

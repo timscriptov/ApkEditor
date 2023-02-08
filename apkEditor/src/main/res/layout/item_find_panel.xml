@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SlidingDrawer xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sliding_drawer"
+    android:layout_width="180.0dip"
+    android:layout_height="fill_parent"
+    android:layout_gravity="right"
+    android:layout_marginBottom="48.0dip"
+    android:content="@+id/panel_content"
+    android:focusable="false"
+    android:handle="@+id/panel_button"
+    android:orientation="horizontal"
+    android:visibility="gone">
+
+    <ImageView
+        android:id="@id/panel_button"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:background="#ff111111"
+        android:gravity="center"
+        android:padding="2dip"
+        android:src="@drawable/edit_slide_left" />
+
+    <RelativeLayout
+        android:id="@id/panel_content"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ff111111">
+
+        <ViewAnimator
+            android:id="@+id/searchAnimator"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <!--  
+            <ListView
+                android:id="@id/documentList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:background="#ff111111"
+                android:focusable="false"
+                android:orientation="vertical" />
+            -->
+            <include layout="@layout/item_find_view" />
+        </ViewAnimator>
+    </RelativeLayout>
+
+</SlidingDrawer>

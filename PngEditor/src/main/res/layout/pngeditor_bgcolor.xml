@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#333333">
+
+    <View
+        android:id="@+id/white_view"
+        android:layout_width="16dip"
+        android:layout_height="16dip"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="4dip"
+        android:background="@color/white" />
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/btn_close"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:text="@string/close"
+        android:textColor="#ffffffff"
+        app:backgroundTint="#ff606060" />
+
+    <View
+        android:id="@+id/black_view"
+        android:layout_width="16dip"
+        android:layout_height="16dip"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dip"
+        android:layout_toStartOf="@id/btn_close"
+        android:background="@color/black" />
+
+    <SeekBar
+        android:id="@+id/seekbar_bgcolor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toStartOf="@id/black_view"
+        android:layout_toEndOf="@id/white_view"
+        android:max="255"
+        android:maxHeight="2dp"
+        android:minHeight="2dp"
+        android:progressDrawable="@drawable/pngeditor_seekbar"
+        android:thumbTint="@color/white" />
+
+
+</RelativeLayout>

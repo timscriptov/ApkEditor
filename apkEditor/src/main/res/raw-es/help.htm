@@ -1,0 +1,236 @@
+<html>
+    <body>
+        <p>
+            <center>
+        <H1>APK Editor</H1>
+        </center></p>
+
+        <p>
+        <ul>
+            <li>
+                <a href="#about">Acerca de APK Editor</a>
+            </li>
+            <li>Ejemplos de c�mo usarlo</li>
+            <ol type="decimal">
+                <li>
+                    <a href="#example1">Modificar el Nombre de la Aplicaci�n</a>
+                </li>
+                <li>
+                    <a href="#example2">Cambios en la UI: Modificar la Disposici�n de Elementos</a>
+                </li>
+                <li>
+                    <a href="#example3">Hacer que una Aplicaci�n sea "Movible" a la Tarjeta-SD</a>
+                </li>
+                <li>
+                    <a href="#example4">Eliminar Anuncios</a>
+                </li>
+                <li>
+                    <a href="#example5">Eliminar Permisos No Deseados</a>
+                </li>
+            </ol>
+            <li>
+                <a href="#issues">Notas y Advertencias</a>
+            </li>
+        </ul>
+
+        </p>
+
+
+        <p id="about">
+            <B>APK Editor</B>
+            es una poderosa herramienta con la que es posible modificar los archivos de un APK para
+            hacer con ellos infinidad de cosas como medio de entretenimiento y diversi�n.
+            Le ser� de gran ayuda para tareas tales como la localizaci�n y edici�n de cadenas de
+            texto, reemplazo de iconos y gr�ficos, reestructuraci�n de la disposici�n de elementos
+            de la Interfaz, e incluso, para la eliminaci�n de la publicidad, cambiar permisos
+            innecesarios o no deseados, etc. Lo que es posible hacer con APK Editor depender� de
+            c�mo Ud. la utilice. Sin embargo, para poder emplearla bien, es necesario tener algunos
+            ligeros conocimientos profesionales, aunque no demasiados.
+            <br>
+        </p>
+        Para que pueda comenzar a trabajar con APK Editor, le mostraremos aqu� algunos sencillos
+        ejemplos de c�mo hay que proceder para realizar algunas acciones. A t�tulo orientativo, le
+        presentamos la aplicaci�n '5 Balls'. (Si desea verla y descargarla,
+        <a href="market://details?id=com.gmail.heagoo.fiveballs">
+            <B>Haga Clic Aqu�</B>
+        </a>
+        )
+        <br>
+        </p>
+        Actualmente, APK Editor ofrece 3 modos de edici�n:
+        <br>
+        </p>
+        (1) Edici�n Completa, que le permitar� acceder y manipular todos los recursos para
+        recompilarlos y guardar los cambios tras la edici�n. Es la opci�n m�s potente y completa,
+        pero es muy sol�cita en recursos de CPU y de RAM, y adem�s, ocasionalmente puede presentar
+        algunos fallos.
+        <br>
+        (2) Reemplazar Archivos, que le permitir�, sencillamente, cambiar y/o modificar algunos
+        archivos de recursos en el APK. Le podr� servir, por ejemplo, para cambiar y afirmar alguna
+        im�gen y/o recurso. Adem�s, esta opci�n redimensionar� por Ud. autom�ticamente las im�genes
+        al tama�o adecuado.
+        <br>
+        (3) Edici�n R�pida, que le permitir�, con muy poco esfuerzo, cambiar o editar aspectos tales
+        como el nombre de la aplicaci�n o del paquete, la ubicaci�n predeterminada de instalaci�n,
+        etc.
+        </p>
+
+        <p id="example1">
+            <B>Ejemplo 1: Modificar el Nombre de la Aplicaci�n</B>
+            <br>
+        </p>
+        (1) Seleccione la aplicaci�n que desee modificar pulsando sobre 'Seleccinar Apk' y a
+        continuaci�n, seleccione '5 Balls'
+        <br>
+        </p>
+        <img src="app_select.jpg">
+        <br>
+        </p>
+        (2) En el cuadro de di�logo de la edici�n, seleccione 'Edici�n R�pida', d�nde podr� ver la
+        informaci�n que es editable tal y como se muestra en el siguiente gr�fico:
+        <br>
+        </p>
+        <img src="common_edit.jpg">
+        <br>
+        </p>
+        (3) Sustituya el nombre '5 Balls' por 'Five Balls'.
+        <br>
+        (4) Pulse sobre el bot�n 'Guardar' y espere un momento hasta que el APK est� listo.
+        <br>
+        (5) Pulse sobre 'Desinstalar' para deshacerse de la aplicaci�n original, y seguidamente,
+        pulse sobre 'Instalar' para hacer lo propio con el nuevo APK. (Es necesario desinstalar
+        previamente la aplicaci�n original debido a que tras la manipulaci�n, las Firmas entre ambas
+        ser�n distintas)
+        <br>
+        Tambi�n es posible modificar el nombre de la aplicaci�n en el modo de Edici�n Completa.
+        </p>
+
+        <p id="example2">
+            <B>Ejemplo 2: Cambiar la Disposici�n de un Elemento de la UI</B>
+            <br>
+        </p>
+        Suponga que quiere hacer m�s grande el bot�n de la p�gina principal, digamos un poco m�s
+        ancho.
+        <br>
+        (1) Seleccione la aplicaci�n que desee modificar pulsando sobre 'Seleccionar APK' y a
+        continuaci�n, seleccione '5 Balls'
+        <br>
+        (2) En el cuadro de di�logo de la edici�n, seleccione 'Edici�n Completa', y espere un
+        momento para dar tiempo a que se descompile el APK.
+        <br>
+        (3) Vaya entonces a la p�gina 'Recursos', pulse en 'layout', y luego, haga clic en el
+        archivo 'main.xml'.
+        <br>
+        (4) El archivo xml se abrir�, y en �l podr� ver una serie de l�neas que comienzan con '&lt;Button'.
+        Pulse en esta l�nea para que se abra un nuevo cuadro de di�logo:
+        <br>
+        </p>
+        <img src="layout_edit.jpg">
+        <br>
+        </p>
+        (5) Cambie el valor del elemento 'android:width' de los '100.0dip' iniciales por el valor de
+        '160.0dip'.
+        <br>
+        (6) Gu�rdelo y proceda a la re-instalaci�n.
+        <br>
+        </p>
+        El bot�n antes de la modificaci�n:
+        <br>
+        </p>
+        <img src="button_before.jpg">
+        <br>
+        </p>
+        Y el mismo bot�n despu�s de modificarlo:
+        <br>
+        </p>
+        <img src="button_after.jpg">
+        </p>
+
+        <p id="example3">
+            <B>Ejemplo 3: Hacer que una Aplicaci�n pueda moverse a la Tarjeta-SD</B>
+            <br>
+        </p>
+        Es muy similiar al Ejemplo 1.
+        <br>
+        Seleccione 'Edici�n R�pida', y a continuaci�n, cambie la ubicaci�n de instalaci�n del
+        segundo elemento tal y como se observa en el siguiente gr�fico:
+        <br>
+        </p>
+        <img src="movable_edit.jpg">
+        </p>
+
+        <p id="example4">
+            <B>Ejemplo 4: Eliminar Anuncios</B>
+            <br>
+        </p>
+        Es posible emplear esta herramienta para eliminar la publicidad en ciertas aplicaciones.
+        Disculpe que �ste no sea el caso y que '5 Balls', no tenga anuncios que quitar, y que no la
+        podamos tomar ahora como ejemplo de c�mo realizar esta acci�n.
+        <br>
+        Puede recurrir al antiguo panel de
+        <a href="oldhelp.htm">Ayuda</a>
+        d�nde podr� tener m�s referencias. Simplemente coja la idea de ah�, puesto que 'Hack App
+        Data' ya no podr� ser instalada nunca m�s despu�s de la modificaci�n.
+        <br>
+        (La idea b�sica es hacer que el anuncio sea invisible en el esquema de disposici�n de la
+        p�gina.)
+        </p>
+
+        <p id="example5">
+            <B>Ejemplo 5: Eliminar Permisos No Deseados</B>
+            <br>
+        </p>
+        (Funci�n S�LO disponible en la Versi�n PRO. En este ejemplo le mostraremos c�mo eliminar los
+        permisos de Internet)
+        <br>
+        (1) Seleccione la aplicaci�n que desee modificar pulsando sobre 'Seleccionar APK' y a
+        continuaci�n, seleccione '5 Balls'. En el cuadro emergente de di�logo que aparecer�,
+        seleccione 'Edici�n Completa'
+        <br>
+        (2) Espere un momento para dar tiempo a que se descompile el APK.
+        <br>
+        (3) Pulse sobre la pesta�a 'Manifiesto' y a continuaci�n, haga clic en las l�neas de
+        'uses-permission' (Deber�a encontrarse entre las l�neas 4-6). Localice la l�nea que contenga
+        el elemento denominado "android.permission.INTERNET".
+        <br>
+        (4) Pulse prolongadamente sobre esa l�nea y se abrir� un cuadro de di�logo como este:
+        <br>
+        </p>
+        <img src="example5_step3.jpg">
+        <br>
+        </p>
+        (5) Pulse 'Eliminar'en el men�.
+        <br>
+        (6) A continuaci�n, haga clic en el bot�n 'Guardar' situado en la esquina superior derecha
+        de ls pantalla. Despu�s de unos instantes, se le informar� de que el APK se ha guardado en
+        una determinada ubicaci�n.
+        <br>
+        </p>
+        <p id="issues"></p>
+        <B>�Nadie dijo nunca que la ingenier�a inversa fuera una tarea f�cil! As� pu�s, tenga en
+            cuenta lo siguiente:
+        </B>
+        <br>
+        </p>
+        (1) Pulsando prolongadamente sobre la pesta�a "Recursos"/"Manifiesto", podr� Ud. probar m�s
+        operaciones.
+        <br>
+        (2) La mayor�a de los colapsos de APK Editor son debidos a la saturaci�n de la capacidad de
+        la RAM. Para evitar esas situaciones, por favor, tome la precauci�n de cerrar todas las
+        aplicaciones innecesarias que se est�n ejecutando en ese momento, salga de APK Editor, e
+        int�ntelo de nuevo.
+        <br>
+        (3) Por favor; evite utilizar APK Editor para editar archivos APK muy grandes, puesto que se
+        pueden llegar a consumir cantidades ingentes de recursos de CPU y Memoria y que podr�an ir
+        m�s all� de las posibilidades de su Dispositivo.
+        <br>
+        (4) NO le podemos garantizar que pueda editar con APK Editor todos los APK's que Ud. desee.
+        <br>
+        (5) Las aplicaciones modificadas con APK Editor podr�an no funcionar, o hacerlo
+        inadecuadamente. �As� pu�s, �s�lo exclusivamente bajo su responsabilidad y a su propia
+        cuenta y riesgo!
+        <br>
+        </p>
+
+    </body>
+</html>

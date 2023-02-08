@@ -1,0 +1,9 @@
+LOCAL_PATH := $(call my-dir)  
+  
+include $(CLEAR_VARS)  
+  
+LOCAL_LDLIBS += -L$(SYSROOT)/usr/lib -llog   
+#LOCAL_ARM_MODE := arm  
+LOCAL_MODULE    := memctl
+LOCAL_SRC_FILES := libmemctl.c memctl.c
+include $(BUILD_SHARED_LIBRARY)

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/editorView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.gmail.heagoo.neweditor.ObScrollView
+        android:id="@+id/editorScrollview"
+        android:layout_width="match_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1.0"
+        android:fillViewport="true"
+        android:scrollbarSize="2dip"
+        android:scrollbarThumbVertical="@drawable/coloritem_cc"
+        android:scrollbars="vertical">
+
+        <LinearLayout
+            android:id="@+id/editorLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/lineNumbers"
+
+                android:layout_width="40.0dip"
+                android:layout_height="match_parent"
+                android:focusable="false"
+                android:gravity="center|right|top"
+                android:lineSpacingMultiplier="1.16"
+                android:padding="2.0dip"
+                android:textSize="14.0sp"
+                android:typeface="monospace" />
+
+            <View
+                android:id="@+id/divider"
+                android:layout_width="1.0px"
+                android:layout_height="match_parent" />
+
+            <com.gmail.heagoo.neweditor.ObEditText
+
+                android:id="@+id/editor"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center|left|top"
+                android:imeOptions="flagNoExtractUi"
+                android:inputType="textMultiLine|textNoSuggestions"
+                android:lineSpacingMultiplier="1.16"
+                android:nextFocusRight="@id/editor"
+                android:padding="2.0dip"
+                android:textSize="12.0sp"
+                android:typeface="monospace" />
+        </LinearLayout>
+    </com.gmail.heagoo.neweditor.ObScrollView>
+
+    <include layout="@layout/included_editor_menu" />
+</LinearLayout>

@@ -1,0 +1,286 @@
+<?xml version="1.0"?>
+<!DOCTYPE MODE SYSTEM "xmode.dtd">
+
+<!-- JavaScript mode by Andre Kaplan -->
+<MODE>
+	<PROPS>
+		<PROPERTY NAME="commentStart" VALUE="/*" />
+		<PROPERTY NAME="commentEnd" VALUE="*/" />
+		<PROPERTY NAME="lineComment" VALUE="//" />
+		<PROPERTY NAME="wordBreakChars" VALUE=",+-=&lt;&gt;/?^&amp;*" />
+
+		<!-- Auto indent -->
+		<PROPERTY NAME="indentOpenBrackets" VALUE="{[" />
+		<PROPERTY NAME="indentCloseBrackets" VALUE="]}" />
+		<PROPERTY NAME="unalignedOpenBrackets" VALUE="(" />
+		<PROPERTY NAME="unalignedCloseBrackets" VALUE=")" />
+		<PROPERTY NAME="indentNextLine"
+			VALUE="\s*(((if|while)\s*\(|else\s*|else\s+if\s*\(|for\s*\(.*\))[^{;]*)" />
+		<PROPERTY NAME="unindentThisLine"
+			VALUE="^.*(default:\s*|case.*:.*)$" />
+		<PROPERTY NAME="electricKeys" VALUE=":" />
+	</PROPS>
+
+	<RULES
+		IGNORE_CASE="FALSE"
+		HIGHLIGHT_DIGITS="TRUE"
+		DIGIT_RE="(0x[\p{XDigit}]+[lL]?|[\p{Digit}]+(e[\p{Digit}]*)?[lLdDfF]?)">
+
+		<!-- The rest of the javascript info -->
+
+		<SPAN TYPE="COMMENT3">
+			<BEGIN>/**</BEGIN>
+			<END>*/</END>
+		</SPAN>
+
+		<SPAN TYPE="COMMENT1">
+			<BEGIN>/*</BEGIN>
+			<END>*/</END>
+		</SPAN>
+
+		<SPAN TYPE="LITERAL1" NO_LINE_BREAK="TRUE" ESCAPE="\">
+			<BEGIN>"</BEGIN>
+			<END>"</END>
+		</SPAN>
+
+		<SPAN TYPE="LITERAL1" NO_LINE_BREAK="TRUE" ESCAPE="\">
+			<BEGIN>'</BEGIN>
+			<END>'</END>
+		</SPAN>
+
+		<MARK_PREVIOUS TYPE="FUNCTION" MATCH_TYPE="OPERATOR">(</MARK_PREVIOUS>
+		<SEQ TYPE="OPERATOR">)</SEQ>
+
+		<SEQ TYPE="COMMENT2">//--&gt;</SEQ>
+		<EOL_SPAN TYPE="COMMENT2">//</EOL_SPAN>
+		<SEQ_REGEXP TYPE="MARKUP" HASH_CHAR="/" AT_WORD_START="TRUE">/[^\p{Blank}]*?/</SEQ_REGEXP>
+
+		<SEQ TYPE="COMMENT1">&lt;!--</SEQ>
+
+		<SEQ TYPE="OPERATOR">=</SEQ>
+		<SEQ TYPE="OPERATOR">!</SEQ>
+		<SEQ TYPE="OPERATOR">&gt;=</SEQ>
+		<SEQ TYPE="OPERATOR">&lt;=</SEQ>
+		<SEQ TYPE="OPERATOR">+</SEQ>
+		<SEQ TYPE="OPERATOR">-</SEQ>
+		<SEQ TYPE="OPERATOR">/</SEQ>
+		<SEQ TYPE="OPERATOR">*</SEQ>
+		<SEQ TYPE="OPERATOR">&gt;</SEQ>
+		<SEQ TYPE="OPERATOR">&lt;</SEQ>
+		<SEQ TYPE="OPERATOR">%</SEQ>
+		<SEQ TYPE="OPERATOR">&amp;</SEQ>
+		<SEQ TYPE="OPERATOR">|</SEQ>
+		<SEQ TYPE="OPERATOR">^</SEQ>
+		<SEQ TYPE="OPERATOR">~</SEQ>
+		<SEQ TYPE="OPERATOR">.</SEQ>
+		<SEQ TYPE="OPERATOR">}</SEQ>
+		<SEQ TYPE="OPERATOR">{</SEQ>
+		<SEQ TYPE="OPERATOR">,</SEQ>
+		<SEQ TYPE="OPERATOR">;</SEQ>
+		<SEQ TYPE="OPERATOR">]</SEQ>
+		<SEQ TYPE="OPERATOR">[</SEQ>
+		<SEQ TYPE="OPERATOR">?</SEQ>
+		<MARK_PREVIOUS AT_WHITESPACE_END="TRUE"
+			MATCH_TYPE="OPERATOR"
+			TYPE="LABEL">:</MARK_PREVIOUS>
+		<SEQ TYPE="OPERATOR">:</SEQ>
+
+		<KEYWORDS>
+			<!-- ECMAScript keywords -->
+			<KEYWORD1>break</KEYWORD1>
+			<KEYWORD1>continue</KEYWORD1>
+			<KEYWORD1>delete</KEYWORD1>
+			<KEYWORD1>else</KEYWORD1>
+			<KEYWORD1>for</KEYWORD1>
+			<KEYWORD1>function</KEYWORD1>
+			<KEYWORD1>if</KEYWORD1>
+			<KEYWORD1>in</KEYWORD1>
+			<KEYWORD1>new</KEYWORD1>
+			<KEYWORD1>return</KEYWORD1>
+			<LITERAL2>this</LITERAL2>
+			<KEYWORD1>typeof</KEYWORD1>
+			<KEYWORD1>var</KEYWORD1>
+			<KEYWORD3>void</KEYWORD3>
+			<KEYWORD1>while</KEYWORD1>
+			<KEYWORD1>with</KEYWORD1>
+
+			<!--ECMAScript keywords-->
+			<!-- Reserved for future use
+				(some are already used in some Javascript Engines)
+			-->
+			<KEYWORD1>abstract</KEYWORD1>
+			<KEYWORD3>boolean</KEYWORD3>
+			<KEYWORD3>byte</KEYWORD3>
+			<KEYWORD1>case</KEYWORD1>
+			<KEYWORD1>catch</KEYWORD1>
+			<KEYWORD3>char</KEYWORD3>
+			<KEYWORD1>class</KEYWORD1>
+			<KEYWORD1>const</KEYWORD1>
+			<KEYWORD1>debugger</KEYWORD1>
+			<KEYWORD1>default</KEYWORD1>
+
+			<KEYWORD1>do</KEYWORD1>
+			<KEYWORD3>double</KEYWORD3>
+			<KEYWORD1>enum</KEYWORD1>
+			<KEYWORD2>export</KEYWORD2>
+			<KEYWORD1>extends</KEYWORD1>
+			<KEYWORD1>final</KEYWORD1>
+			<KEYWORD1>finally</KEYWORD1>
+			<KEYWORD3>float</KEYWORD3>
+			<KEYWORD1>goto</KEYWORD1>
+			<KEYWORD1>implements</KEYWORD1>
+
+			<KEYWORD2>import</KEYWORD2>
+			<KEYWORD1>instanceof</KEYWORD1>
+			<KEYWORD3>int</KEYWORD3>
+			<KEYWORD1>interface</KEYWORD1>
+			<KEYWORD3>long</KEYWORD3>
+			<KEYWORD1>native</KEYWORD1>
+			<KEYWORD2>package</KEYWORD2>
+			<KEYWORD1>private</KEYWORD1>
+			<KEYWORD1>protected</KEYWORD1>
+			<KEYWORD1>public</KEYWORD1>
+
+			<KEYWORD3>short</KEYWORD3>
+			<KEYWORD1>static</KEYWORD1>
+			<LITERAL2>super</LITERAL2>
+			<KEYWORD1>switch</KEYWORD1>
+			<KEYWORD1>synchronized</KEYWORD1>
+			<KEYWORD1>throw</KEYWORD1>
+			<KEYWORD1>throws</KEYWORD1>
+			<KEYWORD1>transient</KEYWORD1>
+			<KEYWORD1>try</KEYWORD1>
+			<KEYWORD1>volatile</KEYWORD1>
+
+			<!-- Intrinsic Objects (Good idea not to use these names!!)-->
+			<KEYWORD3>Array</KEYWORD3>
+			<KEYWORD3>Boolean</KEYWORD3>
+			<KEYWORD3>Date</KEYWORD3>
+			<KEYWORD3>Function</KEYWORD3>
+			<KEYWORD3>Global</KEYWORD3>
+			<KEYWORD3>Math</KEYWORD3>
+			<KEYWORD3>Number</KEYWORD3>
+			<KEYWORD3>Object</KEYWORD3>
+			<KEYWORD3>RegExp</KEYWORD3><!-- Not ECMA -->
+			<KEYWORD3>String</KEYWORD3>
+
+			<!-- Literals -->
+			<LITERAL2>false</LITERAL2>
+			<LITERAL2>null</LITERAL2>
+			<LITERAL2>true</LITERAL2>
+
+			<LITERAL2>NaN</LITERAL2>
+			<LITERAL2>Infinity</LITERAL2>
+
+			<!-- Global functions -->
+			<LITERAL2>eval</LITERAL2>
+			<LITERAL2>parseInt</LITERAL2>
+			<LITERAL2>parseFloat</LITERAL2>
+			<LITERAL2>escape</LITERAL2>
+			<LITERAL2>unescape</LITERAL2>
+			<LITERAL2>isNaN</LITERAL2>
+			<LITERAL2>isFinite</LITERAL2>
+
+			<!-- Comment/Uncomment your favorite ADO Constants-->
+
+			<!-- ADO Constants-->
+
+			<!-- CursorTypeEnum Values -->
+			<LITERAL2>adOpenForwardOnly</LITERAL2>
+			<LITERAL2>adOpenKeyset</LITERAL2>
+			<LITERAL2>adOpenDynamic</LITERAL2>
+			<LITERAL2>adOpenStatic</LITERAL2>
+
+			<!-- LockTypeEnum Values -->
+			<LITERAL2>adLockReadOnly</LITERAL2>
+			<LITERAL2>adLockPessimistic</LITERAL2>
+			<LITERAL2>adLockOptimistic</LITERAL2>
+			<LITERAL2>adLockBatchOptimistic</LITERAL2>
+
+			<!-- ExecuteOptionEnum Values -->
+			<LITERAL2>adRunAsync</LITERAL2>
+			<LITERAL2>adAsyncExecute</LITERAL2>
+			<LITERAL2>adAsyncFetch</LITERAL2>
+			<LITERAL2>adAsyncFetchNonBlocking</LITERAL2>
+			<LITERAL2>adExecuteNoRecords</LITERAL2>
+
+			<!-- ObjectStateEnum Values -->
+			<LITERAL2>adStateClosed</LITERAL2>
+			<LITERAL2>adStateOpen</LITERAL2>
+			<LITERAL2>adStateConnecting</LITERAL2>
+			<LITERAL2>adStateExecuting</LITERAL2>
+			<LITERAL2>adStateFetching</LITERAL2>
+
+			<!-- CursorLocationEnum Values -->
+			<LITERAL2>adUseServer</LITERAL2>
+			<LITERAL2>adUseClient</LITERAL2>
+
+			<!-- DataTypeEnum Values -->
+			<LITERAL2>adEmpty</LITERAL2>
+			<LITERAL2>adTinyInt</LITERAL2>
+			<LITERAL2>adSmallInt</LITERAL2>
+			<LITERAL2>adInteger</LITERAL2>
+			<LITERAL2>adBigInt</LITERAL2>
+			<LITERAL2>adUnsignedTinyInt</LITERAL2>
+			<LITERAL2>adUnsignedSmallInt</LITERAL2>
+			<LITERAL2>adUnsignedInt</LITERAL2>
+			<LITERAL2>adUnsignedBigInt</LITERAL2>
+			<LITERAL2>adSingle</LITERAL2>
+			<LITERAL2>adDouble</LITERAL2>
+			<LITERAL2>adCurrency</LITERAL2>
+			<LITERAL2>adDecimal</LITERAL2>
+			<LITERAL2>adNumeric</LITERAL2>
+			<LITERAL2>adBoolean</LITERAL2>
+			<LITERAL2>adError</LITERAL2>
+			<LITERAL2>adUserDefined</LITERAL2>
+			<LITERAL2>adVariant</LITERAL2>
+			<LITERAL2>adIDispatch</LITERAL2>
+			<LITERAL2>adIUnknown</LITERAL2>
+			<LITERAL2>adGUID</LITERAL2>
+			<LITERAL2>adDate</LITERAL2>
+			<LITERAL2>adDBDate</LITERAL2>
+			<LITERAL2>adDBTime</LITERAL2>
+			<LITERAL2>adDBTimeStamp</LITERAL2>
+			<LITERAL2>adBSTR</LITERAL2>
+			<LITERAL2>adChar</LITERAL2>
+			<LITERAL2>adVarChar</LITERAL2>
+			<LITERAL2>adLongVarChar</LITERAL2>
+			<LITERAL2>adWChar</LITERAL2>
+			<LITERAL2>adVarWChar</LITERAL2>
+			<LITERAL2>adLongVarWChar</LITERAL2>
+			<LITERAL2>adBinary</LITERAL2>
+			<LITERAL2>adVarBinary</LITERAL2>
+			<LITERAL2>adLongVarBinary</LITERAL2>
+			<LITERAL2>adChapter</LITERAL2>
+			<LITERAL2>adFileTime</LITERAL2>
+			<LITERAL2>adDBFileTime</LITERAL2>
+			<LITERAL2>adPropVariant</LITERAL2>
+			<LITERAL2>adVarNumeric</LITERAL2>
+
+
+			<!-- PersistFormatEnum Values -->
+			<LITERAL2>adPersistADTG</LITERAL2>
+			<LITERAL2>adPersistXML</LITERAL2>
+
+			<!-- ParameterAttributesEnum Values -->
+			<LITERAL2>adParamSigned</LITERAL2>
+			<LITERAL2>adParamNullable</LITERAL2>
+			<LITERAL2>adParamLong</LITERAL2>
+
+			<!-- ParameterDirectionEnum Values -->
+			<LITERAL2>adParamUnknown</LITERAL2>
+			<LITERAL2>adParamInput</LITERAL2>
+			<LITERAL2>adParamOutput</LITERAL2>
+			<LITERAL2>adParamInputOutput</LITERAL2>
+			<LITERAL2>adParamReturnValue</LITERAL2>
+
+			<!-- CommandTypeEnum Values -->
+			<LITERAL2>adCmdUnknown</LITERAL2>
+			<LITERAL2>adCmdText</LITERAL2>
+			<LITERAL2>adCmdTable</LITERAL2>
+			<LITERAL2>adCmdStoredProc</LITERAL2>
+			<LITERAL2>adCmdFile</LITERAL2>
+			<LITERAL2>adCmdTableDirect</LITERAL2>
+		</KEYWORDS>
+	</RULES>
+</MODE>

@@ -1,0 +1,9 @@
+LOCAL_PATH := $(call my-dir)  
+  
+include $(CLEAR_VARS)  
+  
+LOCAL_LDLIBS += -L$(SYSROOT)/usr/lib -llog   
+#LOCAL_ARM_MODE := arm  
+LOCAL_MODULE    := controller  
+LOCAL_SRC_FILES := controller.c 
+include $(BUILD_EXECUTABLE)

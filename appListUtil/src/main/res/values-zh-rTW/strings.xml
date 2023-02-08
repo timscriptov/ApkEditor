@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="searching">搜索</string>
+    <string name="close">關閉</string>
+    <string name="find">查找</string>
+    <string name="keyword_hint">請輸入關鍵字</string>
+    <string name="keyword_cannot_empty">關鍵字不能為空！</string>
+
+</resources>

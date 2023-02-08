@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="order_key">
+        <item>By App Name</item>
+        <item>By Installation Time</item>
+    </string-array>
+
+    <string-array name="order_value">
+        <item>ByAlpha</item>
+        <item>ByInstallTime</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,278 @@
+<html>
+    <body>
+        <p>
+            <center>
+        <H1>APK Editor</H1>
+        </center></p>
+
+        <p>
+        <ul>
+            <li>
+                <a href="#about">�ber APK Editor</a>
+            </li>
+            <li>Anwendungsbeispiele</li>
+            <ol type="decimal">
+                <li>
+                    <a href="#example1">Name einer App �ndern</a>
+                </li>
+                <li>
+                    <a href="#example2">Aussehen einer App �ndern</a>
+                </li>
+                <li>
+                    <a href="#example3">App �ndern, um diese auf die SD-Karte installieren zu
+                        k�nnen
+                    </a>
+                </li>
+                <li>
+                    <a href="#example4">Entfernen von Werbung</a>
+                </li>
+                <li>
+                    <a href="#example5">Entfernen unerw�nschter Berechtigungen</a>
+                </li>
+            </ol>
+            <li>
+                <a href="#issues">�ber Probleme</a>
+            </li>
+        </ul>
+        </p>
+
+        <p id="about">
+            <B>APK Editor</B>
+            ist ein gutes Werkzeug zum Bearbeiten von APK-Dateien.
+            Ob man nun den Namen, das Icon, das Layout �ndern, Berechtigungen oder st�rende Werbung
+            entfernen oder Strings f�r Sprachdateien �ndern will, mit der vielseitigen App APK
+            Editor gelingt dies im Handumdrehen. Um den APK Editor effektiv nutzen zu k�nnen,
+            sollten Sie �ber ein wenig Fachwissen in Sachen App-Programmierung verf�gen.
+            <br>
+            Um den Anfang zu machen, werde ich ein paar Beispiele nennen. Der Einfachheit halber
+            habe ich mir als Ziel die APK-Datei von '5 Balls' ausgesucht. (Zur Ansicht und Download,
+            <a href="market://details?id=com.gmail.heagoo.fiveballs">
+                <B>klicken Sie hier</B>
+            </a>
+            )
+            <br>
+            Derzeit verf�gt APK Editor �ber die folgenden 3 Bearbeitungsmodi:
+            <br>
+            <B>(1) 'Vollst�ndig bearbeiten'</B>
+            bedeutet, dass alle Ressourcen dekompiliert und nach deren Bearbeitung erneut kompiliert
+            werden k�nnen. Dieser Modus ist der m�chtigste, aber er verbraucht viel CPU und
+            RAM-Speicher. Zudem enth�lt er auch Fehler.
+            <br>
+            <B>(2) 'Nur Dateien ersetzen'</B>
+            bedeutet, dass einfach nur Dateien in der APK-Datei ersetzt werden k�nnen. Zum Beispiel
+            k�nnen Bilder und T�ne ersetzt werden. Bilder werden in diesem Modus automatisch
+            skaliert.
+            <br>
+            <B>(3) 'App-Infos bearbeiten'</B>
+            bedeutet, dass einige gemeinsame Attribute wie z. B. Name der App, Paketname,
+            Installationsort usw. bearbeitet werden k�nnen.
+        </p>
+
+        <p id="example1">
+            <B>Beispiel 1: Name einer App �ndern</B>
+            <br>
+            <B>(1)</B>
+            W�hlen Sie die Ziel-App durch Klicken auf 'App ausw�hlen' und Auswahl der App '5 Balls'
+            aus.
+            <br>
+            <img src="app_select.jpg">
+            <br>
+            <B>(2)</B>
+            Im Auswahldialog mit den Bearbeitungsmodi w�hlen Sie 'App-Infos bearbeiten' aus, worauf
+            Ihnen einige bearbeitbare Informationen angezeigt werden, wie die folgende Grafik zeigt.
+            <br>
+            <img src="common_edit.jpg">
+            <br>
+            <B>(3)</B>
+            �ndern Sie den Namen der App von '5 Balls' z. B. in 'Five Balls'.
+            <br>
+            <B>(4)</B>
+            Klicken Sie auf die Schaltfl�che 'Speichern', und warten Sie einen Moment bis die neue
+            APK-Datei erstellt ist.
+            <br>
+            <B>(5)</B>
+            Klicken Sie auf 'Entfernen', um die Original-App zu deinstallieren, und danach auf
+            'Installieren', um die neue APK-Datei zu installieren. (Wir m�ssen das Original
+            entfernen, da die Signaturen unterschiedlich sind. Ansonsten w�rde die Installation
+            verweigert.)
+            <br>
+            Sie k�nnen den Namen einer App auch im Bearbeitungsmodus 'Vollst�ndig bearbeiten'
+            �ndern.
+        </p>
+
+        <p id="example2">
+            <B>Beispiel 2: Aussehen einer App �ndern</B>
+            <br>
+            Angenommen, wir wollen die Schaltfl�che auf der Hauptseite ein wenig breiter machen.
+            <br>
+            <B>(1)</B>
+            W�hlen Sie die Ziel-App durch Klicken auf 'App ausw�hlen' und Auswahl von '5 Balls' aus.
+            <br>
+            <B>(2)</B>
+            Im Auswahldialog mit den Bearbeitungsmodi w�hlen Sie 'Vollst�ndig bearbeiten' aus, und
+            warten einen Moment, bis die APK-Datei dekompiliert wurde.
+            <br>
+            <B>(3)</B>
+            Jetzt wechseln wir zur Registerkarte 'Dateien', klicken auf den Ordner 'layout', und
+            w�hlen dann die Datei 'main.xml' aus.
+            <br>
+            <B>(4)</B>
+            Eine XML-Datei wird ge�ffnet, wir k�nnen sehen, dass einige Zeilen mit '&lt;Button'
+            beginnen. Wenn Sie auf diese Zeile klicken, wird folgender Dialog ge�ffnet.
+            <br>
+            <img src="layout_edit.jpg">
+            <br>
+            <B>(5)</B>
+            �ndern Sie den Eintrag 'android:width' von '100.0dip' in '160.0dip'.
+            <br>
+            <B>(6)</B>
+            Speichern Sie die �nderung und installieren die App danach neu.
+            <br>
+            Die Schaltfl�che vor der �nderung:
+            <br>
+            <img src="button_before.jpg">
+            <br>
+            Die Schaltfl�che nach der �nderung:
+            <br>
+            <img src="button_after.jpg">
+        </p>
+
+        <p id="example3">
+            <B>Beispiel 3: App �ndern, um diese auf die SD-Karte installieren zu k�nnen
+                <br>
+                <I>(NUR verf�gbar in der Pro-Version.)</I>
+            </B>
+            Versuchen Sie es mit meiner anderen App
+            <a href="https://play.google.com/store/apps/details?id=com.gmail.heagoo.sdcardmovable">
+                "Apps Movable"</a>, wenn Sie keine Pro-Version haben.
+            <br>
+            <B>(1)</B>
+            W�hlen Sie dort dann die Ziel-App durch Klicken auf 'Select Apk from App' und Auswahl
+            von 'Hack App Data' aus.
+            <br>
+            <B>(2)</B>
+            Jetzt wechseln wir zur Registerkarte 'Manifest', und klicken dann auf die Zeile
+            'manifest xmln:android...' (sollte generell die 2. Zeile sein)
+            <br>
+            <B>(3)</B>
+            Klicken Sie im n�chsten Dialogfenster auf das '+' Symbol, um den Schl�ssel (Key)
+            'android:installLocation' mit dem Wert (Value) 'auto' zu erstellen, wie die folgende
+            Grafik zeigt.
+            <br>
+            <img src="example4_step3.jpg">
+            <br>
+            Klicken Sie dann auf 'OK' und im vorherigen Dialogfenster auf 'Save'
+            <br>
+            <B>(4)</B>
+            Klicken Sie auf die Schaltfl�che 'Speichern' in der rechten oberen Ecke Ihres
+            Bildschirmes. Nach einer Weile werden Sie dann sehen, wohin die ge�nderte APK-Datei
+            gespeichert wurde.
+            <br>
+            <br>
+            Die Vorgehensweise bei der Pro-Version ist �hnlich wie im Beispiel 1.
+            <br>
+            W�hlen Sie "App-Infos bearbeiten" aus, und w�hlen dann unter 'Installationsort' den
+            zweiten Punkt aus, wie die folgende Grafik zeigt.
+            <br>
+            <img src="movable_edit.jpg">
+        </p>
+
+        <p id="example4">
+            <B>Beispiel 4: Entfernen von Werbung</B>
+            <br>
+            <B>(1)</B>
+            W�hlen Sie die Ziel-App durch Klicken auf 'App ausw�hlen' und Auswahl von 'Hack App
+            Data' aus. Im Auswahldialog mit den Bearbeitungsmodi w�hlen Sie 'Vollst�ndig bearbeiten'
+            aus.
+            <br>
+            <B>(2)</B>
+            Jetzt wechseln wir zur Registerkarte 'Dateien', �ffnen den Ordner 'res', klicken auf den
+            Ordner 'layout', und w�hlen dann die Datei 'activity_main.xml' aus, deren Inhalt kurz
+            darauf angezeigt wird. Scrollen Sie zur letzten Zeile und �ndern Sie diese von:<br>
+            layout_height="wrap_content"
+            <br>
+            in:
+            <br>
+            layout_height="0dip"
+            <br>
+            <img src="example3_step2.jpg">
+            <br>
+            Klicken Sie unten links auf die Schaltfl�che mit dem Disketten-Symbol, um die �nderungen
+            zu speichern.
+            <br>
+            (Bitte beachten Sie, dass dies nur die Anzeige auf der Hauptseite unsichtbar macht, aber
+            f�r andere Seiten ist die Vorgehensweise �hnlich.)
+            <br>
+            <B>(3)</B>
+            Nachdem Sie das Bearbeitungsfenster verlassen haben, klicken Sie auf die Schaltfl�che
+            'Speichern' in der rechten oberen Ecke Ihres Bildschirmes. Nach einer Weile werden Sie
+            dann sehen, wohin die ge�nderte APK-Datei gespeichert wurde.
+            <br>
+        </p>
+
+        <p id="example5">
+            <B>Beispiel 5: Entfernen unerw�nschter Berechtigungen
+                <br>
+                <I>(NUR verf�gbar in der Pro-Version.)</I>
+            </B>
+            Dort wird gezeigt, wie man unerw�nschte Internet-Berechtigungen entfernt.)
+            <br>
+            <B>(1)</B>
+            W�hlen Sie die Ziel-App durch Klicken auf 'App ausw�hlen' und Auswahl von '5 Balls' aus.
+            Im Auswahldialog mit den Bearbeitungsmodi w�hlen Sie 'Vollst�ndig bearbeiten' aus.
+            <br>
+            <B>(2)</B>
+            Warten Sie einen Moment, bis die APK-Datei dekompiliert wurde.
+            <br>
+            <B>(3)</B>
+            Jetzt wechseln wir zur Registerkarte 'Manifest', klicken auf eine Zeile wo
+            'uses-permission' steht (sollte die Zeile 4-6 sein). Finden Sie die Zeile heraus, die
+            den Namen "android.permission.INTERNET" enth�lt.
+            <br>
+            <B>(4)</B>
+            Ein langer Klick auf diese Zeile, �ffnet diesen Dialog hier:
+            <br>
+            <img src="example5_step3.jpg">
+            <br>
+            <B>(5)</B>
+            Klicken Sie im Men� auf den Punkt 'L�schen'.
+            <br>
+            <B>(6)</B>
+            Klicken Sie auf die Schaltfl�che 'Speichern' in der rechten oberen Ecke Ihres
+            Bildschirmes. Nach einer Weile werden Sie dann sehen, wohin die ge�nderte APK-Datei
+            gespeichert wurde.
+            <br>
+        </p
+
+        <p id="issues">
+            <B>�ber Probleme</B>
+            <br>
+            Reverse Engineering ist keine leichte Aufgabe.<B>Beachten Sie bitte folgende
+            Hinweise</B>:
+            <br>
+            <B>(1)</B>
+            Durch langes Dr�cken eines Eintrages auf den Seiten "Ressourcen"/"Manifest", wird Ihnen
+            ein Men� mit weiteren Optionen angezeigt.
+            <br>
+            <B>(2)</B>
+            Die meisten Absturzprobleme werden durch ungen�genden Speicher verursacht. In einem
+            solchen Fall beenden Sie bitte alle nicht ben�tigten Anwendungen. Beenden Sie auch den
+            APK Editor und versuchen Sie es danach erneut.
+            <br>
+            <B>(3)</B>
+            Bitte vermeiden Sie es, gro�e APK-Dateien zu �ndern, da dadurch viel an CPU- und
+            Speicherressourcen verbraucht werden, die �ber die F�higkeiten Ihres Ger�tes hinausgehen
+            k�nnten.
+            <br>
+            <B>(4)</B>
+            Wir �bernehmen keine Garantie, dass Sie alle APK-Dateien mit diesem Werkzeug bearbeiten
+            k�nnen.
+            <br>
+            <B>(5)</B>
+            Die ge�nderte APK-Datei kann m�glicherweise nicht gestartet werden, eine Verwendung
+            erfolgt daher auf eigenes Risiko.
+            <br>
+        </p>
+
+    </body>
+</html>

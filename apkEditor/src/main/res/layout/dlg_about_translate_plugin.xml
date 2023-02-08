@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:background="@color/littleblue"
+        android:gravity="center_vertical"
+        android:minHeight="40dip"
+        android:paddingLeft="4dip"
+        android:text="@string/translate_plugin"
+        android:textAppearance="?android:textAppearanceMedium"
+        android:textColor="@color/lightblue" />
+
+    <TextView
+        android:id="@+id/tv_tip"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="4dip"
+        android:text="@string/translate_plugin_notfound_tip"
+        android:textColor="@color/lightblue" />
+
+    <Button
+        android:id="@+id/btn_close"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="@string/close" />
+
+    <WebView
+        android:id="@+id/web_instructions"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/btn_close"
+        android:layout_below="@id/tv_tip"
+        android:layout_marginLeft="4.0dip"
+        android:layout_marginRight="4.0dip" />
+
+</RelativeLayout>

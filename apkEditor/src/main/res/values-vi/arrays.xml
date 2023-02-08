@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="appicon_key">
+        <item>Mặc định (1)</item>
+        <item>(2)</item>
+        <item>(3)</item>
+        <item>(4)</item>
+        <item>(5)</item>
+        <item>(6)</item>
+        <item>(7)</item>
+        <item>(8)</item>
+        <item>(9)</item>
+        <item>(10)</item>
+        <item>(11)</item>
+        <item>(12)</item>
+        <item>(13)</item>
+        <item>(14)</item>
+        <item>(15)</item>
+        <item>(16)</item>
+        <item>(17)</item>
+    </string-array>
+    <string-array name="compression_level_key">
+        <item>0 (Không nén)</item>
+        <item>1 (Nhanh nhất)</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5 (Trung bình)</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9 (Chậm nhất)</item>
+    </string-array>
+    <string-array name="decode_dir_key">
+        <item>Thư mục nội bộ</item>
+        <item>Thư mục tuỳ chỉnh</item>
+    </string-array>
+    <string-array name="file_extract_rename_key">
+        <item>Tự động (bằng cách thêm một số hậu tố)</item>
+        <item>Ghi đè lên</item>
+    </string-array>
+    <string-array name="language_key">
+        <item>Mặc định</item>
+        <item>Arabic</item>
+        <item>Chinese</item>
+        <item>Czech</item>
+        <item>Dutch</item>
+        <item>English</item>
+        <item>French</item>
+        <item>German</item>
+        <item>Hebrew</item>
+        <item>Hungarian</item>
+        <item>Persian</item>
+        <item>Polish</item>
+        <item>Portuguese</item>
+        <item>Russian</item>
+        <item>Slovak</item>
+        <item>Spanish</item>
+        <item>Turkish</item>
+        <item>Ukrainian</item>
+        <item>Vietnamese</item>
+    </string-array>
+    <string-array name="order_key">
+        <item>Theo tên ứng dụng</item>
+        <item>Theo thời gian cài đặt</item>
+    </string-array>
+    <string-array name="signer_key">
+        <item>Key thử nghiệm</item>
+        <item>Key được tạo bởi APK Editor</item>
+        <item>Key thông thường</item>
+    </string-array>
+    <string-array name="theme_key">
+        <item>Chủ đề sáng</item>
+        <item>Chủ đề tối 1</item>
+        <item>Chủ đề tối 2</item>
+    </string-array>
+    <string-array name="decode_mode_key">
+        <item>@string/decode_all_files</item>
+        <item>@string/decode_partial_files</item>
+        <item>Quyết định nó lúc giải mã</item>
+    </string-array>
+</resources>

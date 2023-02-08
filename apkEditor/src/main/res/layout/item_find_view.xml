@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/search_frame"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_margin="5.0dip">
+
+    <LinearLayout
+        android:id="@+id/input_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/findEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:hint="@string/find"
+            android:imeOptions="actionSearch|flagNoExtractUi"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            android:textColor="#ffffffff">
+
+            <requestFocus />
+        </EditText>
+
+        <EditText
+            android:id="@+id/replaceEdit"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:hint="@string/replace"
+            android:imeOptions="actionNone|flagNoExtractUi"
+            android:selectAllOnFocus="true"
+            android:textColor="#ffffffff" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/option_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/input_layout"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/checkBoxRegexp"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:contentDescription="@string/regexp"
+            android:drawableTop="@drawable/edit_regexp"
+            android:paddingTop="10.0dip"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12.0sp" />
+
+        <ToggleButton
+            android:id="@+id/checkBoxIgnoreCase"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:drawableTop="@drawable/edit_ignorecase"
+            android:paddingTop="10.0dip"
+            android:textOff=""
+            android:textOn=""
+            android:textSize="12.0sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/action_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dip"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/findBtn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:contentDescription="@string/find"
+            android:src="@drawable/edit_search" />
+
+        <ImageButton
+            android:id="@+id/replaceBtn"
+            android:layout_width="0.0dip"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.0"
+            android:contentDescription="@string/replace"
+
+            android:src="@drawable/edit_replace" />
+    </LinearLayout>
+
+</RelativeLayout>

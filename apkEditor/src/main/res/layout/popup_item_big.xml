@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/textview_bg"
+    android:orientation="horizontal">
+
+    <ImageView
+        android:id="@+id/checkImage"
+        android:layout_width="32dip"
+        android:layout_height="32dip"
+        android:layout_gravity="center"
+        android:layout_marginLeft="4dip"
+        android:src="@drawable/check_green" />
+
+    <TextView
+        android:id="@+id/groupItem"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:minHeight="50dip"
+        android:paddingLeft="4dip"
+        android:paddingRight="4dip"
+        android:textColor="@color/textview_color"
+        android:textSize="16sp" />
+
+</LinearLayout>
