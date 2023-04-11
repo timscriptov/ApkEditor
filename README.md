@@ -1,4 +1,4 @@
-**ApkEditor Pro v1.10.0**
+**ApkEditor Pro v1.10.0(11.02.2019)**
 
 [RuStore](https://apps.rustore.ru/app/com.mcal.apkeditor.pro "RuStore")
 
