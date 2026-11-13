@@ -8,4 +8,4 @@
 
 Owner: timscriptov
 
-Author: SteelWorks
+Original Author: SteelWorks
